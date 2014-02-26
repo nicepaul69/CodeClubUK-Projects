@@ -9,15 +9,15 @@
   <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/lesson.css">
-  <link rel="stylesheet" href="/css/scratch.css">
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../../../css/lesson.css">
+  <link rel="stylesheet" href="../../../css/scratch.css">
 </head>
 <body>
 <header>
 <div class="level">Level 1</div>
 <div class="title">Felix and Herbert</div>
-<div class="logo"><img src="/img/ccuk_logo.svg"/></div>
+<div class="logo"><img src="../../../img/ccuk_logo.svg"/></div>
 </header>
 <section class="legal">
 <div>
@@ -27,57 +27,56 @@ These projects are for use inside the UK only. All Code Clubs must be registered
 <section id="introduction" class="level1 intro">
 <h1>Introduction</h1>
 <p>We are going to make a game of catch with <strong>Felix the cat</strong> and <strong>Herbert</strong> the mouse. You control Herbert with the mouse and try to avoid getting caught by Felix. The longer you avoid him the more points you score, but don’t get caught because your score will go down!</p>
-<figure>
-<img src="felixherbert_screenshot.png" alt="screenshot" /><figcaption>screenshot</figcaption>
-</figure>
+<p><img src="felixherbert_screenshot.png" alt="screenshot" /></p>
 </section>
 <section id="step-1-felix-follows-the-mouse-pointer" class="level1 activity">
 <h1>STEP 1: Felix follows the mouse pointer</h1>
 <section id="activity-checklist" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li>Start a new project.</li>
-<li>Click on the stage next to the sprite and switch to the Backgrounds tab, and then import the background indoors/hall. Delete the original blank background.</li>
-<li>Change the name of the sprite to Felix.</li>
-<li>Make sure Felix only points left-right by clicking this button:</li>
-<li><p>Create this script:</p>
-<p><img src="6557c7c06ab476bb7d2653430d0e6ebb4cac2e67.png" alt="
-    When FLAG clicked
-    forever
-        point towards [mouse-pointer]
-        move (10) steps
-        next costume
-        play drum (62) for (0.3) beats
-" /></p></li>
+<li><p><strong>Start a new project.</strong></p></li>
+<li><p>Click on the <strong>stage</strong> next to the sprite and switch to the <code class="blocklightgrey">Backdrops</code> tab, and then click the <code class="blocklightgrey">Choose Backdrop from library</code> button and choose the backdrop indoors/hall. Delete the original blank backdrop.</p></li>
+<li>Click on the sprite, and then click on the <code>i</code> button to the top left of the Sprite. Change the name of the sprite to <strong>Felix</strong>.<br /></li>
+<li>Make sure Felix only points left-right by clicking this button:<br /></li>
+<li><p><strong>Create this script</strong>:</p></li>
 </ul>
+<p><img src="1b85ff9c8168d4d49189244de5da02ce9657e539.png" alt="                when FLAG clicked
+                forever
+                    point towards [mouse-pointer v]
+                    move (10) steps
+                    next costume
+                    play drum (3 v) for (0.3) beats
+                end" /></p>
 </section>
 <section id="test-your-project" class="level2 flag">
-<h2>Test Your Project</h2>
-<p><strong>Click the green flag.</strong> Does Felix follow the mouse pointer? Does it look like he’s walking when he moves? Does he move at the right speed?</p>
+<h2>Test your project</h2>
+<p><strong>Click the green flag.</strong></p>
+<p>Does Felix follow the mouse pointer? Does it look like he’s walking when he moves? Does he move at the right speed?</p>
 </section>
 <section id="save-your-project" class="level2 save">
 <h2>Save your project</h2>
 </section>
 </section>
 <section id="step-2-felix-chases-herbert" class="level1 activity">
-<h1>STEP 2: Felix chases Herbert</h1>
-<p><strong>Next, we want Felix to chase Herbert the mouse, rather than the mouse pointer.</strong></p>
+<h1><strong>Step 2:</strong> Felix chases Herbert</h1>
+<p><em>Next, we want Felix to chase Herbert the mouse, rather than the mouse pointer.</em></p>
 <section id="activity-checklist-1" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li>Create another sprite using the choose new sprite from file button and selecting animals/mouse1.</li>
-<li>Change the name of the sprite to Herbert.</li>
-<li>Edit the costume and make it smaller than Felix. Try six clicks on the shrink button:</li>
-<li><p>Make sure Herbert only points left-right. 5. Give Herbert this script:</p>
-<p><img src="a10bc5b8f8505648d1a0481406090026f0f7c002.png" alt="
-    When FLAG clicked
-    forever
-        go to [mouse-pointer]
-        point towards [Felix]" /></p></li>
+<li>Create another sprite using the <code class="blockgrey">choose sprite from library</code> button and selecting <strong>animals/mouse1</strong>.<br /></li>
+<li>Change the name of the sprite to <strong>Herbert</strong>.<br /></li>
+<li>Switch to the <strong>Costumes</strong> tab, then click on the costume in the Paint Editor. A box will appear around the costume. Drag a corner of the box to make Herbert smaller than Felix.<br /></li>
+<li>Make sure Herbert only points left-right.<br /></li>
+<li><strong>Give Herbert this script:</strong></li>
 </ul>
+<p><img src="8204c8863131b567848aecaeacc19bfc5037f65d.png" alt="  when FLAG clicked
+    forever
+      go to [mouse-pointer v]
+      point towards [Felix v]
+    end" /></p>
 </section>
 <section id="test-your-project-1" class="level2 flag">
-<h2>Test Your Project</h2>
+<h2>Test your project</h2>
 <p><strong>Click the green flag.</strong></p>
 <p>Does Herbert move with the mouse pointer? Does Felix chase Herbert?</p>
 </section>
@@ -86,22 +85,26 @@ These projects are for use inside the UK only. All Code Clubs must be registered
 </section>
 </section>
 <section id="step-3-felix-says-when-hes-caught-herbert" class="level1 activity">
-<h1>STEP 3: Felix says when he's caught Herbert</h1>
-<p><strong>We want Felix to know when he’s caught Herbert, and tell us.</strong> ## Activity Checklist { .check}</p>
-<ol type="1">
-<li><p>Change Felix’s script to be this:</p>
-<p><img src="71bd4094f5ac9b4d69f937d4c38993daaaee71d8.png" alt="
-    when FLAG clicked
-    forever
-        point towards [mouse-pointer]
-        move (10) steps
-        next costume
-        play (drum 62) for (0.3) beats
-        if &lt;touching [Herbert]?&gt; then
-            say [Caught you!] for (1) secs" /></p></li>
-</ol>
+<h1><strong>Step 3:</strong> Felix says when he’s caught Herbert</h1>
+<p><strong>We want Felix to know when he’s caught Herbert, and tell us.</strong></p>
+<section id="activity-checklist-2" class="level2 check">
+<h2>Activity Checklist</h2>
+<ul>
+<li><strong>Change Felix’s script to be this:</strong></li>
+</ul>
+<p><img src="eecd113f50a792d2369b3b00e89bdc976e254215.png" alt="  when FLAG clicked
+  forever
+    point towards [mouse-pointer v]
+    move (10) steps
+    next costume
+    play drum (3 v) for (0.3) beats
+    if &lt;touching [herbert v]?&gt;
+      say [Caught you!] for (1) secs
+    end
+   end" /></p>
+</section>
 <section id="test-your-project-2" class="level2 flag">
-<h2>Test Your Project</h2>
+<h2>Test your project</h2>
 <p><strong>Click the green flag.</strong></p>
 <p>Does Felix say when he’s caught Herbert?</p>
 </section>
@@ -110,69 +113,75 @@ These projects are for use inside the UK only. All Code Clubs must be registered
 </section>
 </section>
 <section id="step-4-herbert-turns-into-a-ghost-when-hes-caught" class="level1 activity">
-<h1>STEP 4: Herbert turns into a ghost when he’s caught</h1>
+<h1><strong>Step 4:</strong> Herbert turns into a ghost when he’s caught</h1>
 <p><strong>Instead of Felix saying something, we want Herbert to turn into a ghost when he’s caught.</strong></p>
-<section id="activity-checklist-2" class="level2 check">
+<section id="activity-checklist-3" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li><p>Change Felix’s script to send this message when he catches Herbert.</p>
-<p><img src="9a3a2ccdcbb2ffe321d5336abc97424f85d5491b.png" alt="
-    when FLAG clicked
-    forever
-        point towards [mouse-pointer]
-        move (10) steps
-        next costume
-        play drum (62) for (0.3) beats
-        if &lt;touching [Herbert]?&gt; then
-            broadcast [caught]
-            play drum (58) for (0.2) beats
-            wait (1) sec" /></p></li>
-<li>Import a new costume into Herbert from fantasy/ghost2-a.</li>
-<li>Edit the costume to make it smaller. Six clicks on the shrink button should do.</li>
-<li>Change the names of Herbert’s costumes so the mouse costume is called ‘alive’ and the ghost costume is called ‘dead’.</li>
-<li><p>Create a new script for Herbert to turn him into a ghost:</p>
-<p><img src="28bc4bee2972b8fbc54bf4b940b25ab29fdc67d7.png" alt="
-    when I receive [caught]
-    switch to costume [dead]
-    wait (0.5) secs
-    switch to costume [alive]" /></p></li>
+<li><strong>Change Felix’s script to send this message when he catches Herbert:</strong></li>
 </ul>
+<p><img src="19deaf54bb5d29c9722115bd245684f2092fd7b5.png" alt="     when FLAG clicked
+        forever
+          point towards [mouse-pointer v]
+          move (10) steps
+          move (20) steps
+          next costume
+          play drum [3 v] for (0.3) beats
+          if &lt;touching [herbert v]?&gt;
+            broadcast [caught v]
+            play drum [17 v] for (0.2) beats
+            wait (1) secs
+          end
+        end" /></p>
+<ul>
+<li><p>Add a new costume into Herbert by selecting Herbert, going into the Costumes section, and clicking the <code class="blocklightgrey">Choose costume from Library button</code>. Select the <strong>fantasy/ghost2-a</strong> costume.</p></li>
+<li><p>Make the costume smaller by clicking on it in the Paint Editor, and dragging the box that appears, to resize it.</p></li>
+<li>Change the names of Herbert’s costumes so the mouse costume is called ‘alive’ and the ghost costume is called ‘dead’.<br /></li>
+<li><p><strong>Create a new script for Herbert to turn him into a ghost:</strong></p></li>
+</ul>
+<p><img src="fae5dc343af452dab96c5c0d0b1fe7d79ba13a10.png" alt="  when I receive [caught v]
+    switch costume to [dead v]
+    wait (1) secs
+    switch costume to [alive v]
+" /></p>
 </section>
 <section id="test-your-project-3" class="level2 flag">
-<h2>Test Your Project</h2>
+<h2>Test your project</h2>
 <p><strong>Click the green flag.</strong></p>
-<p>Does Herbert turn into a ghost when he’s caught? Does Felix play the right sounds at the right time? Does Felix still stay still for long enough for Herbert to get away</p>
+<p>Does Herbert turn into a ghost when he’s caught?<br />Does Felix play the right sounds at the right time?<br />Does Felix still stay still for long enough for Herbert to get away?</p>
 </section>
 <section id="save-your-project-3" class="level2 save">
 <h2>Save your project</h2>
 </section>
 </section>
 <section id="step-5-keep-score" class="level1 activity">
-<h1>STEP 5: Keep score</h1>
-<p><strong>Let’s add a score so we know how well we do at keeping Herbert alive. We’ll start the score at zero and increase it by one every second. If Felix catches Herbert, we’ll reduce the score by one hundred.</strong></p>
-<section id="activity-checklist-3" class="level2 check">
+<h1><strong>Step 5:</strong> Keep score</h1>
+<p><strong>Let’s add a score so we know how well we do at keeping Herbert alive.<br />We’ll start the score at zero and increase it by one every second. If Felix catches Herbert, we’ll reduce the score by one hundred.</strong></p>
+<section id="activity-checklist-4" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li>Make a variable, for all sprites, called score. Click on Variables in the top menu, make a variable and name it score</li>
-<li><p>On the stage, create these two scripts</p>
-<p><img src="d85715fc503844e2f525e6da4ff2f4432e3f54df.png" alt="
-    when FLAG clicked
-    set score to (0)
-    forever
-        change score by (1)
-        wait (1) secs
-    when I receive [caught]
-    change score by (-100)" /></p></li>
+<li>Make a variable, for all sprites, called Score. Click on <code class="blockorange">Data</code> in the top menu, make a variable and name it <code class="blockorange">score</code>, ensuring that &quot;For all sprites&quot; is selected.<br /></li>
+<li><strong>On the stage, create these two scripts:</strong></li>
 </ul>
+<p><img src="6ca06a7179651d1c49c4256e553ad59c48d4ad72.png" alt="when gf clicked
+   set [score v] to [0]
+   forever
+      change [score v] by (1)
+      wait (1) secs
+   end
+
+when I receive [caught v]
+change [score v] by (-100)" /></p>
 </section>
 <section id="test-your-project-4" class="level2 flag">
-<h2>Test Your Project</h2>
+<h2>Test your project</h2>
 <p><strong>Click the green flag.</strong></p>
-<p>Does the score go up by one every second? Does the score go down by one hundred when Herbert is caught? What happens when Herbert is caught before score reaches one hundred? Does the score go back to zero when you start a new game?</p>
+<p>Does the score go up by one every second?<br />Does the score go down by one hundred when Herbert is caught?<br />What happens when Herbert is caught before score reaches one hundred? Does the score go back to zero when you start a new game?</p>
 </section>
 <section id="save-your-project-4" class="level2 save">
 <h2>Save your project</h2>
-<p><strong>Well done you’ve finished, now you can enjoy the game!</strong> Don’t forget you can share your game with all your friends and family by clicking on <strong>Share</strong> on the menu bar</p>
+<p><strong>Well done you’ve finished, now you can enjoy the game!</strong></p>
+<p>Don’t forget you can share your game with all your friends and family by clicking on <strong>Share</strong> on the menu bar!</p>
 </section>
 </section>
 <section class="legal">

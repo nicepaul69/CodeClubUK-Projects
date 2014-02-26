@@ -9,15 +9,15 @@
   <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/lesson.css">
-  <link rel="stylesheet" href="/css/scratch.css">
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../../../css/lesson.css">
+  <link rel="stylesheet" href="../../../css/scratch.css">
 </head>
 <body>
 <header>
 <div class="level">Level 1</div>
 <div class="title">Fireworks</div>
-<div class="logo"><img src="/img/ccuk_logo.svg"/></div>
+<div class="logo"><img src="../../../img/ccuk_logo.svg"/></div>
 </header>
 <section class="legal">
 <div>
@@ -27,9 +27,7 @@ These projects are for use inside the UK only. All Code Clubs must be registered
 <section id="introduction" class="level1 intro">
 <h1>Introduction</h1>
 <p>In this project, we’ll create a fireworks display over a city.</p>
-<figure>
-<img src="fireworks_screenshot.png" alt="screenshot" /><figcaption>screenshot</figcaption>
-</figure>
+<p><img src="fireworks_screenshot.png" alt="screenshot" /></p>
 </section>
 <section id="step-1-create-a-rocket-that-flies-towards-the-mouse" class="level1 activity">
 <h1>STEP 1: Create a rocket that flies towards the mouse</h1>
@@ -37,50 +35,50 @@ These projects are for use inside the UK only. All Code Clubs must be registered
 <section id="activity-checklist" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li>Start a new Scratch project. Delete the cat by right clicking it and clicking Delete</li>
-<li>Replace the background with outdoor/city-with-water</li>
-<li>Use the <strong>new sprite from file</strong> button to add a Rocket sprite to the project (use the Resources/Rocket.png costume).</li>
+<li>Start a new Scratch project. Delete the cat by right clicking it and clicking Delete<br /></li>
+<li>Replace the backdrop with <strong>outdoor/city-with-water</strong><br /></li>
+<li>Use the <code class="blockgrey">Upload sprite from file</code> button to add a Rocket sprite<br />to the project (use the <strong>Resources/Rocket.png</strong> costume).<br /></li>
 <li>Make the rocket hide when the green flag is clicked.</li>
 </ul>
 <p>Now we want to make the rocket move towards the mouse when the mouse is clicked.</p>
 <ul>
 <li>Add a when space key pressed control block, and under this make the rocket appear and glide towards the mouse</li>
 </ul>
-<p><img src="57fe40ee6a9a1941362e14a5e4c58017b77f3a2a.png" alt="
+<p><img src="259a2b754818d1824a4a90a632123ac2a7ddcaf1.png" alt="
     when FLAG clicked
     hide
 
-    when (space key) pressed 
+    when [space v] key pressed 
     show
     glide (1) secs to x: (mouse x) y: (mouse y)" /></p>
 </section>
 <section id="test-your-project" class="level2 flag">
 <h2>Test Your Project</h2>
 <p><strong>Click the green flag, place your mouse over the stage and press the space bar.</strong></p>
-<p>Does the rocket appear and move to the mouse? What happens if you move the mouse and press space again?</p>
+<p>Does the rocket appear and move to the mouse?<br />What happens if you move the mouse and press space again?</p>
 </section>
 <section id="activity-checklist-1" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
 <li>Fireworks don’t tend to fly from side to side, so lets make sure it always glides towards the mouse from the bottom of the screen. Before we show the rocket, use the go to block tell it to move to below the bottom of the screen, but stay in the same place horizontally.</li>
 </ul>
-<p><img src="0b490d48c790ff51e549393fcc3032581b05b755.png" alt="
+<p><img src="860f21a1a7af18f6a1bd8c93abd328e1c9609d04.png" alt="
     when FLAG clicked
     hide
 
-    when (space key) pressed
+    when [space v] key pressed 
     go to x: (mouse x) y: (-200)
     show
     glide (1) secs to x: (mouse x) y: (mouse y)" /></p>
 </section>
 <section id="test-your-project-1" class="level2 flag">
 <h2>Test Your Project</h2>
-<p><strong>Click the green flag, place your mouse over the stage and press the space bar.</strong> Does the rocket fly towards the mouse from the bottom of the screen? What happens if you move the mouse and press space again?</p>
+<p><strong>Click the green flag, place your mouse over the stage and press the space bar.</strong><br />Does the rocket fly towards the mouse from the bottom of the screen? What happens if you move the mouse and press space again?</p>
 </section>
 <section id="activity-checklist-2" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li>Finally, lets make this work by using the mouse button instead of the space bar. To do this, we can wrap our script in a <strong>forever if mouse down</strong>. Then swap the <strong>when space key pressed</strong> control block for <strong>when flag clicked</strong> and last but not least make sure the rocket is hidden when everything starts up.</li>
+<li>Finally, lets make this work by using the mouse button instead of the space bar. To do this, we can wrap our script in a <strong>forever if mouse down</strong>.<br />Then swap the <strong>when space key pressed</strong> control block for <strong>when flag clicked</strong> and last but not least make sure the rocket is hidden when everything starts up.</li>
 </ul>
 <p><img src="2385f76aa74b16d7b68a11021da88ff675c672a2.png" alt="
     when FLAG clicked
@@ -97,8 +95,8 @@ These projects are for use inside the UK only. All Code Clubs must be registered
 </section>
 <section id="things-to-try" class="level2 try">
 <h2>Things to try</h2>
-<ol type="1">
-<li>Try making some rockets a little slower or faster than others.</li>
+<ol>
+<li>Try making some rockets a little slower or faster than others.<br /></li>
 <li>Try changing where the rocket moves to be fore gliding towards the mouse to make it arc a little.</li>
 </ol>
 </section>
@@ -111,54 +109,54 @@ These projects are for use inside the UK only. All Code Clubs must be registered
 <section id="activity-checklist-3" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li>The first step to make the rocket explode is to make it play a bang sound Resourcesbefore it starts moving, and then hide itself once it reaches the mouse. To import a sound go to the Sounds tab and click import</li>
+<li>The first step to make the rocket explode is to make it play a bang sound <strong>Resources/bang.wav</strong> before it starts moving, and then hide itself once it reaches the mouse. To import a sound go to the Sounds tab and click the <code class="blockgrey">Upload sound from file</code> button.</li>
 </ul>
-<p><img src="1266945a34ca36968e2aa362a3ce1a0e7cddc254.png" alt="
+<p><img src="6ddd864e4874536ecf273354571e6a4cfdde8f70.png" alt="
     when FLAG clicked
     hide
     forever
         if &lt;mouse down?&gt; then
             go to x: (mouse x) y: (-200)
-            play sound [bang]
+            play sound [bang v]
             show
             glide (1) secs to x: (mouse x) y: (mouse y)
             hide" /></p>
-<ol start="2" type="1">
+<ul>
 <li>Next, make the rocket broadcast a new message when it explodes. We’ll listen for this message later on.</li>
-</ol>
-<p><img src="2f62bee51baecd862e76097a5f69ccf407519e2c.png" alt="
+</ul>
+<p><img src="98bd1c1cc77c7757c10c677b12365f612c5af479.png" alt="
     when FLAG clicked
     hide
     forever
         if &lt;mouse down?&gt; then
             go to x: (mouse x) y: (-200)
-            play sound [bang]
+            play sound [bang v]
             show
             glide (1) secs to x: (mouse x) y: (mouse y)
             hide
-            broadcast [explode]" /></p>
+            broadcast [explode v]" /></p>
 </section>
 <section id="test-your-project-3" class="level2 flag">
 <h2>Test Your Project</h2>
-<p><strong>Click the green flag.</strong> Make sure the rocket plays a noise and hides when it reaches the mouse.</p>
+<p><strong>Click the green flag.</strong><br />Make sure the rocket plays a noise and hides when it reaches the mouse.</p>
 </section>
 <section id="activity-checklist-4" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li>Create new sprite from File, Resources/firework1.png</li>
+<li>Create new sprite from File, <strong>Resources/firework1.png</strong><br /></li>
 <li>When it receives the explode message, it should hide itself and then move to the position of the rocket using the go to block, show itself, and then vanish again a second later.</li>
 </ul>
-<p><img src="bba4dd04e3f79090e926c12340d5d665f1eba9f6.png" alt="
-    when I receive [explode]
+<p><img src="dfc42e82a65fccdb33e8da460ea3f7273b41a43f.png" alt="
+    when I receive [explode v]
     hide
-    go to x: ([x position] of [rocket]) y: ([y position] of [rocket])
+    go to [rocket v]
     show
-    wait (1) sec
+    wait (1) secs
     hide" /></p>
 </section>
 <section id="test-your-project-4" class="level2 flag">
 <h2>Test Your Project</h2>
-<p><strong>Send another rocket flying.</strong> Does it get replaced with the explosion graphic when it explodes? What happens if you hold the mouse button down whilst moving the mouse? (Don’t worry, we’ll fix this later on).</p>
+<p><strong>Send another rocket flying.</strong><br />Does it get replaced with the explosion graphic when it explodes?<br />What happens if you hold the mouse button down whilst moving the mouse? (Don’t worry, we’ll fix this later on).</p>
 </section>
 <section id="save-your-project-1" class="level2 save">
 <h2>Save your project</h2>
@@ -167,15 +165,15 @@ These projects are for use inside the UK only. All Code Clubs must be registered
 <section id="step-3-make-each-explosion-unique" class="level1 activity">
 <h1>STEP 3: Make each explosion unique</h1>
 <ul>
-<li>Now we can make each explosion even more unique by using the set color effect block, and have it pick a random colour between 1 and 200 before showing it.</li>
+<li>Now we can make each explosion even more unique by using the <code class="blockpurple">set color effect</code> block, and have it pick a random colour between <strong>1</strong> and <strong>200</strong> before showing it.</li>
 </ul>
-<p><img src="b825c9692d7bfb5017ae0d6aebeb294c0bdb3681.png" alt="
-    when I receive [explode]
+<p><img src="ab4cca93ae691be97374355aefb7c04ae79f9eb6.png" alt="
+    when I receive [explode v]
     hide
-    set [color] effect to (pick random (1) to (200))
-    go to x: ([x position] of [rocket]) y: ([y position] of [rocket])
+    set [color v] effect to (pick random (1) to (200))
+    go to [rocket v]
     show
-    wait (1) sec
+    wait (1) secs
     hide    
     " /></p>
 <section id="test-your-project-5" class="level2 flag">
@@ -186,29 +184,29 @@ These projects are for use inside the UK only. All Code Clubs must be registered
 <section id="activity-checklist-5" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li>Lets add a number of different possible explosion graphics as costumes, using Resources/firework2.png and Resources/firework3.png, and switch between them for each rocket, again before showing it.</li>
+<li>Lets add a number of different possible explosion graphics as costumes, using <strong>Resources/firework2.png</strong> and <strong>Resources/firework3.png</strong>, and switch between them for each rocket, again before showing it.</li>
 </ul>
-<section id="test-your-project-6" class="level3 flag">
-<h3>Test Your Project</h3>
+</section>
+<section id="test-your-project-6" class="level2 flag">
+<h2>Test Your Project</h2>
 <p><strong>Click the green flag.</strong></p>
 <p>Does each rocket have a different explosion graphic?</p>
-</section>
 </section>
 <section id="activity-checklist-6" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li>Finally, Let's make the explosion get bigger after the rocket explodes! Instead of waiting a second, set the size of the sprite to 5% before we show it, and then once it’s shown, increase the size by 2 fifty times, using a repeat block.</li>
+<li>Finally, Let's make the explosion get bigger after the rocket explodes! Instead of waiting a second, set the size of the sprite to <strong>5%</strong> before we show it, and then once it’s shown, increase the size by <strong>2 fifty times</strong>, using a <code class="blockorange">repeat</code> block.</li>
 </ul>
-<p><img src="9551de5ea17f3188bfcda42f08a48dd3959e87c6.png" alt="    
-    when I receive [explode]
+<p><img src="02b896c403dc388c4756a1b2b7a4b49452c2007f.png" alt="    
+    when I receive [explode v]
     hide
-    set [color] effect to (pick random (1) to (200))
-    go to x: ([x position] of [rocket]) y: ([y position] of [rocket])
+    set [color v] effect to (pick random (1) to (200))
+    go to [rocket v]
     show
     set size to (5) %
-    repeat 50
-        change size by 2
-    wait (1) sec
+    repeat (50)
+        change size by (2)
+    end
     hide
     " /></p>
 </section>
@@ -219,7 +217,9 @@ These projects are for use inside the UK only. All Code Clubs must be registered
 </section>
 <section id="things-to-try-1" class="level2 try">
 <h2>Things to try</h2>
-<p>Why not try making each explosion more unique by altering the size and speed of growth for the explosion.</p>
+<ul>
+<li>Why not try making each explosion more unique by altering the size and speed of growth for the explosion.</li>
+</ul>
 </section>
 <section id="save-your-project-2" class="level2 save">
 <h2>Save your project</h2>
@@ -227,23 +227,23 @@ These projects are for use inside the UK only. All Code Clubs must be registered
 </section>
 <section id="step-4-fixing-the-broadcast-bug" class="level1 activity">
 <h1>Step 4: Fixing the Broadcast Bug</h1>
-<p>Remember earlier we had a problem involving holding down the mouse button? This occurs because when the rocket broadcasts its explosion, it will immediately repeat the if loop and send out another explosion message, before the last one has finished displaying. In computing we often call such problems &quot;bugs&quot;.</p>
+<p>Remember earlier we had a bug involving holding down the mouse button?<br />This occurs because when the rocket broadcasts its explosion, it will immediately repeat the if loop and move the rocket back to the bottom of the stage. This happens before the explosion has moved to the position of the rocket.</p>
 <section id="activity-checklist-7" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
 <li>To fix this, we can replace the broadcast block with a broadcast and wait block. This way, the loop will not repeat until the explosion finishes exploding.</li>
 </ul>
-<p><img src="745a1ea21c4eb135998e498105a9d57be677790c.png" alt="    
+<p><img src="51d790b810c54f3bd5143fbe57929d98b79c1fe9.png" alt="    
     when FLAG clicked
     hide
     forever
         if &lt;mouse down?&gt; then
             go to x: (mouse x) y: (-200)
-            play sound [bang]
+            play sound [bang v]
             show
             glide (1) secs to x: (mouse x) y: (mouse y)
             hide
-            broadcast [explode] and wait
+            broadcast [explode v] and wait
 " /></p>
 </section>
 <section id="test-your-project-8" class="level2 flag">

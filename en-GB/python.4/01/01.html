@@ -9,9 +9,9 @@
   <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/lesson.css">
-  <link rel="stylesheet" href="/css/python.css">
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../../../css/lesson.css">
+  <link rel="stylesheet" href="../../../css/python.css">
   <style type="text/css">
 table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
   margin: 0; padding: 0; vertical-align: baseline; border: none; }
@@ -36,11 +36,11 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <header>
 <div class="level">1</div>
 <div class="title">Turtle Power</div>
-<div class="logo"><img src="/img/ccuk_logo.svg"/></div>
+<div class="logo"><img src="../../../img/ccuk_logo.svg"/></div>
 </header>
 <section class="legal">
 <div>
-These projects are for use inside the UK only. All Code Clubs must be registered. You can check registered clubs at <A href="http://www.codeclub.org.uk/registered-clubs">www.codeclub.org.uk/registered-clubs</a>. This coursework is developed in the open on GitHub, <a href="https://github.com/CodeClub/">https://github.com/CodeClub/</a> come and join us!
+These projects are for use inside the UK only. All Code Clubs must be registered. You can check registered clubs at <A href="http://www.codeclub.org.uk/">www.codeclub.org.uk/registered-clubs</a>. This coursework is developed in the open on GitHub, <a href="https://github.com/CodeClub/">github.com/CodeClub/</a> come and join us!
 </div>
 </section>
 <section id="introduction" class="level1 intro">
@@ -51,18 +51,18 @@ These projects are for use inside the UK only. All Code Clubs must be registered
 <h1>Step 0: Open up the Python Editor</h1>
 <p>If python is on your computer already, it's time to get started.</p>
 <ul>
-<li>On Windows, find IDLE in the start menu.</li>
-<li>On Mac OS X, open up Terminal.app and type <code>idle</code> and press enter.</li>
+<li>On Windows, find IDLE in the start menu.<br /></li>
+<li>On Mac OS X, open up Terminal.app and type <code>idle</code> and press enter.<br /></li>
 <li>On Linux, open up a Terminal, and type <code>idle</code> and press enter.</li>
 </ul>
-<p>If you don't have Python yet, don't panic! You can download the latest version of Python from <a href="http://www.python.org/getit/">http://www.python.org/</a>. The exact version doesn't really matter but we're using Python 3, so it should start with 3 (not 2).</p>
+<p>If you don't have Python yet, don't panic! You can download the latest version of Python from <a href="http://www.python.org/getit/"><a href="http://www.python.org/">http://www.python.org/</a></a>. The exact version doesn't really matter but we're using Python 3, so it should start with 3 (not 2).</p>
 <p>When IDLE starts you will see an Output window called <code>Python Shell</code>. We need to open a new window to write code in. Go to <code>File -&gt; New Window</code> so you're ready for Step 1. Make sure you have both windows visible.</p>
 </section>
 <section id="step-1-hello-world" class="level1 activity">
 <h1>Step 1: Hello, World!</h1>
 <section id="activity-checklist" class="level2 check">
 <h2>Activity Checklist</h2>
-<ol type="1">
+<ol>
 <li><p>Open IDLE, the editor that comes with Python. All our code will be written in this editor. When you open it, you will see an Output window, where errors and results will appear.</p></li>
 <li><p>If you haven't yet, choose <code>File -&gt; New Window</code>. An empty window will appear, with '<em>Untitled</em>' in the title bar.<br /> You should have two windows open now, one for writing your program, another for showing output. Make sure you write in the right one!</p></li>
 <li><p>Enter the following code into the new window:</p>
@@ -74,7 +74,7 @@ These projects are for use inside the UK only. All Code Clubs must be registered
 <section id="protip" class="level3 protip">
 <h3><strong>ProTip</strong>:</h3>
 <ul>
-<li>On <strong>Windows</strong> and <strong>Ubuntu</strong>, use Ctrl-N to create a new shell window, use ctrl-S to save your file after you’ve finished editing, and press F5 to run your program. On some computers you may need to press a Fn key too.</li>
+<li>On <strong>Windows</strong> and <strong>Ubuntu</strong>, use Ctrl-N to create a new shell window, use ctrl-S to save your file after you’ve finished editing, and press F5 to run your program. On some computers you may need to press a Fn key too.<br /></li>
 <li>On <strong>Mac OS X</strong>, cmd-N to create a new shell window, Command-S to save your file, and hold down the function (fn) key and press F5 to run your program.</li>
 </ul>
 </section>
@@ -85,7 +85,7 @@ These projects are for use inside the UK only. All Code Clubs must be registered
 <p>Next, we're going to have some fun with turtles. A turtle is a tiny robot that draws on your screen, we can tell it to move around using Python commands.</p>
 <section id="activity-checklist-1" class="level2 check">
 <h2>Activity Checklist</h2>
-<ol type="1">
+<ol>
 <li><p>Open a new code window (From the File menu) and write the following:</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
@@ -135,7 +135,7 @@ West      |     East
 <h3>What does the code at the beginning of our program do</h3>
 <ul>
 <li><p><code>from turtle import *</code> tells Python we want to use the turtle library, a collection of code we can use to draw on the screen. Using a library means we can save time.</p></li>
-<li><code>speed()</code> sets the speed of the turtle, it takes a value between 1 and 11. 11 is the fastest, 1 is the slowest.</li>
+<li><code>speed()</code> sets the speed of the turtle, it takes a value between 1 and 11. 11 is the fastest, 1 is the slowest.<br /></li>
 <li><p><code>shape()</code> We are using the &quot;turtle&quot; shape, but it can also take the values &quot;arrow&quot;, &quot;circle&quot;, &quot;square&quot;, &quot;triangle&quot; or &quot;classic&quot;.</p></li>
 </ul>
 <p>We will be putting these three instructions at the top of all our programs in this lesson. If you like you can make your turtle a different shape, or go as fast or slow as you want.</p>
@@ -147,7 +147,7 @@ West      |     East
 <p>Lets make a square by telling the turtle how to move around.</p>
 <section id="activity-checklist-2" class="level2 check">
 <h2>Activity Checklist</h2>
-<ol type="1">
+<ol>
 <li><p>Open up a new file in IDLE, and write the following code in:</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
@@ -181,7 +181,7 @@ right(<span class="dv">120</span>)</code></pre></li>
 <section id="pick-a-colour" class="level3">
 <h3>Pick a Colour</h3>
 <p>What's your favourite colour? You can change the colour of the lines using the function <code>pencolor</code> (Python uses American spellings), and you can also change the pen size using <code>pensize</code>:</p>
-<ol type="1">
+<ol>
 <li><p>Edit the code from before to look like the next example, by adding in these new commands:</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
@@ -198,8 +198,8 @@ right(<span class="dv">120</span>)
 pencolor(<span class="st">&quot;green&quot;</span>)
 forward(<span class="dv">100</span>)
 right(<span class="dv">120</span>)</code></pre></li>
-<li><p>Run your code, what does it draw on screen? This code draws a thick triangle in three different colors.</p></li>
-<li><p>Try changing the colors in your code, run it, and see what happens. The turtle knows hundreds of different colours, not just red, blue and green, try using your favourite colour!<br /> You can also specify colours in <strong>hex</strong> like we did in CSS. Instead of using <code>pencolor(&quot;red&quot;)</code> you could use hex <code>pencolor(&quot;#FF0000&quot;)</code>. What colour is #FF4F00?</p></li>
+<li><p>Run your code, what does it draw on screen?<br /> This code draws a thick triangle in three different colors.</p></li>
+<li><p>Try changing the colors in your code, run it, and see what happens.<br /> The turtle knows hundreds of different colours, not just red, blue and green, try using your favourite colour!<br /> You can also specify colours in <strong>hex</strong> like we did in CSS. Instead of using <code>pencolor(&quot;red&quot;)</code> you could use hex <code>pencolor(&quot;#FF0000&quot;)</code>.<br /> What colour is #FF4F00?</p></li>
 </ol>
 </section>
 </section>
@@ -209,7 +209,7 @@ right(<span class="dv">120</span>)</code></pre></li>
 <p>That last program was the same commands over and over again. Instead of writing them down, let's ask the computer to repeat them for us. You should have encountered <em>iteration</em> in Scratch before using the <code>Forever</code> and <code>Repeat</code>/<code>Repeat until</code> blocks. In Python <strong>for loops</strong> are used when you have a piece of code which you want to repeat n number of times. In this case we want to repeat the code (that is indented) 4 times (because a square has 4 sides).</p>
 <section id="activity-checklist-3" class="level2 check">
 <h2>Activity Checklist</h2>
-<ol type="1">
+<ol>
 <li><p>Open up a new file and type the following in:</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
@@ -252,9 +252,9 @@ angle = <span class="dv">90</span>
 <h2>Challenge: Drawing the other shapes</h2>
 <p>Can you draw the following shapes by changing the values?</p>
 <ul>
-<li>a triangle? (three sides)</li>
-<li>a pentagon? (five sides)</li>
-<li>a hexagon? (six sides)</li>
+<li>a triangle? (three sides)<br /></li>
+<li>a pentagon? (five sides)<br /></li>
+<li>a hexagon? (six sides)<br /></li>
 <li>an octagon? (eight sides)</li>
 </ul>
 <p>Remember, a Triangle has three sides, and turns 120 degrees. Turning 120 degrees for each corner means we turn 360 degrees in total. For a Square, we turn 90 degrees for four corners, which also adds up to 360 degrees.</p>
@@ -268,7 +268,7 @@ angle = <span class="dv">90</span>
 <p>If we need to turn 360 degrees in total, we can work out the angle we'll need. For a square, <code>360 / 4</code> is 90, for a Triangle, <code>360/3</code> is 120.</p>
 <section id="activity-checklist-4" class="level2 check">
 <h2>Activity Checklist</h2>
-<ol type="1">
+<ol>
 <li><p>Change your program to calculate the angle as following.</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
@@ -290,8 +290,8 @@ angle = <span class="dv">360</span>/sides
 <h1>Step 6: Solid Shape</h1>
 <section id="activity-checklist-5" class="level2 check">
 <h2>Activity Checklist</h2>
-<ol type="1">
-<li><p>We can ask the turtle to fill in shapes with a colour, by using <code>begin_fill()</code> and <code>end_fill()</code>. Change your code to add these commands in:</p>
+<ol>
+<li><p>We can ask the turtle to fill in shapes with a colour, by using <code>begin_fill()</code> and <code>end_fill()</code>. Change your code to<br />add these commands in:</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
 speed(<span class="dv">11</span>)
@@ -310,7 +310,7 @@ angle = <span class="dv">360</span>/sides
     right(angle)
 end_fill()</code></pre>
 <p>Like with <code>pencolor</code>, <code>fillcolor</code> sets the color the turtle uses to fill in the shapes you draw. This draws a red square with a red outline.</p>
-You use <code>begin_fill()</code> to tell the turtle you're drawing a shape to colour-in, and <code>end_fill()</code> to say you've finished it.</li>
+You use <code>begin_fill()</code> to tell the turtle you're drawing a shape to colour-in, and <code>end_fill()</code> to say you've finished it.<br /></li>
 <li><p>Try changing the colours, sides and lengths to see what shapes you can draw!</p></li>
 </ol>
 </section>
@@ -320,7 +320,7 @@ You use <code>begin_fill()</code> to tell the turtle you're drawing a shape to c
 <section id="activity-checklist-6" class="level2 check">
 <h2>Activity Checklist</h2>
 <p>If you want to move the turtle without leaving a trail behind it, you can use <code>penup()</code> and <code>pendown()</code> to turn drawing on and off.</p>
-<ol type="1">
+<ol>
 <li><p>In a new file, try the following:</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
@@ -349,7 +349,7 @@ pencolor(<span class="st">&#39;red&#39;</span>)
 </section>
 <section class="legal">
 <div>
-These projects are for use inside the UK only. All Code Clubs must be registered. You can check registered clubs at <A href="http://www.codeclub.org.uk/registered-clubs">www.codeclub.org.uk/registered-clubs</a>. This coursework is developed in the open on GitHub, <a href="https://github.com/CodeClub/">https://github.com/CodeClub/</a> come and join us!
+These projects are for use inside the UK only. All Code Clubs must be registered. You can check registered clubs at <A href="http://www.codeclub.org.uk/">www.codeclub.org.uk/registered-clubs</a>. This coursework is developed in the open on GitHub, <a href="https://github.com/CodeClub/">github.com/CodeClub/</a> come and join us!
 </div>
 </section>
 </body>

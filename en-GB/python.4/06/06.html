@@ -9,9 +9,9 @@
   <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/lesson.css">
-  <link rel="stylesheet" href="/css/python.css">
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../../../css/lesson.css">
+  <link rel="stylesheet" href="../../../css/python.css">
   <style type="text/css">
 table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
   margin: 0; padding: 0; vertical-align: baseline; border: none; }
@@ -36,11 +36,11 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <header>
 <div class="level">6</div>
 <div class="title">Noughts and Crosses</div>
-<div class="logo"><img src="/img/ccuk_logo.svg"/></div>
+<div class="logo"><img src="../../../img/ccuk_logo.svg"/></div>
 </header>
 <section class="legal">
 <div>
-These projects are for use inside the UK only. All Code Clubs must be registered. You can check registered clubs at <A href="http://www.codeclub.org.uk/registered-clubs">www.codeclub.org.uk/registered-clubs</a>. This coursework is developed in the open on GitHub, <a href="https://github.com/CodeClub/">https://github.com/CodeClub/</a> come and join us!
+These projects are for use inside the UK only. All Code Clubs must be registered. You can check registered clubs at <A href="http://www.codeclub.org.uk/">www.codeclub.org.uk/registered-clubs</a>. This coursework is developed in the open on GitHub, <a href="https://github.com/CodeClub/">github.com/CodeClub/</a> come and join us!
 </div>
 </section>
 <section id="introduction" class="level1 intro">
@@ -56,7 +56,7 @@ _|_|_
 <p>We could use the turtle commands to draw it, but today we're going to learn about the Tk Canvas.</p>
 <section id="activity-checklist" class="level2 check">
 <h2>Activity Checklist</h2>
-<ol type="1">
+<ol>
 <li><p>Open up IDLE, create a New File, and save it as 'xox.py'</p></li>
 <li><p>Write the following code</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> tkinter <span class="ch">import</span> *
@@ -136,7 +136,7 @@ c.create_line(<span class="dv">0</span>, <span class="dv">400</span>, <span clas
 <h1>Step 2: Drawing a O</h1>
 <section id="activity-checklist-1" class="level2 check">
 <h2>Activity Checklist</h2>
-<ol type="1">
+<ol>
 <li><p>In the same file, let's add a new function to draw when you click the mouse!</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> tkinter <span class="ch">import</span> *
 
@@ -160,7 +160,7 @@ mainloop()</code></pre></li>
 <li><p>Run your code, and click on the grid, what happens?</p></li>
 </ol>
 <p>You should see a circle in the centre of the grid.</p>
-<ol start="3" type="1">
+<ol>
 <li><p>Let's edit the code, so it will draw where you click</p>
 <p>For this we'll need to take the mouse position, and work out which grid square it is in, and change the <code>click</code> function</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> tkinter <span class="ch">import</span> *
@@ -198,7 +198,7 @@ mainloop()</code></pre>
 <h1>Step 3: Drawing an X</h1>
 <section id="activity-checklist-2" class="level2 check">
 <h2>Activity Checklist</h2>
-<ol type="1">
+<ol>
 <li><p>In the same file, let's add some code to draw an X, then an O, then an X, ...</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> tkinter <span class="ch">import</span> *
 
@@ -241,7 +241,7 @@ c.bind(<span class="st">&quot;&lt;Button-1&gt;&quot;</span>, click)
 
 mainloop()</code></pre></li>
 <li><p>Run your program, try click on a grid, it should draw a O, click elsewhere it should draw an X</p>
-<p>We've used a new feature of python, <code>global</code> to let us change the variable <code>shape</code> in the function <code>click</code>. If you change variables defined outside of a function, then you have to use <code>global</code>.</p></li>
+<p>We've used a new feature of python, <code>global</code> to let us change the variable <code>shape</code> in the function <code>click</code>.<br />If you change variables defined outside of a function, then you have to use <code>global</code>.</p></li>
 <li><p>What happens if you click on the same square twice?</p>
 <p>This is because our code doesn't keep track of what has been drawn, or where players have moved. We will have write some more code to fix this.</p></li>
 </ol>
@@ -252,7 +252,7 @@ mainloop()</code></pre></li>
 <section id="activity-checklist-3" class="level2 check">
 <h2>Activity Checklist</h2>
 <p>To stop players playing the same move twice, we'll have to keep track of the moves they make. To do this we'll introduce a list called <code>grid</code></p>
-<ol type="1">
+<ol>
 <li><p>In the same file,</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> tkinter <span class="ch">import</span> *
 
@@ -315,7 +315,7 @@ mainloop()</code></pre></li>
 <p>Now we have got the game working, we need to find a winner!</p>
 <section id="activity-checklist-4" class="level2 check">
 <h2>Activity Checklist</h2>
-<ol type="1">
+<ol>
 <li><p>In the same file, we're going to introduce a new function <code>winner</code>, and call it to check if the game has been won</p>
 <p>The completed code looks like this!</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> tkinter <span class="ch">import</span> *
@@ -399,7 +399,7 @@ c.bind(<span class="st">&quot;&lt;Button-1&gt;&quot;</span>, click)
 mainloop()</code></pre></li>
 <li><p>Try playing the game and winning, can you make any more moves?</p>
 <p>We have four checks in <code>winner</code></p>
-<ol type="1">
+<ol>
 <li><p>Check each row for three X's or O's</p></li>
 <li><p>Check each column for three X's or O's</p></li>
 <li><p>Check the diagonal from left to right</p></li>
@@ -414,7 +414,7 @@ mainloop()</code></pre></li>
 </section>
 <section class="legal">
 <div>
-These projects are for use inside the UK only. All Code Clubs must be registered. You can check registered clubs at <A href="http://www.codeclub.org.uk/registered-clubs">www.codeclub.org.uk/registered-clubs</a>. This coursework is developed in the open on GitHub, <a href="https://github.com/CodeClub/">https://github.com/CodeClub/</a> come and join us!
+These projects are for use inside the UK only. All Code Clubs must be registered. You can check registered clubs at <A href="http://www.codeclub.org.uk/">www.codeclub.org.uk/registered-clubs</a>. This coursework is developed in the open on GitHub, <a href="https://github.com/CodeClub/">github.com/CodeClub/</a> come and join us!
 </div>
 </section>
 </body>

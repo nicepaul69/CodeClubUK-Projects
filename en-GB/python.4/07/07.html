@@ -9,9 +9,9 @@
   <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/lesson.css">
-  <link rel="stylesheet" href="/css/python.css">
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../../../css/lesson.css">
+  <link rel="stylesheet" href="../../../css/python.css">
   <style type="text/css">
 table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
   margin: 0; padding: 0; vertical-align: baseline; border: none; }
@@ -36,11 +36,11 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <header>
 <div class="level">7</div>
 <div class="title">Playing against the Computer</div>
-<div class="logo"><img src="/img/ccuk_logo.svg"/></div>
+<div class="logo"><img src="../../../img/ccuk_logo.svg"/></div>
 </header>
 <section class="legal">
 <div>
-These projects are for use inside the UK only. All Code Clubs must be registered. You can check registered clubs at <A href="http://www.codeclub.org.uk/registered-clubs">www.codeclub.org.uk/registered-clubs</a>. This coursework is developed in the open on GitHub, <a href="https://github.com/CodeClub/">https://github.com/CodeClub/</a> come and join us!
+These projects are for use inside the UK only. All Code Clubs must be registered. You can check registered clubs at <A href="http://www.codeclub.org.uk/">www.codeclub.org.uk/registered-clubs</a>. This coursework is developed in the open on GitHub, <a href="https://github.com/CodeClub/">github.com/CodeClub/</a> come and join us!
 </div>
 </section>
 <section id="introduction" class="level1 intro">
@@ -52,7 +52,7 @@ These projects are for use inside the UK only. All Code Clubs must be registered
 <p>In Lesson 6, we wrote a two player noughts and crosses game, using the &quot;Tk Canvas&quot; to draw on the screen, before we start writing new code, we're going to need the basic part of the game.</p>
 <section id="activity-checklist" class="level2 check">
 <h2>Activity Checklist</h2>
-<ol type="1">
+<ol>
 <li><p>Open IDLE, and either open your file from last week and save it as a new file, or if you can't find it, copy the following in:</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> tkinter <span class="ch">import</span> *
 
@@ -144,7 +144,7 @@ mainloop()</code></pre></li>
 <p>Remember that we use the variable <code>grid</code> to store how the board looks. It's a list that starts off [&quot;0&quot;, &quot;1&quot;, &quot;2&quot;, ... ], and we replace elements with &quot;X&quot; or &quot;O&quot; as the game progresses. We will have to find a free spot, then play it.</p>
 <section id="activity-checklist-1" class="level2 check">
 <h2>Activity Checklist</h2>
-<ol type="1">
+<ol>
 <li><p>At the top of the file, we will have to import the <code>random</code> library, so we can pick a move</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> tkinter <span class="ch">import</span> *
 <span class="ch">import</span> random</code></pre>
@@ -158,8 +158,8 @@ mainloop()</code></pre></li>
             output.append(position)
     <span class="kw">return</span> output</code></pre>
 <p>This function creates an empty list, and then for each square in the grid, checks if it is empty.</p>
-<p>We use a function <code>enumerate</code> to tell us the positions of each item in the list. <code>enumerate</code> turns a list of ['A','B','C'] into pairs of (0, 'A'), (1,'B') and so on, so we don't have to count them</p></li>
-<li><p>Next we write a function <code>play_move()</code> which finds an empty square to play in. Add this function after <code>free_squares</code> and before the line <code>c.bind(...)</code></p>
+<p>We use a function <code>enumerate</code> to tell us the positions of each item in the list. <code>enumerate</code> turns<br />a list of ['A','B','C'] into pairs of (0, 'A'), (1,'B') and so on, so we don't have to count them</p></li>
+<li><p>Next we write a function <code>play_move()</code> which finds an empty square to play in. Add this function<br />after <code>free_squares</code> and before the line <code>c.bind(...)</code></p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> play_move()
     moves = free_squares()
     move = random.choice(moves)
@@ -219,7 +219,7 @@ mainloop()</code></pre></li>
 <p>The computer can play noughts and crosses, but badly. Let's help it a little. Instead of picking a random move, let's make it pick a move that wins, if it sees one. The idea is that we can try each move in turn and see if it wins, and then play it.</p>
 <section id="activity-checklist-2" class="level2 check">
 <h2>Activity Checklist</h2>
-<ol type="1">
+<ol>
 <li><p>Edit the <code>winner</code> function to take an argument <code>grid</code>:</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> winner(grid):
     <span class="kw">for</span> across in <span class="dt">range</span>(<span class="dv">3</span>):
@@ -312,7 +312,7 @@ mainloop()</code></pre></li>
 <p>The other strategy we will use, is to look for a winning move for the player, and play it instead. I.e block any potential three in a row.</p>
 <section id="activity-checklist-3" class="level2 check">
 <h2>Activity Checklist</h2>
-<ol type="1">
+<ol>
 <li><p>Edit <code>play_move</code> to find the players winning move, and block it!</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> play_move():
     move = -<span class="dv">1</span>
@@ -477,7 +477,7 @@ mainloop()
 </section>
 <section class="legal">
 <div>
-These projects are for use inside the UK only. All Code Clubs must be registered. You can check registered clubs at <A href="http://www.codeclub.org.uk/registered-clubs">www.codeclub.org.uk/registered-clubs</a>. This coursework is developed in the open on GitHub, <a href="https://github.com/CodeClub/">https://github.com/CodeClub/</a> come and join us!
+These projects are for use inside the UK only. All Code Clubs must be registered. You can check registered clubs at <A href="http://www.codeclub.org.uk/">www.codeclub.org.uk/registered-clubs</a>. This coursework is developed in the open on GitHub, <a href="https://github.com/CodeClub/">github.com/CodeClub/</a> come and join us!
 </div>
 </section>
 </body>

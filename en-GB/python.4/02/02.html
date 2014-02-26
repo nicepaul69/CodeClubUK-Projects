@@ -9,9 +9,9 @@
   <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/lesson.css">
-  <link rel="stylesheet" href="/css/python.css">
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../../../css/lesson.css">
+  <link rel="stylesheet" href="../../../css/python.css">
   <style type="text/css">
 table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
   margin: 0; padding: 0; vertical-align: baseline; border: none; }
@@ -36,18 +36,18 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <header>
 <div class="level">2</div>
 <div class="title">Teaching Turtles</div>
-<div class="logo"><img src="/img/ccuk_logo.svg"/></div>
+<div class="logo"><img src="../../../img/ccuk_logo.svg"/></div>
 </header>
 <section class="legal">
 <div>
-These projects are for use inside the UK only. All Code Clubs must be registered. You can check registered clubs at <A href="http://www.codeclub.org.uk/registered-clubs">www.codeclub.org.uk/registered-clubs</a>. This coursework is developed in the open on GitHub, <a href="https://github.com/CodeClub/">https://github.com/CodeClub/</a> come and join us!
+These projects are for use inside the UK only. All Code Clubs must be registered. You can check registered clubs at <A href="http://www.codeclub.org.uk/">www.codeclub.org.uk/registered-clubs</a>. This coursework is developed in the open on GitHub, <a href="https://github.com/CodeClub/">github.com/CodeClub/</a> come and join us!
 </div>
 </section>
 <section id="step-1-back-to-square-one" class="level1 activity">
 <h1>Step 1: Back to Square One</h1>
 <section id="activity-checklist" class="level2 check">
 <h2>Activity Checklist</h2>
-<ol type="1">
+<ol>
 <li><p>Open IDLE, the editor and open a new file by going to File &gt; New Window, and let's get started.</p>
 <p>Remember you should have two windows open. One is 'Python Shell', and the other is to write your code in.</p>
 <p>Like before, the first line will always be <code>from turtle import *</code> to tell Python we want to draw!</p>
@@ -66,7 +66,7 @@ These projects are for use inside the UK only. All Code Clubs must be registered
 <p>Like we did last time, let's use variables to make our program clearer, and easier to change:</p>
 <section id="activity-checklist-1" class="level2 check">
 <h2>Activity Checklist</h2>
-<ol type="1">
+<ol>
 <li><p>Edit the file to look like the following:</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
@@ -86,7 +86,7 @@ angle = <span class="dv">360</span>/sides
 <h1>Step 3: A new command appears</h1>
 <section id="activity-checklist-2" class="level2 check">
 <h2>Activity Checklist</h2>
-<ol type="1">
+<ol>
 <li><p>We will edit the code and add <code>def poly():</code>, indent the code (you can select it and press Tab), and call the new command.</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
@@ -113,7 +113,7 @@ poly()</code></pre></li>
 <p>We're not finished yet, how about we change the function so it can draw any shape! Like with <code>forward</code> and <code>right</code>, we can pass values into the function, rather than just edit the code each time.</p>
 <section id="activity-checklist-3" class="level2 check">
 <h2>Activity Checklist</h2>
-<ol type="1">
+<ol>
 <li><p>Edit the code from the last step to look like this:</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
@@ -140,7 +140,7 @@ poly(<span class="dv">3</span>, <span class="dv">150</span>)</code></pre></li>
 <h1>Step 5: Turtle Dash</h1>
 <section id="activity-checklist-4" class="level2 check">
 <h2>Activity Checklist</h2>
-<ol type="1">
+<ol>
 <li><p>Although the turtle is a little robot that can draw, it can also move without drawing. Remember that we can Use <code>penup()</code> and <code>pendown()</code> to turn drawing on and off. Open a new Python file, and put the following code in:</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
@@ -159,7 +159,7 @@ length = <span class="dv">200</span>
 <p>We can put the shape and dashed line program together, by replacing the <code>forward</code> with the code we have for dashes. We repeat the outer layer to draw each side of the shape, and then repeat on the inside to draw all the dashes.</p>
 <section id="activity-checklist-5" class="level2 check">
 <h2>Activity Checklist</h2>
-<ol type="1">
+<ol>
 <li><p>Edit your code to look like the following:</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 speed(<span class="dv">11</span>)
@@ -191,7 +191,7 @@ dashpoly(<span class="dv">3</span>, <span class="dv">150</span>)</code></pre></l
 <h1>Step 7: Building blocks for shapes</h1>
 <section id="activity-checklist-6" class="level2 check">
 <h2>Activity Checklist</h2>
-<ol type="1">
+<ol>
 <li><p>Let's use functions again to clean up the code. Edit your code from step 6, and let's split the code apart.</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 speed(<span class="dv">11</span>)
@@ -229,7 +229,7 @@ dashpoly(<span class="dv">3</span>, <span class="dv">150</span>)</code></pre></l
 <p>Just before we stop, how about doing something a little random? We can ask the computer to pick a number for us, or pick a colour for us, a bit like rolling dice. Scratch does this too with the pick operator</p>
 <section id="activity-checklist-7" class="level2 check">
 <h2>Activity Checklist</h2>
-<ol type="1">
+<ol>
 <li><p>In a new file, type the following in</p>
 <pre class="sourceCode python"><code class="sourceCode python">
 <span class="ch">from</span> turtle <span class="ch">import</span> *
@@ -262,7 +262,7 @@ colors = [<span class="st">&#39;red&#39;</span>, <span class="st">&#39;blue&#39;
 </section>
 <section class="legal">
 <div>
-These projects are for use inside the UK only. All Code Clubs must be registered. You can check registered clubs at <A href="http://www.codeclub.org.uk/registered-clubs">www.codeclub.org.uk/registered-clubs</a>. This coursework is developed in the open on GitHub, <a href="https://github.com/CodeClub/">https://github.com/CodeClub/</a> come and join us!
+These projects are for use inside the UK only. All Code Clubs must be registered. You can check registered clubs at <A href="http://www.codeclub.org.uk/">www.codeclub.org.uk/registered-clubs</a>. This coursework is developed in the open on GitHub, <a href="https://github.com/CodeClub/">github.com/CodeClub/</a> come and join us!
 </div>
 </section>
 </body>

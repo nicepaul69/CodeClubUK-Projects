@@ -9,9 +9,9 @@
   <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/lesson.css">
-  
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../../../css/lesson.css">
+  <link rel="stylesheet" href="../../../css/web.css">
   <style type="text/css">
 table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
   margin: 0; padding: 0; vertical-align: baseline; border: none; }
@@ -36,16 +36,16 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <header>
 <div class="level">Lesson 4</div>
 <div class="title">Styling web pages</div>
-<div class="logo"><img src="/img/ccuk_logo.svg"/></div>
+<div class="logo"><img src="../../../img/ccuk_logo.svg"/></div>
 </header>
 <section class="legal">
 <div>
-These projects are for use inside the UK only. All Code Clubs must be registered. You can check registered clubs at <A href="http://www.codeclub.org.uk/registered-clubs">www.codeclub.org.uk/registered-clubs</a>. This coursework is developed in the open on GitHub, <a href="https://github.com/CodeClub/">https://github.com/CodeClub/</a> come and join us!
+These projects are for use inside the UK only. All Code Clubs must be registered. You can check registered clubs at <A href="http://www.codeclub.org.uk/">www.codeclub.org.uk/registered-clubs</a>. This coursework is developed in the open on GitHub, <a href="https://github.com/CodeClub/">github.com/CodeClub/</a> come and join us!
 </div>
 </section>
 <section id="introduction" class="level2 intro">
 <h2>Introduction</h2>
-<p>Let’s make our website better with some styles. In this lesson and the next we are going to learn how to change colour, text, sizes and more!</p>
+<p>Let’s make our website better with some styles.<br />In this lesson and the next we are going to learn how to change colour, text, sizes and more!</p>
 <p>We style HTML pages using a language called <strong>CSS</strong> (which stands for <strong>Cascading Style Sheets</strong>). It is a very simple language to learn. Let’s get started.</p>
 </section>
 <section id="step-1-setting-up-to-write-some-style" class="level1 activity">
@@ -64,7 +64,7 @@ These projects are for use inside the UK only. All Code Clubs must be registered
     <span class="kw">property:</span> value<span class="kw">;</span>
 <span class="kw">}</span></code></pre>
 <ul>
-<li>Can you find the ‘{‘ and ‘}’ keys on your keyboard? What about ‘:’ and ‘;’ ? Selectors can be html elements like <code>h1</code>, <code>p</code>, <code>img</code>, <code>a</code>. But they can also be other things which we will learn later.</li>
+<li>Can you find the ‘{‘ and ‘}’ keys on your keyboard? What about ‘:’ and ‘;’ ?<br />Selectors can be html elements like <code>h1</code>, <code>p</code>, <code>img</code>, <code>a</code>. But they can also be other things which we will learn later.</li>
 </ul>
 </section>
 </section>
@@ -81,7 +81,7 @@ These projects are for use inside the UK only. All Code Clubs must be registered
 <h2><strong>SAVE</strong> your file and <strong>VIEW</strong> it in your browser</h2>
 <p>The text is now red, w00t! There are different ways of saying the values for the color. There are 16 basic color names, they are aqua, black, blue, fuchsia, gray, green, lime, maroon, navy, olive, purple, red, silver, teal, white, and yellow.</p>
 <ul>
-<li><p>Try changing the color to something else! Most browsers support an additional 130 color names, a full alphabetical list is found at <a href="http://www.w3.org/TR/css3-color/#svg-color">http://www.w3.org/TR/css3-color/#svg-color</a> Is your favourite colour in the list?</p></li>
+<li><p>Try changing the color to something else!<br />Most browsers support an additional 130 color names, a full alphabetical list is found at<br /><a href="http://www.w3.org/TR/css3-color/#svg-color"><a href="http://www.w3.org/TR/css3-color/#svg-color">http://www.w3.org/TR/css3-color/#svg-color</a></a> Is your favourite colour in the list?</p></li>
 <li><p>But we can use even more colors by using <strong>hexcode</strong> instead of color name. A hexcode is a # followed by 6 digits, the digits can be 0-9 or the letters A, B, C, D, E, F. Using hexcode we can use more than 16 million colours!</p></li>
 <li><p>At Code Club, our favourite colour is <code>#58AB57</code>. Can you guess what colour it is? Why don’t you try changing some text to that colour and view it in a browser to see.</p></li>
 </ul>
@@ -124,7 +124,7 @@ These projects are for use inside the UK only. All Code Clubs must be registered
 </section>
 <section id="fun-with-text" class="level2">
 <h2>Fun with text</h2>
-<p>Maybe the ‘Missing’ header should be <strong>bigger</strong> and also all capital letters. We can specify the size of the text using <code>font-size</code>. The values can be many things, but the most common are 12, 14, 16, 32, 48 and 72 pixels. For now lets try 72px. (px means pixel).</p>
+<p>Maybe the ‘Missing’ header should be <strong>bigger</strong> and also all capital letters. We can specify the size of the text using <code>font-size</code>. The values can be many things, but the most common are 12, 14, 16, 32, 48 and 72 pixels.<br />For now lets try 72px. (px means pixel).</p>
 <pre class="sourceCode css"><code class="sourceCode css">h1 <span class="kw">{</span>
     <span class="kw">color:</span><span class="dt">red</span><span class="kw">;</span>
     <span class="kw">background-color:</span><span class="dt">black</span><span class="kw">;</span>
@@ -143,28 +143,31 @@ These projects are for use inside the UK only. All Code Clubs must be registered
 </section>
 <section id="step-6.-centering-text-and-images-horizontally" class="level1 activity">
 <h1>Step 6. Centering text (and images) horizontally</h1>
-<p>All our text is all the way over on the left. We can change that using <code>text-align:center</code> (it also takes ‘right’, ‘left’ is the default). 1. We want all our text to be centered for this particular webpage, so we can write: Note the American spelling of the word centre is center.</p>
+<p>All our text is all the way over on the left. We can change that using <code>text-align:center</code> (it also takes ‘right’, ‘left’ is the default).</p>
+<ol>
+<li>We want all our text to be centered for this particular webpage, so we can write: Note the American spelling of the word centre is center.</li>
+</ol>
 <pre class="sourceCode css"><code class="sourceCode css">body <span class="kw">{</span>
     <span class="kw">background-color:</span> <span class="dt">#F8FAF4</span><span class="kw">;</span>
     <span class="kw">text-align:</span> <span class="dt">center</span><span class="kw">;</span>
 <span class="kw">}</span></code></pre>
 <p>Did you notice that everything in the page went to the centre when we put ‘text-align:center’ in the body section? That’s because everything inside the body element inherits the style. This happens whenever one element is inside another, like here:</p>
 <pre class="sourceCode HTML"><code class="sourceCode html"><span class="kw">&lt;p&gt;</span>Have you seen Felix? <span class="kw">&lt;em&gt;</span>Please<span class="kw">&lt;/em&gt;</span> contact his owner<span class="kw">&lt;/p&gt;</span></code></pre>
-<p>The ‘Please’ will have the style of the <code>&lt;p&gt;</code> element with the style of the <code>&lt;em&gt;</code> element added on. This is why the stylesheets are called <strong>cascading</strong> - the styles cascade from elements into all the ones inside them. Be careful, though, because some styles are not <em>inherited</em>. We will find out about these later.</p>
+<p>The ‘Please’ will have the style of the <code>&lt;p&gt;</code> element with the style of the <code>&lt;em&gt;</code> element added on. This is why the stylesheets are called <strong>cascading</strong> - the styles cascade from elements into all the ones inside them.<br />Be careful, though, because some styles are not <em>inherited</em>. We will find out about these later.</p>
 <section id="now-save-your-file-and-view-it-in-a-browser" class="level2 save">
 <h2>Now <strong>SAVE</strong> your file and view it in a browser</h2>
 </section>
 <section id="further-study" class="level2 try">
 <h2>Further study</h2>
 <ul>
-<li>How would you change the page to make it look better? Why not try using all your favourite colours? Do they have colour names or do you need to use hexcode?</li>
+<li>How would you change the page to make it look better? Why not try using all your favourite colours? Do they have colour names or do you need to use hexcode?<br /></li>
 <li>If you finish early you can go back and add styles to the html we made in previous lessons.</li>
 </ul>
 </section>
 </section>
 <section class="legal">
 <div>
-These projects are for use inside the UK only. All Code Clubs must be registered. You can check registered clubs at <A href="http://www.codeclub.org.uk/registered-clubs">www.codeclub.org.uk/registered-clubs</a>. This coursework is developed in the open on GitHub, <a href="https://github.com/CodeClub/">https://github.com/CodeClub/</a> come and join us!
+These projects are for use inside the UK only. All Code Clubs must be registered. You can check registered clubs at <A href="http://www.codeclub.org.uk/">www.codeclub.org.uk/registered-clubs</a>. This coursework is developed in the open on GitHub, <a href="https://github.com/CodeClub/">github.com/CodeClub/</a> come and join us!
 </div>
 </section>
 </body>

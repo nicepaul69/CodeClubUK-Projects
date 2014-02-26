@@ -9,9 +9,9 @@
   <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/lesson.css">
-  <link rel="stylesheet" href="/css/python.css">
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../../../css/lesson.css">
+  <link rel="stylesheet" href="../../../css/python.css">
   <style type="text/css">
 table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
   margin: 0; padding: 0; vertical-align: baseline; border: none; }
@@ -36,16 +36,16 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <header>
 <div class="level">4</div>
 <div class="title">Turtles all the way down</div>
-<div class="logo"><img src="/img/ccuk_logo.svg"/></div>
+<div class="logo"><img src="../../../img/ccuk_logo.svg"/></div>
 </header>
 <section class="legal">
 <div>
-These projects are for use inside the UK only. All Code Clubs must be registered. You can check registered clubs at <A href="http://www.codeclub.org.uk/registered-clubs">www.codeclub.org.uk/registered-clubs</a>. This coursework is developed in the open on GitHub, <a href="https://github.com/CodeClub/">https://github.com/CodeClub/</a> come and join us!
+These projects are for use inside the UK only. All Code Clubs must be registered. You can check registered clubs at <A href="http://www.codeclub.org.uk/">www.codeclub.org.uk/registered-clubs</a>. This coursework is developed in the open on GitHub, <a href="https://github.com/CodeClub/">github.com/CodeClub/</a> come and join us!
 </div>
 </section>
 <section id="step-1-drawing-a-mountain" class="level1 activity">
 <h1>Step 1: Drawing a Mountain</h1>
-<p>Pick up your turtles, open IDLE, it's time to draw again. But first, look at the following three shapes: how would we draw them in python?</p>
+<p>Pick up your turtles, open IDLE, it's time to draw again. But first, look at the following three shapes:<br />how would we draw them in python?</p>
 <pre><code>_________________________
 
             /\
@@ -60,7 +60,7 @@ ____/\___/      \___/\___
 </code></pre>
 <section id="activity-checklist" class="level2 check">
 <h2>Activity Checklist</h2>
-<ol type="1">
+<ol>
 <li><p>Drawing The first is easy. Like we always do, the first line of the file is always <code>from turtle import *</code> so Python knows we want to draw. Copy the program into a new file</p>
 <pre class="sourceCode python"><code class="sourceCode python">
 <span class="ch">from</span> turtle <span class="ch">import</span> *
@@ -105,7 +105,7 @@ ____/\___/      \___/\___
 <p>You can see we draw the second shape, turn, draw it again, turn, draw it again, turn and draw it one last time.</p>
 <section id="activity-checklist-1" class="level2 check">
 <h2>Activity Checklist</h2>
-<ol type="1">
+<ol>
 <li><p>Instead of writing all of the smaller movements, let's draw it by calling <code>second</code></p>
 <pre><code>from turtle import *
 
@@ -138,7 +138,7 @@ third()</code></pre>
 <p>We do this by splitting up the problem into two: The simple case, and the special case. The simple case is easy: it's just forward(100). The special case is a little harder, it needs to say 'Do the special case, but one less, until you get to the simple case'. It's easier to look at the code.</p>
 <section id="activity-checklist-2" class="level2 check">
 <h2>Activity Checklist</h2>
-<ol type="1">
+<ol>
 <li><p>Open a new file and write in the following code:</p>
 <pre><code>from turtle import * 
 
@@ -165,7 +165,7 @@ mountain(3)</code></pre>
 <h1>Step 4: Drawing A snowflake from Three Mountains</h1>
 <section id="activity-checklist-3" class="level2 check">
 <h2>Activity Checklist</h2>
-<ol type="1">
+<ol>
 <li><p>Let's just add one last thing to the mountain file, change it to look like the following, adding a new function <code>snowflake</code>:</p>
 <pre class="sourceCode python"><code class="sourceCode python">
 <span class="ch">from</span> turtle <span class="ch">import</span> * 
@@ -224,7 +224,7 @@ ___| |__|         |__| |___
 <p>Like before with the mountain, we have a simple case: a straight line, and a special case: draw a line with a square bump in it. We can see the third one is just like before, drawing the second one a few times.</p>
 <section id="activity-checklist-4" class="level2 check">
 <h2>Activity Checklist</h2>
-<ol type="1">
+<ol>
 <li><p>Let's open a new file and try to draw the second picture, which is what we'll be repeating:</p>
 <pre class="sourceCode python"><code class="sourceCode python">
 <span class="ch">from</span> turtle <span class="ch">import</span> *
@@ -254,7 +254,7 @@ ________|         |________</code></pre></li>
 <h1>Step 6: Bumpy Boxes</h1>
 <section id="activity-checklist-5" class="level2 check">
 <h2>Activity Checklist</h2>
-<ol type="1">
+<ol>
 <li><p>Open up a new file in IDLE and copy the following code into it:</p>
 <pre class="sourceCode python"><code class="sourceCode python">
 <span class="ch">from</span> turtle <span class="ch">import</span> * 
@@ -281,7 +281,7 @@ ________|         |________</code></pre></li>
     left(<span class="dv">90</span>)
 
 xcurve(<span class="dv">4</span>,<span class="dv">5</span>)</code></pre></li>
-<li><p>We've left the special case out for you to fill in; it should be trying to draw the bumpy line, but calling <code>box(newdepth, length)</code> to do it. Your code should look very much like the mountain and snowflake.</p></li>
+<li><p>We've left the special case out for you to fill in; it should be trying to draw the bumpy line,<br />but calling <code>box(newdepth, length)</code> to do it. Your code should look very much like the mountain and snowflake.</p></li>
 </ol>
 </section>
 </section>
@@ -318,7 +318,7 @@ xcurve(<span class="dv">4</span>,<span class="dv">5</span>)</code></pre></li>
 ----------------</code></pre>
 <section id="activity-checklist-6" class="level2 check">
 <h2>Activity Checklist</h2>
-<ol type="1">
+<ol>
 <li><p>Let's open a new file and try it out.</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
@@ -369,7 +369,7 @@ triforce(<span class="dv">7</span>, <span class="dv">512</span>)</code></pre>
 <h1>Step 8: A bubbly relic</h1>
 <section id="activity-checklist-7" class="level2 check">
 <h2>Activity Checklist</h2>
-<ol type="1">
+<ol>
 <li><p>If you like, instead of triangles we can draw it with circles! Open up a new file and try the following code:</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
@@ -404,7 +404,7 @@ bubble(<span class="dv">6</span>, <span class="dv">512</span>)</code></pre></li>
 </section>
 <section class="legal">
 <div>
-These projects are for use inside the UK only. All Code Clubs must be registered. You can check registered clubs at <A href="http://www.codeclub.org.uk/registered-clubs">www.codeclub.org.uk/registered-clubs</a>. This coursework is developed in the open on GitHub, <a href="https://github.com/CodeClub/">https://github.com/CodeClub/</a> come and join us!
+These projects are for use inside the UK only. All Code Clubs must be registered. You can check registered clubs at <A href="http://www.codeclub.org.uk/">www.codeclub.org.uk/registered-clubs</a>. This coursework is developed in the open on GitHub, <a href="https://github.com/CodeClub/">github.com/CodeClub/</a> come and join us!
 </div>
 </section>
 </body>
