@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Félix y Hérbert — Code Club</title>
+
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../../../css/lesson.css">
+  <link rel="stylesheet" href="../../../css/scratch.css">
+</head>
+<body>
+<header>
+<div class="level">Nivel 1</div>
+<div class="title">Félix y Hérbert</div>
+<div class="logo"><img src="../../../img/ccuk_logo.svg"/></div>
+</header>
+<section class="legal">
+<div>
+These projects are for use inside the UK only. All Code Clubs must be registered. You can check registered clubs at <A href="http://www.codeclub.org.uk/">www.codeclub.org.uk/registered-clubs</a>. This coursework is developed in the open on GitHub, <a href="https://github.com/CodeClub/">github.com/CodeClub/</a> come and join us!
+</div>
+</section>
+<section id="introduccion" class="level1 intro">
+<h1>Introducción</h1>
+<p>Vamos a crear un juego en el que <strong>el gato Félix</strong> y <strong>el ratón Hérbert</strong> juegan a pillarse. Tú controlarás a Hérbert con el ratón para evitar que lo pille Félix. Cuanto más tiempo puedas evitarlo, más puntos te dará el juego, pero ten cuidado porque ¡perderás puntos si te pilla!</p>
+<p><img src="felixherbert_screenshot.png" title="Captura de Pantalla" alt="Captura de Pantalla" /></p>
+</section>
+<section id="paso-1-felix-sigue-al-puntero-del-raton" class="level1 activity">
+<h1>PASO 1: Félix sigue al puntero del ratón</h1>
+<section id="progreso" class="level2 check">
+<h2>Progreso</h2>
+<ul>
+<li><p><strong>Crea un proyecto nuevo.</strong></p></li>
+<li><p>Haz click en <strong>escenario</strong> y cambia a la pestaña <code class="blocklightgrey">Fondos</code>. Haz click en el botón <code class="blocklightgrey">Elegir un fondo de la biblioteca</code> y selecciona el fondo interiores/hall. Borra el fondo blanco original.</p></li>
+<li>Haz click en el objeto Gato, y después pulsa la <code>i</code> azul que hay arriba a la izquierda. Cambia el nombre del objeto a <strong>Félix</strong>.<br /></li>
+<li>Asegúrate de que Félix sólo gira a la izquierda o a la derecha pulsando el botón: <img src="estilo-rotacion-izq-dcha.png" title="Estilo de rotación" alt="Estilo de rotación" /><br /></li>
+<li><p><strong>Crea este programa para Félix</strong>:</p></li>
+</ul>
+<p><img src="c8119d1836ebedc6f4597a3a1cd99b0d204dbb3b.png" alt="                al presionar BANDERA VERDE
+                por siempre
+                    apuntar hacia [puntero del ratón v]
+                    mover (10) pasos
+                    siguiente disfraz
+                    tocar tambor (62) durante (0.1) pulsos" /></p>
+</section>
+<section id="prueba-tu-proyecto" class="level2 flag">
+<h2>Prueba tu proyecto</h2>
+<p><strong>Haz click en la bandera verde.</strong></p>
+<p>¿Sigue Félix al puntero del ratón? ¿Parece que está caminando cuando se mueve? ¿Se mueve a la velocidad correcta?</p>
+</section>
+<section id="guarda-tu-proyecto" class="level2 save">
+<h2>Guarda tu proyecto</h2>
+</section>
+</section>
+<section id="paso-2-felix-persigue-a-herbert" class="level1 activity">
+<h1><strong>Paso 2:</strong> Félix persigue a Hérbert</h1>
+<p><strong>Ahora, queremos que Félix persiga a Hérbert el ratón en vez de al puntero del ratón.</strong></p>
+<section id="progreso-1" class="level2 check">
+<h2>Progreso</h2>
+<ul>
+<li>Crea otro objecto usando el botón <code class="blockgrey">Elegir un objecto desde la biblioteca</code> y elije <strong>animales/mouse1</strong>.<br /></li>
+<li>Cambia el nombre del nuevo objeto a <strong>Hérbert</strong>.<br /></li>
+<li>Cambia a la pestaña <strong>Disfraces</strong>, haz click en el disfraz en el editor de dibujos. Aparecerá una caja alrededor del dibujo. Arrastra una de las esquinas para hacer que Hérbert sea más pequeño que Félix.<br /></li>
+<li>Asegúrate de que Hérbert sólo mira a la derecha y a la izquierda.<br /></li>
+<li><strong>Dale éste programa a Hérbert:</strong></li>
+</ul>
+<p><img src="d6cd81fded1faf0eac3396fbdfae1a4f392ead38.png" alt="  al presionar BANDERA VERDE
+    por siempre
+      ir a [puntero del ratón v]
+      apuntar hacia [Félix v]" /></p>
+</section>
+<section id="prueba-tu-proyecto-1" class="level2 flag">
+<h2>Prueba tu proyecto</h2>
+<p><strong>Haz click en la bandera verde.</strong></p>
+<p>¿Se mueve Hérbert cuando mueves el puntero del ratón? ¿Persigue Félix a Hérbert?</p>
+</section>
+<section id="guarda-tu-proyecto-1" class="level2 save">
+<h2>Guarda tu proyecto</h2>
+</section>
+</section>
+<section id="paso-3-felix-dice-cuando-ha-pillado-a-herbert" class="level1 activity">
+<h1><strong>Paso 3:</strong> Félix dice cuando ha pillado a Hérbert</h1>
+<p><strong>Queremos que Félix sepa cuando ha pillado a Hérbert y nos lo diga.</strong></p>
+<section id="progreso-2" class="level2 check">
+<h2>Progreso</h2>
+<ul>
+<li><strong>Cambia el programa de Félix para que sea así:</strong></li>
+</ul>
+<p><img src="d635b4f90fa3f4de183fff4811322cabb5738ab2.png" alt="  al presionar BANDERA VERDE
+  por siempre
+    apuntar hacia [puntero del ratón v]
+    mover (10) pasos
+    siguiente disfraz
+    tocar tambor (62) durante (0.1) pulsos
+    si &lt;¿tocando [Hérbert v]?&gt; entonces
+      decir [Te pillé!] por (1) segundos
+    end
+   end" /></p>
+</section>
+<section id="prueba-tu-proyecto-2" class="level2 flag">
+<h2>Prueba tu proyecto</h2>
+<p><strong>Haz click en la bandera verde.</strong></p>
+<p>¿Dice Félix cuando ha pillado a Hérbert?</p>
+</section>
+<section id="guarda-tu-proyecto-2" class="level2 save">
+<h2>Guarda tu proyecto</h2>
+</section>
+</section>
+<section id="paso-4-herbert-se-convierte-en-un-fantasma-cuando-le-pillan" class="level1 activity">
+<h1><strong>Paso 4:</strong> Hérbert se convierte en un fantasma cuando le pillan</h1>
+<p><strong>En vez de que Félix lo diga, queremos que Hérbert se convierta en un fantasma cuando le pillan.</strong></p>
+<section id="progreso-3" class="level2 check">
+<h2>Progreso</h2>
+<ul>
+<li><strong>Cambia el programa de Félix para que envíe éste mensaje cuando pilla a Hérbert:</strong></li>
+</ul>
+<p><img src="deb0e90e8ba4f77c7d35a30109dc3df065242cf3.png" alt="  al presionar BANDERA VERDE
+  por siempre
+    apuntar hacia [puntero del ratón v]
+    mover (10) pasos
+    mover (20) pasos
+    siguiente disfraz
+    tocar tambor (62 v) durante (0.1) pulsos
+    si &lt;¿tocando [Hérbert v]?&gt; entonces
+      enviar [pillado v]
+      tocar tambor (17 v) durante (0.2) pulsos
+      esperar (1) segundos
+    end
+   end" /></p>
+<ul>
+<li><p>Crea un nuevo disfraz para Hérbert: Seleccionalo, ve a la pestaña Disfraces y haz click en el botón <code class="blocklightgrey">Elegir un disfraz desde la biblioteca</code>. Selecciona el disfraz <strong>fantasía/ghost2-a</strong>.</p></li>
+<li><p>Haz el disfraz más pequeño, seleccionándolo en el Editor y arrastra una esquina de la caja que aparece para cambiar su tamaño.</p></li>
+<li><p>Cambia el nombre de los disfraces de Hérbert para que el disfraz de ratón se llame ‘vivo‘ y el de fantasma ‘muerto‘.</p></li>
+<li><p><strong>Crea un nuevo script para que Hérbert se convierta en un fantasma cuando le pillen:</strong></p></li>
+</ul>
+<p><img src="7002c407a5e10108cb957cc411e41bcad007b7bc.png" alt="  al recibir [pillado v]
+    cambiar el disfraz a [muerto v]
+    esperar (1) segundos
+    cambiar el disfraz a [vivo v]
+" /></p>
+</section>
+<section id="prueba-tu-proyecto-3" class="level2 flag">
+<h2>Prueba tu proyecto</h2>
+<p><strong>Haz click en la bandera verde.</strong></p>
+<p>¿Se convierte Hérbert en un fantasma cuando le pillan?<br />¿Hace Félix el sonido correcto en el momento adecuado?<br />¿Se queda Félix quieto el tiempo suficiente para que Hérbert se aleje?</p>
+</section>
+<section id="guarda-tu-proyecto-3" class="level2 save">
+<h2>Guarda tu proyecto</h2>
+</section>
+</section>
+<section id="paso-5-mantener-puntuacion" class="level1 activity">
+<h1><strong>Paso 5:</strong> Mantener puntuación</h1>
+<p><strong>Vamos a añadir un marcador para ver cómo de bien se nos da mantener a Hérbert vivo.<br />Empezaremos con 0 puntos y ganaremos un punto cada segundo. Si Félix pilla a Hérbert perdemos 100 puntos.</strong></p>
+<section id="progreso-4" class="level2 check">
+<h2>Progreso</h2>
+<ul>
+<li>Crea una variable, para todos los objetos, llamada Puntos. Haz cliz en <code class="blockorange">Datos</code> en la pestaña Programas, crea una variable y llámala <code class="blockorange">puntos</code>, asegurándote de que &quot;Para todos los objetos&quot; está seleccionado.<br /></li>
+<li><strong>En el escenario, añade estos dos programas:</strong></li>
+</ul>
+<p><img src="a782ace9f060bae294630a2050172c90b0b6bb48.png" alt="al presionar BANDERA VERDE
+   fijar [puntos v] a [0]
+   por siempre
+      cambiar [puntos v] por (1)
+      esperar (1) segundos
+   end
+
+al recibir [pillado v]
+cambiar [puntos v] por (-100)" /></p>
+</section>
+<section id="prueba-tu-proyecto-4" class="level2 flag">
+<h2>Prueba tu proyecto</h2>
+<p><strong>Haz click en la bandera verde.</strong></p>
+<p>¿Ganas un punto cada segundo?<br />¿Pierdes 100 puntos cuando te pillan?<br />¿Qué pasa si pillas a Hérbert antes de que el marcador llegue a 100? ¿Vuelve el marcador a 0 cuando empiezas el juego de nuevo?</p>
+</section>
+<section id="guarda-tu-proyecto-4" class="level2 save">
+<h2>Guarda tu proyecto</h2>
+<p><strong>¡Bien hecho! ¡Has terminado! Ahora puedes disfrutar el juego</strong></p>
+<p>No olvides que puedes compartir el juego con tu familia y amigos pulsando el botón <code class="blockgrey">Compartir</code> en la barra de herramientas</p>
+</section>
+</section>
+<section class="legal">
+<div>
+These projects are for use inside the UK only. All Code Clubs must be registered. You can check registered clubs at <A href="http://www.codeclub.org.uk/">www.codeclub.org.uk/registered-clubs</a>. This coursework is developed in the open on GitHub, <a href="https://github.com/CodeClub/">github.com/CodeClub/</a> come and join us!
+</div>
+</section>
+</body>
+</div>
+</html>

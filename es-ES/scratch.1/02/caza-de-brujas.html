@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Caza de brujas — Code Club</title>
+
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../../../css/lesson.css">
+  <link rel="stylesheet" href="../../../css/scratch.css">
+</head>
+<body>
+<header>
+<div class="level">Nivel 1</div>
+<div class="title">Caza de brujas</div>
+<div class="logo"><img src="../../../img/ccuk_logo.svg"/></div>
+</header>
+<section class="legal">
+<div>
+These projects are for use inside the UK only. All Code Clubs must be registered. You can check registered clubs at <A href="http://www.codeclub.org.uk/">www.codeclub.org.uk/registered-clubs</a>. This coursework is developed in the open on GitHub, <a href="https://github.com/CodeClub/">github.com/CodeClub/</a> come and join us!
+</div>
+</section>
+<section id="introduccion" class="level1 intro">
+<h1>Introducción</h1>
+<p>En este proyecto vamos a <strong>Cazar Brujas</strong>. Consigues puntos por golpear a los fantasmas que aparecen en la pantalla. ¡La meta es conseguir todos los puntos que puedas en 30 segundos!</p>
+<p><img src="ghostbusters_screenshot.png" alt="screenshot" /></p>
+</section>
+<section id="paso-1-crea-un-fantasma-volador" class="level1 activity">
+<h1>PASO 1: Crea un fantasma volador</h1>
+<section id="progreso" class="level2 check">
+<h2>Progreso</h2>
+<ul>
+<li><strong>Crea un nuevo proyecto scratch.</strong><br /></li>
+<li><strong>Borra el objeto gato</strong> y cambia el fondo por <strong>naturaleza/woods</strong>.<br /></li>
+<li>Usando el botón <code class="blockgrey">Elegir un objeto desde la biblioteca</code> añade un nuevo fantasma al proyecto (usa el disfraz <strong>fantasía/ghost1</strong>).<br /></li>
+<li>Cambia el nombre del nuevo objeto por <strong>Fantasma1</strong></li>
+</ul>
+<p><strong>Ahora queremos que nuestro fantasma se mueva</strong></p>
+<ul>
+<li>Crea una <code class="blocklightgrey">Variable</code> sólo para este objeto llamada <code class="blockorange">velocidad</code>.<br />En el <strong>Escenario</strong>, el marcador para esta variable debería decir <code class="blockgrey">Fantasma1: velocidad</code>.<br />Si sólo pone <code class="blockgrey">velocidad</code> borra la variable y créala de nuevo, sólo para éste objeto.<br /></li>
+<li><p>Quita la marca que hay en la casilla al lado del nombre de la variable en el apartado <strong>Datos</strong> para que no aparezca en el Escenario.<br />Esta variable va a controlar cómo de rápido se mueve el fantasma. Usamos una variable para poder cambiar la velocidad del juego según vamos avanzando.</p></li>
+<li><p>Queremos que el fantasma se empiece a mover cuando inicia el juego, así que vamos a darle <strong>un programa como este</strong>:</p></li>
+</ul>
+<p><img src="fd821c5169d88c4576067caa36e547bc1c5796ec.png" alt="
+    al presionar BANDERA VERDE
+    fijar [velocidad v] a [5]
+    por siempre
+        mover (velocidad) pasos" /></p>
+</section>
+<section id="prueba-tu-proyecto" class="level2 flag">
+<h2>Prueba tu proyecto</h2>
+<p><strong>Pulsa la bandera verde</strong> y mira qué hace tu fantasma. ¿Por qué se queda parado en el borde de la pantalla?</p>
+</section>
+<section id="progreso-1" class="level2 check">
+<h2>Progreso</h2>
+<ul>
+<li>Para conseguir que el fantasma no se pare necesitamos que cambie de dirección cuando toque un borde de la pantalla. Edita tu script para añadir un bloque <code class="blockblue">rebotar si toca un borde</code> justo después del bloque <code class="blockblue">mover</code><code class="blockorange">velocidad</code><code class="blockblue">pasos</code>.</li>
+</ul>
+<p><img src="bcd3237a55bf9b12c389560158cf4b2105cb22c7.png" alt="
+    al presionar BANDERA VERDE
+    fijar [velocidad v] a [5]
+    por siempre
+        mover (velocidad) pasos
+        rebotar si toca un borde" /></p>
+<ul>
+<li>Para que el fantasma deje de ponerse boca abajo, haz click en <code class="blockgrey">estilo de rotación: izquierda-derecha</code> en las propiedades del objeto.</li>
+</ul>
+</section>
+<section id="prueba-tu-proyecto-1" class="level2 flag">
+<h2>Prueba tu proyecto</h2>
+<p><strong>Pulsa la bandera verde.</strong><br />¿Se mueve el fantasma de un lado a otro de la pantalla?</p>
+</section>
+<section id="guarda-tu-proyecto" class="level2 save">
+<h2>Guarda tu proyecto</h2>
+</section>
+<section id="cosas-para-probar" class="level2 try">
+<h2>Cosas para probar</h2>
+<ul>
+<li><strong>Cambia el valor de la variable velocidad para que el fantasma vuele más rapido o más lento.</strong><br /></li>
+<li><strong>¿Cómo harías que el fantasma vuele más deprisa según pasa el tiempo?</strong><br />(Esta es complicada ¡no te preocupes si no lo consigues!. Encontrarás alguna pista según avances en el proyecto.)</li>
+</ul>
+</section>
+</section>
+<section id="paso-2-hacer-que-el-fantasma-apareca-y-desaparezca-al-azar" class="level1 activity">
+<h1>PASO 2: Hacer que el fantasma apareca y desaparezca al azar</h1>
+<p>Para que el juego sea más divertido, queremos que el fantasma aparezca y desaparezca al azar. Conseguiremos esto con otro programa que se ejecuta a la vez que el que mueve el fantasma. Este nuevo programa necesita esconder el fantasma durante un tiempo aleatorio y repetirlo por siempre (o hasta que el juego se acabe).</p>
+<section id="progreso-2" class="level2 check">
+<h2>Progreso</h2>
+<ul>
+<li><strong>Crea este programa para el fantasma:</strong></li>
+</ul>
+<p><img src="cd8d9a6a5e4516465c7286d3c2cc3a69783dd84f.png" alt="
+    al presionar BANDERA VERDE
+    por siempre
+        esconder
+        esperar (número al azar entre (2) y (5)) segundos
+        mostrar
+        esperar (número al azar entre (2) y (5)) segundos
+" /></p>
+</section>
+<section id="prueba-tu-proyecto-2" class="level2 flag">
+<h2>Prueba tu proyecto</h2>
+<p><strong>Pulsa la bandera verde.</strong><br />¿Se mueve el fantasma de un lado a otro de la pantalla y aparece/desaparece al azar?</p>
+</section>
+<section id="guarda-tu-proyecto-1" class="level2 save">
+<h2>Guarda tu proyecto</h2>
+</section>
+<section id="cosas-para-probar-1" class="level2 try">
+<h2>Cosas para probar</h2>
+<ul>
+<li><strong>Cambia el rango de los números al azar. ¿Qué pasa si pones números muy grandes o muy pequeños?</strong><br />(¿Te da esto alguna pista de cómo hacer que el fantasma vaya más deprisa cuanto más tiempo pasas jugando?)</li>
+</ul>
+</section>
+</section>
+<section id="paso-3-hacer-que-el-fantasma-desaparezca-al-pulsarlo" class="level1 activity">
+<h1>PASO 3: Hacer que el fantasma desaparezca al pulsarlo</h1>
+<p>Para convertir esto en un juego, necesitamos que el jugador haga algo. Necesitan hacer click en el fantasma para que desaparezca. Cuando el fantasma sea pulsado queremos que desaparezca y suene un sonido.</p>
+<section id="progreso-3" class="level2 check">
+<h2>Progreso</h2>
+<ul>
+<li><p>En la pestaña <strong>Sonidos</strong>, añade un nuevo sonido <strong>Electrónica/fairydust</strong>, usando el botón <code class="blockgrey">Elegir un sonido desde la biblioteca</code>.</p></li>
+<li><p><strong>Añade este programa al fantasma</strong>:</p></li>
+</ul>
+<p><img src="fabdd5196fba3bad4408e5624f450e7d5b3c56a3.png" alt="
+    al clickear este objeto
+    esconder
+    tocar sonido [Fairydust v]" /></p>
+</section>
+<section id="prueba-tu-proyecto-3" class="level2 flag">
+<h2>Prueba tu proyecto</h2>
+<p><strong>Pulsa la bandera verde.</strong></p>
+<p>¿Desaparece el fantasma y se oye un sonido cuando lo pulsas?</p>
+</section>
+<section id="guarda-tu-proyecto-2" class="level2 save">
+<h2>Guarda tu proyecto</h2>
+</section>
+<section id="cosas-para-probar-2" class="level2 try">
+<h2>Cosas para probar</h2>
+<ul>
+<li><strong>Pregunta a tu profesor cómo grabar tu propio sonido.</strong></li>
+</ul>
+</section>
+</section>
+<section id="paso-4-anadir-la-puntuacion-y-el-tiempo" class="level1 activity">
+<h1>PASO 4: Añadir la puntuación y el tiempo</h1>
+<p>Tenemos un fantasma, pero ¡queremos hacer un juego! Queremos ganar puntos cada vez que pulsemos el fantasma pero también queremos tener un límite de tiempo. Podemos usar variables para la puntuación y el tiempo.</p>
+<section id="progreso-4" class="level2 check">
+<h2>Progreso</h2>
+<ul>
+<li>Crea una nueva <code class="blockgrey">Variable</code> para todos los objetos llamada <strong>puntos</strong>, y cambia el script del fantasma para que aumente la puntuación cada vez que pulsas.</li>
+</ul>
+<p><img src="1d3d04900d396e083b160beb4f7e77d7a7dd29bc.png" alt="
+    al clickear este objeto
+    esconder
+    tocar sonido [Fairydust v]
+    cambiar [puntos v] por (1)" /></p>
+<ul>
+<li>Cambia al <strong>Escenario</strong> y crea una <strong>nueva variable</strong> llamada <strong>timer</strong>. Añade un nuevo programa que se ejecuta al pulsar la bandera verde para poner la variable <code class="blockorange">timer</code> a <strong>30</strong> y poner los puntos a <strong>0</strong>. Luego usa un bloque <code class="blockyellow">repetir hasta que</code> para esperar un segundo y luego restar 1 a <code class="blockorange">timer</code>.</li>
+</ul>
+<p>Esto se tiene que repetir hasta que el timer sea 0. En ese punto usaremos <code class="blockyellow">detener todo</code> para parar el juego.</p>
+<p><img src="2280fdceba34a1c8f6c2b558be51b1778226aabd.png" alt="
+    al presionar BANDERA VERDE
+    fijar [timer v] a (30)
+    fijar [puntos v] a (0)
+    repetir hasta que &lt;(timer) = [0]&gt;
+        esperar (1) segundos
+        cambiar [timer v] por (-1)
+    fin 
+    detener [todos v]" /></p>
+</section>
+<section id="prueba-tu-proyecto-4" class="level2 flag">
+<h2>Prueba tu proyecto</h2>
+<p><strong>Pulsa la bandera verde.</strong></p>
+</section>
+<section id="guarda-tu-proyecto-3" class="level2 save">
+<h2>Guarda tu proyecto</h2>
+</section>
+<section id="cosas-que-probar" class="level2 try">
+<h2>COsas que probar</h2>
+<ol>
+<li><strong>¿Cómo puedes hacer que el fantasma vaya más deprisa según avanza el juego?</strong><br /></li>
+<li><strong>¡Bien hecho! Has terminado el juego básico. Hay muchas más cosas que puedes hacer en tu juego ¿Te atreves con el resto?</strong></li>
+</ol>
+</section>
+<section id="reto-anadir-mas-fantasmas" class="level2 challenge">
+<h2>Reto: Añadir más fantasmas</h2>
+<p>¡Si un fantasma es divertido, más será mejor! <strong>Vamos a crear tres fantasmas.</strong></p>
+<ol>
+<li>Duplica el fantasma haciendo <strong>click con el botón derecho</strong> en la lista de objetos.<br /></li>
+<li>Cambia el <strong>tamaño de cada objeto</strong> para que cada fantasma sea distinto.<br /></li>
+<li>Para cada fantasma cambia la <strong>variable de velocidad</strong> y así volarán a velocidades distintas.<br /></li>
+<li>Mueve los fantasmas en el dibujo para que no estén todos juntos.</li>
+</ol>
+</section>
+<section id="prueba-tu-proyecto-5" class="level2 flag">
+<h2>Prueba tu proyecto</h2>
+<p><strong>Pulsa la bandera verde.</strong></p>
+<p>¿Tienes tres fantasmas moviéndose de un lado a otro de la pantalla, apareciendo y desapareciendo y que desaparecen cuando pulsas sobre ellos?</p>
+</section>
+<section id="guarda-tu-proyecto-4" class="level2 save">
+<h2>Guarda tu proyecto</h2>
+</section>
+<section id="cosas-para-probar-3" class="level2 try">
+<h2>Cosas para probar</h2>
+<ol>
+<li><strong>¿Cual es el mejor número de fantasmas en el juego?</strong><br /></li>
+<li><strong>¿Puedes hacer que cada fantasma sea distinto? También puedes cambiar sus disfraces, o usar algunas opciones de la pestaña Apariencia para que cambien.</strong><br /></li>
+<li><strong>¿Puedes hacer que cada fantasma tenga una puntuación distinta? ¿Qué te parece si los más rapidos valen 10 puntos?</strong></li>
+</ol>
+<p><strong>¡Bien hecho, has acabado! Ahora ¡Disfruta de tu juego!</strong><br />No olvides que puedes compartir el juego con tu familia y amigos pulsando el botón <strong>Compartir</strong> en la barra de herramientas</p>
+</section>
+</section>
+<section class="legal">
+<div>
+These projects are for use inside the UK only. All Code Clubs must be registered. You can check registered clubs at <A href="http://www.codeclub.org.uk/">www.codeclub.org.uk/registered-clubs</a>. This coursework is developed in the open on GitHub, <a href="https://github.com/CodeClub/">github.com/CodeClub/</a> come and join us!
+</div>
+</section>
+</body>
+</div>
+</html>
