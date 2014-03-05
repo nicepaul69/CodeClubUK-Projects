@@ -41,15 +41,15 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 <li><p>Click on the <strong>stage</strong> next to the sprite and switch to the <code class="blocklightgrey">Backdrops</code> tab, and then click the <code class="blocklightgrey">Choose Backdrop from library</code> button and choose the backdrop indoors/hall. Delete the original blank backdrop.</p></li>
 <li>Click on the sprite, and then click on the <code>i</code> button to the top left of the Sprite. Change the name of the sprite to <strong>Felix</strong>.<br /></li>
 <li>Make sure Felix only points left-right by clicking this button:<br /></li>
-<li><p><strong>Create this script</strong>:</p></li>
+<li><p><strong>Create this script</strong>:</p>
+<p><img src="fdeeafd344e1c6ce5654dbc1473fbaf73d4009f7.png" alt="    when FLAG clicked
+    forever
+        point towards [mouse-pointer v]
+        move (10) steps
+        next costume
+        play drum (3 v) for (0.3) beats
+    end" /></p></li>
 </ul>
-<p><img src="1b85ff9c8168d4d49189244de5da02ce9657e539.png" alt="                when FLAG clicked
-                forever
-                    point towards [mouse-pointer v]
-                    move (10) steps
-                    next costume
-                    play drum (3 v) for (0.3) beats
-                end" /></p>
 </section>
 <section id="test-your-project" class="level2 flag">
 <h2>Test your project</h2>
@@ -70,13 +70,13 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 <li>Change the name of the sprite to <strong>Herbert</strong>.<br /></li>
 <li>Switch to the <strong>Costumes</strong> tab, then click on the costume in the Paint Editor. A box will appear around the costume. Drag a corner of the box to make Herbert smaller than Felix.<br /></li>
 <li>Make sure Herbert only points left-right.<br /></li>
-<li><strong>Give Herbert this script:</strong></li>
-</ul>
+<li><p><strong>Give Herbert this script:</strong></p>
 <p><img src="8204c8863131b567848aecaeacc19bfc5037f65d.png" alt="  when FLAG clicked
     forever
       go to [mouse-pointer v]
       point towards [Felix v]
-    end" /></p>
+    end" /></p></li>
+</ul>
 </section>
 <section id="test-your-project-1" class="level2 flag">
 <h2>Test your project</h2>
@@ -93,8 +93,7 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 <section id="activity-checklist-2" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li><strong>Change Felix’s script to be this:</strong></li>
-</ul>
+<li><p><strong>Change Felix’s script to be this:</strong></p>
 <p><img src="eecd113f50a792d2369b3b00e89bdc976e254215.png" alt="  when FLAG clicked
   forever
     point towards [mouse-pointer v]
@@ -104,7 +103,8 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
     if &lt;touching [herbert v]?&gt;
       say [Caught you!] for (1) secs
     end
-   end" /></p>
+   end" /></p></li>
+</ul>
 </section>
 <section id="test-your-project-2" class="level2 flag">
 <h2>Test your project</h2>
@@ -121,32 +121,29 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 <section id="activity-checklist-3" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li><strong>Change Felix’s script to send this message when he catches Herbert:</strong></li>
-</ul>
-<p><img src="19deaf54bb5d29c9722115bd245684f2092fd7b5.png" alt="     when FLAG clicked
-        forever
-          point towards [mouse-pointer v]
-          move (10) steps
-          move (20) steps
-          next costume
-          play drum [3 v] for (0.3) beats
-          if &lt;touching [herbert v]?&gt;
-            broadcast [caught v]
-            play drum [17 v] for (0.2) beats
-            wait (1) secs
-          end
-        end" /></p>
-<ul>
+<li><p><strong>Change Felix’s script to send this message when he catches Herbert:</strong></p>
+<p><img src="0a0cee2db3835be1984d7b585c2987242094e437.png" alt=" when FLAG clicked
+    forever
+      point towards [mouse-pointer v]
+      move (10) steps
+      move (20) steps
+      next costume
+      play drum [3 v] for (0.3) beats
+      if &lt;touching [herbert v]?&gt;
+        broadcast [caught v]
+        play drum [17 v] for (0.2) beats
+        wait (1) secs
+      end
+    end" /></p></li>
 <li><p>Add a new costume into Herbert by selecting Herbert, going into the Costumes section, and clicking the <code class="blocklightgrey">Choose costume from Library button</code>. Select the <strong>fantasy/ghost2-a</strong> costume.</p></li>
 <li><p>Make the costume smaller by clicking on it in the Paint Editor, and dragging the box that appears, to resize it.</p></li>
 <li>Change the names of Herbert’s costumes so the mouse costume is called ‘alive’ and the ghost costume is called ‘dead’.<br /></li>
-<li><p><strong>Create a new script for Herbert to turn him into a ghost:</strong></p></li>
-</ul>
-<p><img src="fae5dc343af452dab96c5c0d0b1fe7d79ba13a10.png" alt="  when I receive [caught v]
+<li><p><strong>Create a new script for Herbert to turn him into a ghost:</strong></p>
+<p><img src="57d514d13ab4458c22ce5ebe36f6c6baccf2c6e7.png" alt="when I receive [caught v]
     switch costume to [dead v]
     wait (1) secs
-    switch costume to [alive v]
-" /></p>
+    switch costume to [alive v]" /></p></li>
+</ul>
 </section>
 <section id="test-your-project-3" class="level2 flag">
 <h2>Test your project</h2>
@@ -164,8 +161,7 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 <h2>Activity Checklist</h2>
 <ul>
 <li>Make a variable, for all sprites, called Score. Click on <code class="blockorange">Data</code> in the top menu, make a variable and name it <code class="blockorange">score</code>, ensuring that &quot;For all sprites&quot; is selected.<br /></li>
-<li><strong>On the stage, create these two scripts:</strong></li>
-</ul>
+<li><p><strong>On the stage, create these two scripts:</strong></p>
 <p><img src="6ca06a7179651d1c49c4256e553ad59c48d4ad72.png" alt="when gf clicked
    set [score v] to [0]
    forever
@@ -174,7 +170,8 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
    end
 
 when I receive [caught v]
-change [score v] by (-100)" /></p>
+change [score v] by (-100)" /></p></li>
+</ul>
 </section>
 <section id="test-your-project-4" class="level2 flag">
 <h2>Test your project</h2>

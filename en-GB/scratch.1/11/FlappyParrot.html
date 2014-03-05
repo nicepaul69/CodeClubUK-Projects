@@ -41,12 +41,12 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 <li>Replace the background with an outdoor landscape. <strong>desert</strong> is a good choice.<br /></li>
 <li>Add the Flappy character. You'll need a sprite with costumes for wings up and wings down. <strong>parrot</strong> is a good choice.<br /></li>
 <li>Change the name of your sprite to <strong>Flappy</strong>.<br /></li>
-<li>Give Flappy the following script:</li>
-</ul>
+<li><p>Give Flappy the following script:</p>
 <p><img src="5d5d7e27f895c15829c4abb48e5fe70a33dda51d.png" alt="when FLAG clicked
     go to x: (-50) y: (0)
     forever
-        change y by (-3)" /></p>
+        change y by (-3)" /></p></li>
+</ul>
 </section>
 <section id="test-your-project" class="level2 flag">
 <h2>Test Your Project</h2>
@@ -63,8 +63,7 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 <h2>Activity Checklist</h2>
 <ul>
 <li>Click on the <strong>Costumes</strong> tab and name the costumes <strong>wings up</strong> and <strong>wings down</strong>.<br /></li>
-<li>Now switch back to the <strong>Scripts</strong> tab and add this script:</li>
-</ul>
+<li><p>Now switch back to the <strong>Scripts</strong> tab and add this script:</p>
 <p><img src="4c7794cb5c21db60485e4adce7a0398875405fc3.png" alt="when [space v] key pressed
     switch costume to [wings down v]
     repeat (10)
@@ -73,7 +72,8 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
     switch costume to [wings up v]
     repeat (10)
         change y by (6)
-    end" /></p>
+    end" /></p></li>
+</ul>
 </section>
 <section id="test-your-project-1" class="level2 flag">
 <h2>Test Your Project</h2>
@@ -91,8 +91,7 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 <ul>
 <li>Disconnect the blocks under the <code class="blockbrown">when space key pressed</code> and put them to the side (we'll use them in a few moments.)<br /></li>
 <li>Make a new variable <code class="blockgrey">For this sprite only</code> and call it <code class="blockorange">flaps</code>.<br /></li>
-<li>Add the following script by draging in the blocks you put aside:</li>
-</ul>
+<li><p>Add the following script by draging in the blocks you put aside:</p>
 <p><img src="6b53c0c9ba2b3935b1cff51bfc37c538b399c319.png" alt="when FLAG clicked
     set [flaps v] to [0]
     switch costume to [wings up v]
@@ -107,12 +106,11 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
             repeat (10)
                 change y by (6)
             end
-" /></p>
-<ul>
-<li>Finally, add to your <code class="blockbrown">when space key pressed</code> event:</li>
-</ul>
+" /></p></li>
+<li><p>Finally, add to your <code class="blockbrown">when space key pressed</code> event:</p>
 <p><img src="cce39614e4c0e10598de7a0f1ca225d62175027a.png" alt="when [space v] key pressed
-    change [flaps v] by (1)" /></p>
+    change [flaps v] by (1)" /></p></li>
+</ul>
 </section>
 <section id="test-your-project-2" class="level2 flag">
 <h2>Test Your Project</h2>
@@ -152,8 +150,7 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 <h2>Activity Checklist</h2>
 <ul>
 <li>Click on your <strong>Pipe</strong> sprite and select the <code class="blockgrey">Scripts</code> tab.<br /></li>
-<li>Add the following scripts:</li>
-</ul>
+<li><p>Add the following scripts:</p>
 <p><img src="663c25c798490d623b5f0ec2fe5d31c2dc2d37bc.png" alt="when FLAG clicked
     hide
     set size to (200)%
@@ -167,7 +164,8 @@ when I start as a clone
     repeat (120)
         change x by (-4)
     end
-    delete this clone" /></p>
+    delete this clone" /></p></li>
+</ul>
 </section>
 <section id="test-your-project-3" class="level2 flag">
 <h2>Test Your Project</h2>
@@ -187,19 +185,17 @@ when I start as a clone
 <li>Click the <code class="blockgrey">Choose sound from library</code> button.<br /></li>
 <li>Pick a collision sound for <strong>Flappy</strong>. The <strong>screech</strong> sound is good.<br /></li>
 <li>Now click back on the <code class="blockgrey">Scripts</code> tab.<br /></li>
-<li>Add the following script:</li>
-</ul>
+<li><p>Add the following script:</p>
 <p><img src="284bceb31a68c0a75038a56ed4dc9c48c67fa24e.png" alt="when FLAG clicked
     wait until ((touching [edge v]?) or (touching [Pipe v]?))
     play sound [screech v]
     say [Game Over!]
     broadcast [GameOver v]
-    stop [other scripts in sprite v]" /></p>
-<ul>
-<li>Click on the <strong>Pipe</strong> sprite and add a script:</li>
-</ul>
+    stop [other scripts in sprite v]" /></p></li>
+<li><p>Click on the <strong>Pipe</strong> sprite and add a script:</p>
 <p><img src="00728ae39c19d14ec1a6a4b14104135d3cef2471.png" alt="when I receive [GameOver v]
-    stop [other scripts in sprite v]" /></p>
+    stop [other scripts in sprite v]" /></p></li>
+</ul>
 </section>
 <section id="test-your-project-4" class="level2 flag">
 <h2>Test Your Project</h2>
@@ -219,12 +215,12 @@ when I start as a clone
 <li>Now click back on the <code class="blockgrey">Scripts</code> tab.<br /></li>
 <li>Make a new variable <code class="blockgrey">For all sprites</code> and call it <code class="blockorange">score</code>.<br /></li>
 <li>Add a block to set the score to 0 when the flag is clicked.<br /></li>
-<li>Add the following block:</li>
-</ul>
+<li><p>Add the following block:</p>
 <p><img src="3df49536287acd015c6483af738433c24c9e7108.png" alt="when I start as a clone
     wait until &lt;(x position) &lt; ([x position v] of [Flappy v])&gt;
     change [score v] by (1)
-    play sound [bird v]" /></p>
+    play sound [bird v]" /></p></li>
+</ul>
 </section>
 <section id="test-your-project-5" class="level2 flag">
 <h2>Test Your Project</h2>
@@ -244,13 +240,13 @@ when I start as a clone
 <h2>Challenge 1: add a high score</h2>
 <ul>
 <li>Make a new variable and tick the <code class="blockgrey">Cloud variable (stored on server)</code> box. Call the variable <code class="blockorange">hi-score</code><br /></li>
-<li>when the game is over check if you need to set a new high score:</li>
-</ul>
+<li><p>when the game is over check if you need to set a new high score:</p>
 <p><img src="ccfeb9da62043450464335533e5fd87ed6c905ed.png" alt="when I receive [GameOver v]
     if &lt;(score) &gt; (hi-score)&gt; then
         set [hi-score v] to (score)
     end
-    stop [other scripts in sprite v]" /></p>
+    stop [other scripts in sprite v]" /></p></li>
+</ul>
 </section>
 <section id="test-your-project-6" class="level2 flag">
 <h2>Test Your Project</h2>
@@ -264,17 +260,14 @@ when I start as a clone
 <p>When something falls under gravity it doesn't usually fall at a fixed rate. For this challenge we will make Flappy fall as if under gravity.</p>
 <ul>
 <li>Add a new variable <code class="blockgrey">For this sprite only</code> to <strong>Flappy</strong> and call it <code class="blockorange">rise</code>.<br /></li>
-<li>Change Flappy's falling script:</li>
-</ul>
+<li><p>Change Flappy's falling script:</p>
 <p><img src="6102997a2f9bdcbe6cf164c4575b56f532f07f7c.png" alt="when FLAG clicked
     set [rise v] to [0]
     go to x: (-50) y: (0)
     forever
         change y by (rise)
-        change [rise v] by (-0.4)" /></p>
-<ul>
-<li>And change Flappy's flapping script:</li>
-</ul>
+        change [rise v] by (-0.4)" /></p></li>
+<li><p>And change Flappy's flapping script:</p>
 <p><img src="98cfce029e263e8d32eaea3ecf32f1aab08f9d34.png" alt="when FLAG clicked
     set [flaps v] to [0]
     switch costume to [wings up v]
@@ -285,7 +278,8 @@ when I start as a clone
             change [rise v] by (8)
             wait (0.2) secs
             switch costume to [wings up v]
-            wait (0.2) secs" /></p>
+            wait (0.2) secs" /></p></li>
+</ul>
 </section>
 <section id="test-your-project-7" class="level2 flag">
 <h2>Test Your Project</h2>
@@ -299,8 +293,7 @@ when I start as a clone
 <p>When the player loses make Flappy fall off the bottom of the screen before ending the game.</p>
 <ul>
 <li>Replace the <code class="blockbrown">broadcast GameOver</code> block with <code class="blockbrown">broadcast Fall</code><br /></li>
-<li>Now add the following scripts:</li>
-</ul>
+<li><p>Now add the following scripts:</p>
 <p><img src="70861fda22fb5e9f56c3864d3dedeb39e5adbcc4.png" alt="when I receive [Fall v]
     repeat (10)
         turn ccw (5) degrees
@@ -311,9 +304,8 @@ when I receive [Fall v]
         change [rise v] by (-0.4)
     end
     hide
-    broadcast [GameOver v]" /></p>
-<ul>
-<li>Don't forget to add a <code class="blockpurple">show</code> block and reset Flappy's direction when the game restarts.</li>
+    broadcast [GameOver v]" /></p></li>
+<li><p>Don't forget to add a <code class="blockpurple">show</code> block and reset Flappy's direction when the game restarts.</p></li>
 </ul>
 </section>
 <section id="test-your-project-8" class="level2 flag">

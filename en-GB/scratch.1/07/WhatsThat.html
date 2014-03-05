@@ -43,13 +43,13 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 <li>Create a new sprite from the library, and give it any costume you like. You can pick something from the things folder.<br /></li>
 <li>Position the new sprite in the middle of the blackboard. Make it bigger or smaller if you need to.<br /></li>
 <li>Click the Costumes tab and import four more things. They can be anything you want, yay!<br />Let’s now make a random picture appear.<br /></li>
-<li><p>Create this script:</p></li>
-</ul>
+<li><p>Create this script:</p>
 <p><img src="9be0ff0ad36af17882df6b6f648a0ad4a5cbab7a.png" alt="
     when FLAG clicked
     repeat (pick random (1) to (5)
         next costume
-    end" /></p>
+    end" /></p></li>
+</ul>
 </section>
 <section id="test-your-project" class="level2 flag">
 <h2>Test Your Project</h2>
@@ -69,8 +69,7 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>On the Data palette, create a variable called Score.</p></li>
-<li><p>Change the script to look like this:</p></li>
-</ul>
+<li><p>Change the script to look like this:</p>
 <p><img src="94e23d8849162818775798c427660cb3fe8949b3.png" alt="
     when FLAG clicked
     hide
@@ -84,7 +83,8 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
         set [colour v] effect to (score)
         show
         wait (1) secs
-    end" /></p>
+    end" /></p></li>
+</ul>
 <p>You should add the <code class="blockpurple">hide</code> block at the top and the <code class="blockorange">set [score] to 110</code> block, and everything below it.</p>
 </section>
 <section id="test-your-project-1" class="level2 flag">
@@ -113,8 +113,7 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 <p>First, we need to know what the right answer is.</p>
 <ul>
 <li><strong>Create a new variable</strong> called <strong>answer</strong>. Make sure it’s for all sprites.<br /></li>
-<li>Change the script you’ve written to record the right answer. Add the <code class="blockorange">set [answer] to costume #</code> blocks just after the first repeat loop:</li>
-</ul>
+<li><p>Change the script you’ve written to record the right answer. Add the <code class="blockorange">set [answer] to costume #</code> blocks just after the first repeat loop:</p>
 <p><img src="7e373291952b3d96ce1dcc7985f285af5f17dd5b.png" alt="    when FLAG clicked
     hide
     repeat (pick random (1) to (5)  
@@ -129,32 +128,29 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
         show
         wait (1) secs
     end" /></p>
-<p><strong>Now we need to add the sprites that the player can click on.</strong></p>
-<ul>
+<p><strong>Now we need to add the sprites that the player can click on.</strong></p></li>
 <li>Duplicate the main sprite and drag the duplicate to the bottom left corner of the stage.<br /></li>
 <li>Rename this sprite to <strong>answer1.</strong> (This makes it easier to talk about.)<br /></li>
 <li>Delete <strong>answer1</strong>'s script and all its costumes but its first one.<br /></li>
 <li>Do these last three steps again, but put the <strong>answer2</strong> sprite next to <strong>answer1</strong> and delete all but its second costume.<br /></li>
-<li>Do it three more times for <strong>answer3</strong>, <strong>answer4</strong>, and <strong>answer5.</strong><br />You should end up with a row of five answer sprites along the bottom of the Stage, each showing a different costume the the main sprite can be. <strong>None of the answer sprites should have any scripts.</strong></li>
+<li><p>Do it three more times for <strong>answer3</strong>, <strong>answer4</strong>, and <strong>answer5.</strong><br />You should end up with a row of five answer sprites along the bottom of the Stage, each showing a different costume the the main sprite can be. <strong>None of the answer sprites should have any scripts.</strong></p></li>
 </ul>
 <p>Now we want to have each sprite respond to being clicked and do something depending on whether its the right answer or not.</p>
 <ul>
-<li>Add this script to the answer1 sprite:</li>
-</ul>
-<p><img src="dcafba8972b020eeef1b744ad98bbf20bf04f52e.png" alt="
+<li><p>Add this script to the answer1 sprite:</p>
+<p><img src="af9d41729b50022f6aee1622cc81b6e085dc6c6a.png" alt="
     when this sprite clicked
     if ((answer) = (1)
         broadcast [won v]
     else
         hide
-    " /></p>
-<ul>
+" /></p></li>
 <li>Drag this script into each of the other answer sprites. <strong>In each sprite, change the 1 to 2, 3, and so on.</strong><br /></li>
-<li>We now have to add something that responds to the won message. Go back to sprite1, the one on the blackboard. Add this extra script:</li>
-</ul>
+<li><p>We now have to add something that responds to the won message. Go back to sprite1, the one on the blackboard. Add this extra script:</p>
 <p><img src="5e90161dc4fa6ec9687dcf61387e9754eb6a09fe.png" alt="
     when I receive [won v]
-    say (join [Congratulations! You scored] (score))" /></p>
+    say (join [Congratulations! You scored] (score))" /></p></li>
+</ul>
 <section id="test-your-project-2" class="level2 flag">
 <h2>Test Your Project</h2>
 <p><strong>Click the green flag.</strong></p>
@@ -164,17 +160,16 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 <p>What happens to the wrong answer when you <strong>start a new game?</strong></p>
 <p>The test shows up two problems. First, wrong guesses don’t reappear when the next game starts. Second, the score doesn’t stop going down when we get the right answer.</p>
 <ul>
-<li>To fix the first problem, add this script to each of the five answer sprites:</li>
-</ul>
+<li><p>To fix the first problem, add this script to each of the five answer sprites:</p>
 <p><img src="e2aa465e5fdb7bcc39cb638e8a7cba9374543cf9.png" alt="
     when FLAG clicked
-    show" /></p>
+    show" /></p></li>
+</ul>
 <p>To fix the second problem, we need to stop the <strong>question sprite</strong>’s repeat until loop when the player clicks on the right answer. We’ll use a new variable to do that. We’ll set it to <strong>zero</strong> when the game starts and set it to <strong>one</strong> when the game is won. We’ll make the repeat until loop stop when either the score reaches <strong>zero</strong> OR the <strong>game-winning flag</strong> is set to <strong>one.</strong></p>
 <ul>
 <li>Create a new variable called won?<br /></li>
-<li>Change the scripts so they look like this:</li>
-</ul>
-<p><img src="80e50d10119e5a08d05814bab454a65c0b81eada.png" alt="
+<li><p>Change the scripts so they look like this:</p>
+<p><img src="004bd49774a3ebf2348c0421b34af0fc3c074645.png" alt="
     when FLAG clicked
     hide
     repeat (pick random (1) to (5)
@@ -190,11 +185,12 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
         show
         wait (1) secs
     end
-    
+
     when I receive [won v]
     set [won v] to (1)
     clear graphic effects
-    say (join [Congratulations! You scored] (score))" /></p>
+    say (join [Congratulations! You scored] (score))" /></p></li>
+</ul>
 </section>
 <section id="save-your-project-2" class="level2 save">
 <h2>Save your project</h2>

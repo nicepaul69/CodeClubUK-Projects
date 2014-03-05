@@ -43,23 +43,23 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 <li>Change the name of Sprite1 to 'Hungry Fish' by clicking on the blue 'i' symbol.<br /></li>
 <li>Import Hungry Fish’s costume, <strong>resources/hungry-fish.png</strong> then remove its existing <strong>costume1</strong> and <strong>costume2</strong>.<br /></li>
 <li>Click on the blue '<strong>i</strong>' symbol again, and make sure the sprite can only flip left-right.<br /></li>
-<li>Now create a script for Hungry Fish to follow the mouse around the sea like this:</li>
-</ol>
+<li><p>Now create a script for Hungry Fish to follow the mouse around the sea like this:</p>
 <p><img src="89a23fdce94f6c4c0f3b2bd2b5ef30b3bbea425f.png" alt="when FLAG clicked
     forever     
         point towards [mouse pointer v]
-        move (3) steps" /></p>
+        move (3) steps" /></p></li>
+</ol>
 </section>
 <section id="test-your-project" class="level2 flag">
 <h2>Test Your Project</h2>
 <p><strong>Click the green flag.</strong><br />Move the mouse pointer around the sea. Does the fish follow the pointer?<br />What happens if you don’t move the mouse pointer and the fish catches up with it? What does it look like? Why does it do this?</p>
 <ol>
-<li>You can stop the Hungry Fish flipping like crazy if you make it only move when it’s not too near the mouse pointer<br />(The <code class="blocklightblue">distance to</code> block is in the <code class="blocklightgrey">Sensing</code> palette).</li>
-</ol>
+<li><p>You can stop the Hungry Fish flipping like crazy if you make it only move when it’s not too near the mouse pointer<br />(The <code class="blocklightblue">distance to</code> block is in the <code class="blocklightgrey">Sensing</code> palette).</p>
 <p><img src="773a8f2892e29a5e40ca51cc8b01daaea557e4b2.png" alt="when FLAG clicked
     forever if &lt;(distance to [mouse-pointer v]) &gt; (10)&gt;
         point towards [mouse-pointer v]
-        move (3) steps" /></p>
+        move (3) steps" /></p></li>
+</ol>
 </section>
 <section id="save-your-project" class="level2 save">
 <h2>Save your project</h2>
@@ -77,13 +77,13 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 <ol>
 <li>Create a new sprite from the library, using <strong>Animals/starfish</strong>.<br /></li>
 <li>Use the <code class="blocklightgrey">Shrink</code> sprite tool (above the Stage) to make the sprite smaller.<br /></li>
-<li>Create a script to make the prey swim around. We want them to move randomly, so let’s make it move forward a bit, then turn a random amount left or right, then do it again.</li>
-</ol>
+<li><p>Create a script to make the prey swim around. We want them to move randomly, so let’s make it move forward a bit, then turn a random amount left or right, then do it again.</p>
 <p><img src="d55a1a116e2f1450af684695fecca7d1d50a0b11.png" alt="when FLAG clicked
     forever     
         move (2) steps
         turn right (pick random (-20) to (20)) degrees
-        if on edge, bounce  " /></p>
+        if on edge, bounce  " /></p></li>
+</ol>
 </section>
 <section id="test-your-project-1" class="level2 flag">
 <h2>Test Your Project</h2>
@@ -111,25 +111,24 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 <section id="activity-checklist-2" class="level2 check">
 <h2>Activity Checklist</h2>
 <ol>
-<li>First, let’s make the prey disappear if it is touching the Hungry Fish, and then reappear 3 seconds later. Use the <code class="blocklightblue">touching</code> block to see if it is touching the fish.</li>
-</ol>
-<p><img src="b8183d6c95d09c3940e964729462d54718bdb397.png" alt="
+<li><p>First, let’s make the prey disappear if it is touching the Hungry Fish, and then reappear 3 seconds later. Use the <code class="blocklightblue">touching</code> block to see if it is touching the fish.</p>
+<p><img src="ac9156e2474207599cf229244794fabf0db9ee5d.png" alt="
 forever     
-        move (2) steps
-        turn right (pick random (-20) to (20)) degrees
-        if on edge, bounce
-        if &lt;touching [Hungry Fish v]?&gt; then
-            hide
-            wait (3) secs
-            show" /></p>
+    move (2) steps
+    turn right (pick random (-20) to (20)) degrees
+    if on edge, bounce
+    if &lt;touching [Hungry Fish v]?&gt; then
+        hide
+        wait (3) secs
+        show" /></p></li>
+</ol>
 </section>
 <section id="test-your-project-2" class="level2 flag">
 <h2>Test Your Project</h2>
 <p><strong>Try out your game again – can you spot any problems?</strong> Notice that the prey disappears no matter where it touches the Hungry Fish. Also, the fish could just wait 3 seconds and eat the prey the moment it reappears – this isn’t very fair!</p>
 <ol>
 <li>How could we make sure the prey only disappears if it is touching the Hungry Fish’s mouth? Well, we could use the <code class="blocklightblue">touching color</code> block, and see if it is touching the fish’s blue teeth. To do this, replace the <code class="blocklightblue">touching</code> block with a <code class="blocklightblue">touching color</code> block in your script, click on the color in the block and then click again on the fish’s teeth.<br /></li>
-<li>Next we can make the prey move to a random point on the screen before reappearing using a <code class="blockblue">go to</code> block, and giving it a random value for <strong>x</strong> and <strong>y</strong>.</li>
-</ol>
+<li><p>Next we can make the prey move to a random point on the screen before reappearing using a <code class="blockblue">go to</code> block, and giving it a random value for <strong>x</strong> and <strong>y</strong>.</p>
 <p><img src="66e79c114cb9343ecffc908cc3179fe6db736d23.png" alt="when FLAG clicked
     forever     
         move (2) steps
@@ -139,15 +138,15 @@ forever
             hide
             wait (3) secs
             go to x:(pick random (-220) to (220)) y: (pick random (-170) to (170))
-            show" /></p>
+            show" /></p></li>
+</ol>
 </section>
 <section id="test-your-project-3" class="level2 flag">
 <h2>Test Your Project</h2>
 <p>Try the game again – does the prey only vanish when it touches the fish’s mouth? And does it re-appear in a random point on the screen instead of where it was eaten?</p>
 <ol>
-<li>The fish needs to know when it has eaten something so it can play a sound and change its skin. To do this, we can have the prey <code class="blockyellow">broadcast</code> the fact that it’s been eaten before vanishing.</li>
-</ol>
-<p><img src="a8fc4de49458e4a8355a114fa543f8726a05a50d.png" alt="
+<li><p>The fish needs to know when it has eaten something so it can play a sound and change its skin. To do this, we can have the prey <code class="blockyellow">broadcast</code> the fact that it’s been eaten before vanishing.</p>
+<p><img src="7d4b91363fbb353d55425fb292966223627358ae.png" alt="
 when FLAG clicked
 forever     
     move (2) steps
@@ -159,18 +158,17 @@ forever
         wait (3) secs
         go to x:&lt;pick random (-220) to (220)&gt; y: &lt;pick random (-170) to (170)&gt;
         show
-    " /></p>
-<p><strong>Now we want the fish to respond to this message by making a “chomp” sound and snapping its jaws.</strong></p>
-<ol>
+" /></p>
+<p><strong>Now we want the fish to respond to this message by making a “chomp” sound and snapping its jaws.</strong></p></li>
 <li>Add the <strong>resources/mouth-closed.png</strong> costume and the <strong>resources/chomp.mp3</strong> sound to the Hungry Fish sprite.<br /></li>
-<li>Then, add a new script to the Hungry Fish to respond to the message <code class="blockyellow">broadcast</code> by the prey. This script should make the fish play the <strong>'chomp'</strong> sound and <code class="blockpurple">switch to</code> the mouth-closed costume, wait briefly and then switch back.</li>
-</ol>
+<li><p>Then, add a new script to the Hungry Fish to respond to the message <code class="blockyellow">broadcast</code> by the prey. This script should make the fish play the <strong>'chomp'</strong> sound and <code class="blockpurple">switch to</code> the mouth-closed costume, wait briefly and then switch back.</p>
 <p><img src="23d3179ded053b5ca7880f47a9fd94024446d453.png" alt="when I receive [got me v]
     play sound [chomp v]
     repeat (2)
         switch to costume [mouth-closed v]
         wait (0.5) secs
-        switch to costume [hungry-fish v]" /></p>
+        switch to costume [hungry-fish v]" /></p></li>
+</ol>
 <p><strong>Now our Hungry Fish is ready to eat, let’s fill the ocean with prey. Right-click on the prey sprite and click “duplicate” several times.</strong></p>
 </section>
 <section id="test-your-project-4" class="level2 flag">

@@ -74,12 +74,12 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 <li><strong>Click the green flag</strong> in the top right. Notice that a yellow outline is around our script. It’s running because we clicked the green flag, which triggers this.<br /></li>
 <li>Now click <code class="blockgrey">Looks</code> and drag in a <code class="blockpurple">next costume</code><br /></li>
 <li>How do we slow it down so it isn’t changing so quickly? Click the <code class="blockgrey">Control</code> tab and drag in a <code class="blockyellow">wait 1 secs</code><br /></li>
-<li>Adjust the time until it’s repeating at a faster pace (a time of 0.5s looks good). What would happen if we didn’t have the <code class="blockyellow">wait 1 secs</code> block?</li>
-</ol>
+<li><p>Adjust the time until it’s repeating at a faster pace (a time of 0.5s looks good). What would happen if we didn’t have the <code class="blockyellow">wait 1 secs</code> block?</p>
 <p><img src="62a85c12abf878edc5def0543fa1bc7bc3fa18a3.png" alt="when FLAG clicked
 forever     
     next costume
-    wait (0.5) secs" /></p>
+    wait (0.5) secs" /></p></li>
+</ol>
 </section>
 <section id="test-your-project" class="level2 flag">
 <h2>Test Your Project</h2>
@@ -100,27 +100,23 @@ forever
 <p><strong>Great! We can make the sprite change costumes forever, but how do we make it stop when we click on it?</strong><br />One way to do it is by using a variable to set the state of the Sprite. This will also be useful later...</p>
 <ol>
 <li>Create a new variable by clicking <code class="blockgrey">Data</code> and <code class="blocklightgrey">Make a variable</code>. Call it <code class="blockorange">stopped</code> and make it for only this sprite, then uncheck the box next to it so it doesn’t display on the stage.<br /></li>
-<li>At the start of the game, the sprite won't have been clicked so we'll set the variable to be equal to <strong>&quot;NO&quot;</strong>.</li>
-</ol>
+<li><p>At the start of the game, the sprite won't have been clicked so we'll set the variable to be equal to <strong>&quot;NO&quot;</strong>.</p>
 <p><img src="0aa86ad505c5d28967e4d7e5344034c2bbeb16d4.png" alt="when FLAG clicked
 set [stopped v] to (NO)
 forever 
     next costume
-    wait (0.1) secs" /></p>
-<ol>
-<li>Now we'll set the variable <code class="blockorange">stopped</code> to <strong>&quot;YES&quot;</strong> when someone clicks on the sprite.</li>
-</ol>
-<p><img src="cb78f33297f165fac0bdf78fcdb9532de7df8ce1.png" alt="    when this sprite clicked
-    set [stopped v] to (YES)" /></p>
-<ol>
-<li>Finally we need to make the sprite stop changing costume when the variable <code class="blockorange">stopped</code> changes to &quot;YES&quot;. Add an <code class="blockyellow">if...then</code> loop and use a new <strong>equals</strong> <code class="blockgreen">[] = []</code> operator block (found under the <em>Operators</em> tab) to check if <code class="blockorange">stopped</code> is still &quot;NO&quot;.</li>
-</ol>
+    wait (0.1) secs" /></p></li>
+<li><p>Now we'll set the variable <code class="blockorange">stopped</code> to <strong>&quot;YES&quot;</strong> when someone clicks on the sprite.</p>
+<p><img src="a6ed24bf345830e7c942fc436098996c84daac02.png" alt="when this sprite clicked
+set [stopped v] to (YES)" /></p></li>
+<li><p>Finally we need to make the sprite stop changing costume when the variable <code class="blockorange">stopped</code> changes to &quot;YES&quot;. Add an <code class="blockyellow">if...then</code> loop and use a new <strong>equals</strong> <code class="blockgreen">[] = []</code> operator block (found under the <em>Operators</em> tab) to check if <code class="blockorange">stopped</code> is still &quot;NO&quot;.</p>
 <p><img src="6c11d310ed7b719f56481b640e39c317b5b5cdc7.png" alt="when FLAG clicked
 set [stopped v] to (NO)
 forever 
     if &lt;(stopped) = [NO]&gt; then  
         next costume
-        wait (0.5) secs" /></p>
+        wait (0.5) secs" /></p></li>
+</ol>
 </section>
 <section id="test-your-project-1" class="level2 flag">
 <h2>Test Your Project</h2>
@@ -161,17 +157,15 @@ forever
 <ol>
 <li>If you look under the <code class="blocklightgrey">costumes</code> tab for a sprite then you'll see that each costume has a number. You can specify which costume a sprite is wearing using either its name or its number.<br /></li>
 <li>To make the sprite start with a random costume, let's add a <code class="blockpurple">switch costume to</code> block with <code class="blockgreen">pick random (1) to (3)</code> to choose<br />the costume number.<br /></li>
-<li>We can also use exactly the same block in the <code class="blockyellow">forever</code> loop so that the sprite switches to a different costume each time it changes during the game.</li>
-</ol>
+<li><p>We can also use exactly the same block in the <code class="blockyellow">forever</code> loop so that the sprite switches to a different costume each time it changes during the game.</p>
 <p><img src="c51c772da9712fce08361344810e30cdfa68dec6.png" alt="when FLAG clicked
 set [stopped v] to (0)
 switch costume to &lt;pick random (1) to (3)&gt;
 forever 
     if &lt;(stopped) = [NO]&gt; then  
         switch costume to &lt;pick random (1) to (3)&gt;
-            wait (0.5) secs" /></p>
-<ol>
-<li>Do the same thing for each of your sprites.</li>
+            wait (0.5) secs" /></p></li>
+<li><p>Do the same thing for each of your sprites.</p></li>
 </ol>
 </section>
 <section id="test-your-project-3" class="level2 flag">
@@ -205,26 +199,26 @@ forever
 <li>Click on the stage and then the <code class="blocklightgrey">Backdrops</code> tab. Change the name of the existing backdrop to <strong>&quot;GameOn&quot;</strong>.<br /></li>
 <li>Duplicate the backdrop and then add some text to the copy that says <strong>&quot;Game Over&quot;</strong>. You can change the size of the text by clicking on it and then<br />dragging one of the corners. Rename this backdrop to be <strong>&quot;GameOver&quot;</strong>.<br /></li>
 <li>Click on the <code class="blocklightgrey">Scripts</code> tab for the stage and set the &quot;GameOn&quot; backdrop to be the one displayed when the game is started.<br /></li>
-<li>How can we detect when all the sprites have stopped? Remember we use the <code class="blockorange">stopped</code> variable to record whether each sprite has been clicked? Let's check the <code class="blockorange">stopped</code> variable for the <strong>Fruit3</strong> sprite to see if the game is over. Select the Fruit3 sprite and then can use a <code class="blockblue">x position of Fruit3</code> block from the <code class="blocklightgrey">Sensing</code> tab, but change <strong>x position</strong> to <code class="blockorange">stopped</code>.</li>
-</ol>
+<li><p>How can we detect when all the sprites have stopped? Remember we use the <code class="blockorange">stopped</code> variable to record whether each sprite has been clicked? Let's check the <code class="blockorange">stopped</code> variable for the <strong>Fruit3</strong> sprite to see if the game is over. Select the Fruit3 sprite and then can use a <code class="blockblue">x position of Fruit3</code> block from the <code class="blocklightgrey">Sensing</code> tab, but change <strong>x position</strong> to <code class="blockorange">stopped</code>.</p>
 <p><img src="5da90a9de45e4d4dc5ae96ab581b0a41c907997e.png" alt="when FLAG clicked
 switch backdrop to [GameOn v]
 forever
     if &lt;([stopped v] of [Fruit3 v]) = [YES]&gt; then
-        switch backdrop to [GameOver v]" /></p>
+        switch backdrop to [GameOver v]" /></p></li>
+</ol>
 </section>
 <section id="test-your-project-4" class="level2 flag">
 <h2>Test Your Project</h2>
 <p><strong>Click the green flag.</strong> Does the &quot;Game Over&quot; message appear when you click on Fruit3?</p>
 <p>What happens if you stop Fruit3 before you've clicked on both of the other fruit sprites? Let's<br />modify our script so that it will work regardless of the order in which the sprites are stopped.</p>
 <ol>
-<li>To check to see that <strong>all three</strong> fruit sprites have had their <code class="blockorange">stopped</code> variables set to <strong>YES</strong>, we can use the <code>and</code> {. blockgreen} operator. This is a compicated block that can be quite fiddly to assemble, so try and put it together one step at a time.</li>
-</ol>
+<li><p>To check to see that <strong>all three</strong> fruit sprites have had their <code class="blockorange">stopped</code> variables set to <strong>YES</strong>, we can use the <code>and</code> {. blockgreen} operator. This is a compicated block that can be quite fiddly to assemble, so try and put it together one step at a time.</p>
 <p><img src="89e33cb4d76d31f714f91a71214b2d70bffd6ea2.png" alt="    when FLAG clicked
 switch backdrop to [GameOn v]
 forever
     if &lt;&lt;&lt;([stopped v]  of [Fruit1 v]) = [YES]&gt; and &lt;([stopped v]  of [Fruit2 v]) = [YES]&gt;&gt; and &lt;([stopped v]  of [Fruit3 v]) = [YES]&gt;&gt; then
-        switch backdrop to [GameOver v]" /></p>
+        switch backdrop to [GameOver v]" /></p></li>
+</ol>
 </section>
 <section id="test-your-project-5" class="level2 flag">
 <h2>Test Your Project</h2>
@@ -242,8 +236,7 @@ forever
 <ol>
 <li>We wrote the code to check that the game was over in <strong>step 6</strong>, so all we need to do now is check to see if the player has won. Go back to the backdrops and and add some more text to the GameOver backdrop so that also displays the word <strong>&quot;WIN&quot;</strong>. Then change its name to <strong>&quot;Win&quot;</strong>.<br /></li>
 <li>Copy the backdrop again to create one with a <strong>&quot;Lose&quot;</strong> message. Give it the name <strong>&quot;Lose&quot;</strong>.<br /></li>
-<li>Now we need some code to work out which backrop to display once the game is over. We can use an <code class="blockyellow">if...then...else</code> block to see if the player has won or lost by comparing each <code class="blockpurple">costume #</code> (costume number) using a similar <code class="blockblue">x position of Sprite</code> block like we did before. This time, instead of looking at the <code class="blockorange">stopped</code> variable, we can check the<code class="blockpurple">costume #</code> and see if Fruit1 has the same costume as Fruit2, and if Fruit2 has the same costume as Fruit3.</li>
-</ol>
+<li><p>Now we need some code to work out which backrop to display once the game is over. We can use an <code class="blockyellow">if...then...else</code> block to see if the player has won or lost by comparing each <code class="blockpurple">costume #</code> (costume number) using a similar <code class="blockblue">x position of Sprite</code> block like we did before. This time, instead of looking at the <code class="blockorange">stopped</code> variable, we can check the<code class="blockpurple">costume #</code> and see if Fruit1 has the same costume as Fruit2, and if Fruit2 has the same costume as Fruit3.</p>
 <p><img src="e958d3e04ecf861a9fb539b76944ec596df8ae63.png" alt="    when FLAG clicked
 switch backdrop to [GameOn v]
 forever
@@ -251,7 +244,8 @@ forever
         if &lt;&lt;([costume # v]  of [Fruit1 v]) = ([costume # v]  of [Fruit1 v])&gt; and &lt;([costume # v]  of [Fruit2 v]) = ([costume # v]  of [Fruit3 v])&gt;&gt; then
             switch backdrop to [Win v]
         else    
-            switch backdrop to [Lose v]" /></p>
+            switch backdrop to [Lose v]" /></p></li>
+</ol>
 </section>
 <section id="test-your-project-6" class="level2 flag">
 <h2>Test Your Project</h2>

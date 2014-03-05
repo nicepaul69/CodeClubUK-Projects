@@ -39,12 +39,12 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 <li>Start a new Scratch project. Delete the cat by right-clicking it and selecting Delete<br /></li>
 <li>Replace the background with <strong>SkyBackground.png</strong>.<br /></li>
 <li>Add the Rudolph sprite to the project (use the <strong>resources/Rudolph.png</strong> file)<br /></li>
-<li>Make Rudolph follow the mouse by using the following script:</li>
-</ol>
+<li><p>Make Rudolph follow the mouse by using the following script:</p>
 <p><img src="b2527a230cd84ab9b352f988e8ddf33859c6e5e1.png" alt="when FLAG clicked
     go to front
     forever
-        go to [mouse-pointer v]" /></p>
+        go to [mouse-pointer v]" /></p></li>
+</ol>
 </section>
 <section id="test-your-project" class="level2 flag">
 <h2>Test Your Project</h2>
@@ -56,15 +56,15 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 <li>To make the game more interesting we will add some moving snowy hills to make it look like Rudolf is flying. Add the Snow sprite to the project (use the <strong>SnowHills.png</strong> file).<br /></li>
 <li>Rename the sprite to <strong>Snow1</strong>.<br /></li>
 <li>Create a new variable by clicking the <em>Data</em> tab and then <strong>make a variable</strong>. Call it <code class="blockorange">ScrollX</code> and make it for all sprites, then uncheck the box next to it to remove<br />it from the stage. This will be used to control how the hills move.<br /></li>
-<li>Add the following script to make the hills move:</li>
-</ol>
+<li><p>Add the following script to make the hills move:</p>
 <p><img src="2e7361139bb18881394d0ba1ffd672f0531e6c19.png" alt="when FLAG clicked
 set y to (0)
 forever
     set x to (ScrollX)
     change [ScrollX v] by (-1)
     if &lt;(ScrollX) &lt; (-480)&gt; then
-        set [ScrollX v] to [0]" /></p>
+        set [ScrollX v] to [0]" /></p></li>
+</ol>
 </section>
 <section id="test-your-project-1" class="level2 flag">
 <h2>Test Your Project</h2>
@@ -75,12 +75,12 @@ forever
 <ol>
 <li>Let’s fix the issue with the snowy hills flickering when they reach the right of the screen. Add more hills to the stage use the <strong>new sprite from file</strong> button to add the Snow sprite to the project again (use the <strong>SnowHills.png</strong> file).<br /></li>
 <li>Rename the sprite to <strong>Snow2</strong>.<br /></li>
-<li>Add the following script to the Snow2 sprite to allow the 2nd set of hills to follow closely behind the first:</li>
-</ol>
+<li><p>Add the following script to the Snow2 sprite to allow the 2nd set of hills to follow closely behind the first:</p>
 <p><img src="ebf9cf7be005385569fed0b010cdd4227c09bc41.png" alt="when FLAG clicked
 set y to (0)
 forever
-    set x to &lt;(ScrollX) + [479]&gt;" /></p>
+    set x to &lt;(ScrollX) + [479]&gt;" /></p></li>
+</ol>
 </section>
 <section id="test-your-project-2" class="level2 flag">
 <h2>Test Your Project</h2>
@@ -99,8 +99,7 @@ forever
 <li><strong>Create a new variable</strong> by clicking the <code class="blocklightgrey">Data</code> tab and then <strong>make a variable</strong>. Call it <code class="blockorange">Finish</code> and make it for this sprite only, then uncheck the box next to it to remove it from the stage. This will be used to control when the present should be removed from the game.<br /></li>
 <li><strong>Create another variable</strong> and call it <code class="blockorange">Speed</code> and make it for this sprite only, then uncheck the box next to it to remove it from the stage. This will be used to control the speed that the present falls down the screen.<br /></li>
 <li>Add the following script to the <strong>Present</strong> sprite to allow it to fall from the sky. Note that we will use <code class="blockgreen">pick random</code> to make the present appear in a different place each time.<br /></li>
-<li>By using the <code class="blocklightblue">touching [ Rudolph ]</code> block we can make the present disappear when touched, we can use this later to keep a score.</li>
-</ol>
+<li><p>By using the <code class="blocklightblue">touching [ Rudolph ]</code> block we can make the present disappear when touched, we can use this later to keep a score.</p>
 <p><img src="4c3b50764d139b7ee655faba893b7be2e3fde1da.png" alt="when FLAG clicked
 forever
     set [Finish v] to [0]
@@ -112,7 +111,8 @@ forever
             set (Finish) to [1]
         end
         if &lt;touching [Rudolph v]?&gt;
-            set (Finish) to [1]" /></p>
+            set (Finish) to [1]" /></p></li>
+</ol>
 </section>
 <section id="test-your-project-3" class="level2 flag">
 <h2>Test Your Project</h2>
@@ -122,8 +122,7 @@ forever
 <h2>Save your project</h2>
 <ol>
 <li>Let’s make the game more interesting by changing the colour of the presents each time they fall. Do this by using the <code class="blockpurple">change colour</code> block.<br /></li>
-<li>Change the speed of each present by replacing <code class="blockorange">set Speed to -1</code> with the <code class="blockgreen">pick random</code> block, try different values such as <strong>-10</strong> to <strong>-1</strong>. Your script should now look like this.</li>
-</ol>
+<li><p>Change the speed of each present by replacing <code class="blockorange">set Speed to -1</code> with the <code class="blockgreen">pick random</code> block, try different values such as <strong>-10</strong> to <strong>-1</strong>. Your script should now look like this.</p>
 <p><img src="a4b32e54490dc7be0b40d56a86e66bcbe3eedb26.png" alt="when FLAG clicked
 forever
     set [Finish v] to [0]
@@ -136,7 +135,8 @@ forever
             set (Finish) to [1]
         end
         if &lt;touching [Rudolph v]?&gt; then
-            set (Finish) to [1]" /></p>
+            set (Finish) to [1]" /></p></li>
+</ol>
 </section>
 <section id="test-your-project-4" class="level2 flag">
 <h2>Test Your Project</h2>
@@ -153,8 +153,7 @@ forever
 <ol>
 <li><strong>Let’s change our script to keep track of a score within the game.</strong> We can then use this later to work out when the game over message should appear.<br /></li>
 <li>Create a new variable. Call it <code class="blockorange">Score</code> and make it for all sprites. Leave this variable ticked so it appears on the screen.<br /></li>
-<li>Change the script behind the <strong>Present</strong> sprite to look like this. Note we have both added sound effects with the <code class="blockpink">play drum</code> command and also <code class="blockorange">change [ score ] by 1</code> when Rudolph touches the present.</li>
-</ol>
+<li><p>Change the script behind the <strong>Present</strong> sprite to look like this. Note we have both added sound effects with the <code class="blockpink">play drum</code> command and also <code class="blockorange">change [ score ] by 1</code> when Rudolph touches the present.</p>
 <p><img src="e8da20aa45c48b99803ee33af082c62a776ed9e8.png" alt="when FLAG clicked
 forever
     set [Finish v] to [0]
@@ -170,16 +169,13 @@ forever
         if &lt;touching [Rudolph v]?&gt; then
             play drum [39 v] for (0.2) beats    
             set (Finish) to [1]
-            change [Score v] by [1]" /></p>
-<ol>
-<li>Let’s add some music to the game, import the sound file <strong>Jingle_Bells.mp3</strong> to the <strong>Stage</strong>.</li>
-</ol>
+            change [Score v] by [1]" /></p></li>
+<li><p>Let’s add some music to the game, import the sound file <strong>Jingle_Bells.mp3</strong> to the <strong>Stage</strong>.</p>
 <p><img src="59a8c219b6ff3494b705cb76e1a3dcc290e51570.png" alt="when FLAG clicked
     set [ScrollX v] to [0]
     set [Score v] to [0]
-    play sound [Jingle_Bells v]" /></p>
-<ol>
-<li>Add the following script to the <strong>Stage</strong>, this will <code class="blockorange">set score to 0</code> when the game is started. It will also play Jingle Bells while the game is being played.</li>
+    play sound [Jingle_Bells v]" /></p></li>
+<li><p>Add the following script to the <strong>Stage</strong>, this will <code class="blockorange">set score to 0</code> when the game is started. It will also play Jingle Bells while the game is being played.</p></li>
 </ol>
 <p>Note, if at first the music sounds ‘choppy’ save your project, close Scratch and then open your project again.</p>
 </section>
@@ -195,26 +191,24 @@ forever
 <h1>STEP 4: Game over</h1>
 <ol>
 <li><strong>Let’s change our script to keep track of a score within the game.</strong> We can then use this later to work out when the game over message should appear.<br /></li>
-<li>Change the script on the <strong>Stage</strong> so when the <code class="blockorange">Score</code> reaches <strong>10</strong> we will <code class="blockyellow">broadcast</code> a <strong>GameOver</strong> message.</li>
-</ol>
+<li><p>Change the script on the <strong>Stage</strong> so when the <code class="blockorange">Score</code> reaches <strong>10</strong> we will <code class="blockyellow">broadcast</code> a <strong>GameOver</strong> message.</p>
 <p><img src="46acd2aadb9b28ff55a8945d8220e14ecdfaa65e.png" alt="when FLAG clicked
 set [ScrollX v] to [0]
 set [Score v] to [0]
 play sound [Jingle_Bells v]
 forever 
 if &lt;(score) = [10]&gt;
-    broadcast [GameOver v] and wait" /></p>
-<ol>
+    broadcast [GameOver v] and wait" /></p></li>
 <li>We now need to add in our GameOver message. Add the <strong>GameOver</strong> sprite to the project (use the <strong>GameOver.png</strong> file).<br /></li>
-<li><strong>Add the following script to the GameOver sprite.</strong> This will <code class="blockpurple">hide</code> the picture when the game starts and <code class="blockpurple">show</code> it when the GameOver message is received.</li>
-</ol>
+<li><p><strong>Add the following script to the GameOver sprite.</strong> This will <code class="blockpurple">hide</code> the picture when the game starts and <code class="blockpurple">show</code> it when the GameOver message is received.</p>
 <p><img src="701fbae37c8890decf858219228cf61e41daf3cc.png" alt="when FLAG clicked
 hide
 
 when I receive [GameOver v]
 go to front
 show
-stop [all v]" /></p>
+stop [all v]" /></p></li>
+</ol>
 <section id="test-your-project-6" class="level2 flag">
 <h2>Test Your Project</h2>
 <p><strong>Click the green flag,</strong> does the score change when Rudolph touches a present?</p>

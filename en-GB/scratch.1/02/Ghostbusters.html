@@ -44,13 +44,12 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 <p><strong>Now we want to make our ghost move</strong></p>
 <ul>
 <li>Add a <code class="blocklightgrey">Variable</code> for this sprite only called <code class="blockorange">speed</code>.<br />On the <strong>Stage</strong>, the stage monitor for this variable should say “<strong>Ghost1 speed</strong>”.<br />If it just says “speed”, delete the variable and create it again, for this sprite only. Uncheck the box next to the speed block in the <strong>Data palette</strong> so it does not show on the Stage.<br />The speed variable will control how fast the ghost moves. We use a variable so that we can change how fast the ghost moves as the game progresses.<br /></li>
-<li>We want the ghost to start moving when the game starts, <strong>so make a script like this</strong>:</li>
+<li><p>We want the ghost to start moving when the game starts, <strong>so make a script like this</strong>:</p>
+<p><img src="9f37d7c9b8ca8159515e9f4f64f87b90115006fb.png" alt="when FLAG clicked
+set [speed v] to [5]
+forever
+    move (speed) steps" /></p></li>
 </ul>
-<p><img src="fcca9c7608cebdb6b6e6aa863801c0da3be3e079.png" alt="
-    when FLAG clicked
-    set [speed v] to [5]
-    forever
-        move (speed) steps" /></p>
 </section>
 <section id="test-your-project" class="level2 flag">
 <h2>Test Your Project</h2>
@@ -59,16 +58,13 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 <section id="activity-checklist-1" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li>To stop the ghost getting stuck we need to make her go back the other way when she touches the edge of the screen. Edit your existing script by adding an <code class="blockblue">if on edge, bounce</code> block below your <code class="blockblue">move</code><code class="blockorange">speed</code><code class="blockblue">steps</code> block.</li>
-</ul>
-<p><img src="d2d9c2cecdface058828ae44af7c06eb56b45269.png" alt="
-    when FLAG clicked
-    set [speed v] to [5]
-    forever
-        move (speed) steps
-        if on edge, bounce" /></p>
-<ul>
-<li>To stop the ghost flipping upside down, click on the <code class="blockgrey">rotation style: left-right</code> button in the Sprite Summary area.</li>
+<li><p>To stop the ghost getting stuck we need to make her go back the other way when she touches the edge of the screen. Edit your existing script by adding an <code class="blockblue">if on edge, bounce</code> block below your <code class="blockblue">move</code><code class="blockorange">speed</code><code class="blockblue">steps</code> block.</p>
+<p><img src="de6d5893af49898ddcf3dcbede358a305ec75a06.png" alt="when FLAG clicked
+set [speed v] to [5]
+forever
+    move (speed) steps
+    if on edge, bounce" /></p></li>
+<li><p>To stop the ghost flipping upside down, click on the <code class="blockgrey">rotation style: left-right</code> button in the Sprite Summary area.</p></li>
 </ul>
 </section>
 <section id="test-your-project-1" class="level2 flag">
@@ -92,13 +88,12 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 <section id="activity-checklist-2" class="level2 check">
 <h2>Activity Checklist</h2>
 <p><strong>Create this script for the ghost:</strong></p>
-<p><img src="007cd800c885a7975a91cbcccd96dd4b0c6fd060.png" alt="
-    when FLAG clicked
-    forever
-        hide
-        wait (pick random (2) to (5)) secs
-        show
-        wait (pick random (3) to (5)) secs
+<p><img src="fc7d76eb97e8be73cfc66634445f194d9c457df7.png" alt="when FLAG clicked
+forever
+    hide
+    wait (pick random (2) to (5)) secs
+    show
+    wait (pick random (3) to (5)) secs
 " /></p>
 </section>
 <section id="test-your-project-2" class="level2 flag">
@@ -122,12 +117,11 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>In the <strong>Sounds</strong> tab, add a new sound <strong>Electronic/fairydust</strong>, using the <code class="blockgrey">Choose sound from library</code> button.</p></li>
-<li><p><strong>Add this script to the ghost</strong>:</p></li>
+<li><p><strong>Add this script to the ghost</strong>:</p>
+<p><img src="fe619ea49051f6f231786fb881139d9fa2e591de.png" alt="when this sprite clicked
+hide
+play sound [Fairydust v]" /></p></li>
 </ul>
-<p><img src="e56128d597a3fa9db8c7ea258478462316694a4f.png" alt="
-    when this sprite clicked
-    hide
-    play sound [Fairydust v]" /></p>
 </section>
 <section id="test-your-project-3" class="level2 flag">
 <h2>Test Your Project</h2>
@@ -150,25 +144,21 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 <section id="activity-checklist-4" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li>Create a new <code class="blockgrey">Variable</code> for all sprites called <strong>score</strong>, and alter the script for the ghost to increase this variable by one when it is clicked.</li>
+<li><p>Create a new <code class="blockgrey">Variable</code> for all sprites called <strong>score</strong>, and alter the script for the ghost to increase this variable by one when it is clicked.</p>
+<p><img src="6c64b3035b598ef048ff0270bfeddd5148f34fea.png" alt="when this sprite clicked
+hide
+play sound [Fairydust v]
+change [score v] by (1)" /></p></li>
+<li><p>Switch to the <strong>Stage</strong> and create a <strong>new variable</strong> called <strong>timer</strong>. Add a new script that occurs when the green flag is clicked to set <code class="blockorange">timer</code> to <strong>30</strong> and reset the score to <strong>0</strong>. Then use a <code class="blockyellow">repeat until</code> block to wait a second and then reduce <code class="blockorange">timer</code> by<br />one. This should repeat until timer is 0, at which point use <code class="blockyellow">stop all</code> to stop the game.</p>
+<p><img src="1992e3969fe703da3ba8bf6c3b98a26340ae3a22.png" alt="when FLAG clicked
+set [timer v] to (30)
+set [score v] to (0)
+repeat until &lt;(timer) = [0]&gt;
+    wait (1) secs
+    change [timer v] by (-1)
+
+stop [all v]" /></p></li>
 </ul>
-<p><img src="262d27d7fea586ae123b4b74a22a958667000acf.png" alt="
-    when this sprite clicked
-    hide
-    play sound [Fairydust v]
-    change [score v] by (1)" /></p>
-<ul>
-<li>Switch to the <strong>Stage</strong> and create a <strong>new variable</strong> called <strong>timer</strong>. Add a new script that occurs when the green flag is clicked to set <code class="blockorange">timer</code> to <strong>30</strong> and reset the score to <strong>0</strong>. Then use a <code class="blockyellow">repeat until</code> block to wait a second and then reduce <code class="blockorange">timer</code> by<br />one. This should repeat until timer is 0, at which point use <code class="blockyellow">stop all</code> to stop the game.</li>
-</ul>
-<p><img src="31511bd26ed2f284b9690fde455a82271454ebbd.png" alt="
-    when FLAG clicked
-    set [timer v] to (30)
-    set [score v] to (0)
-    repeat until &lt;(timer) = [0]&gt;
-        wait (1) secs
-        change [timer v] by (-1)
-    
-    stop [all v]" /></p>
 </section>
 <section id="test-your-project-4" class="level2 flag">
 <h2>Test Your Project</h2>

@@ -64,15 +64,11 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 <section id="activity-checklist-1" class="level2 check">
 <h2>Activity Checklist</h2>
 <ol>
-<li>First select the lion sprite and set it to <code class="blockblue">move (4) steps</code> when you press the <strong>‘L’</strong> key.</li>
-</ol>
-<p><img src="5f030d2b539995c45e725827c6c48a493c6811cd.png" alt="when [l v] key pressed
-    move (4) steps" /></p>
-<ol>
-<li>Next, select the parrot sprite and set it to <code class="blockblue">move (4) steps</code> when you press the <strong>‘A’</strong> key.</li>
-</ol>
+<li><p>First select the lion sprite and set it to <code class="blockblue">move (4) steps</code> when you press the <strong>‘L’</strong> key.<br /> <code>blocks     when [l v] key pressed         move (4) steps</code></p></li>
+<li><p>Next, select the parrot sprite and set it to <code class="blockblue">move (4) steps</code> when you press the <strong>‘A’</strong> key.</p>
 <p><img src="ea0da29ff29dcacb944b66526cb76769453ed58a.png" alt="when [a v] key pressed
-    move (4) steps" /></p>
+    move (4) steps" /></p></li>
+</ol>
 </section>
 <section id="test-your-project" class="level2 flag">
 <h2>Test Your Project</h2>
@@ -90,19 +86,17 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 <ol>
 <li>Add a new sprite from a file. Choose the <strong>button3</strong> sprite which is inside <strong>“Things”</strong>.<br /></li>
 <li>Edit the costume of the button sprite, add the text <strong>‘start’</strong> to it and click OK. Move the sprite to the middle of the stage.<br /></li>
-<li>Now add a script that shows the sprite when the project is run:</li>
-</ol>
+<li><p>Now add a script that shows the sprite when the project is run:</p>
 <p><img src="6b092c29425ba351f83f775c5750be3bce319e9c.png" alt="    when FLAG clicked
-    show" /></p>
-<ol>
-<li>Now we want the button to count down from 3 and then say go and then <code class="blockblue">hide</code> when it is clicked. Add another script like this one:</li>
-</ol>
+    show" /></p></li>
+<li><p>Now we want the button to count down from 3 and then say go and then <code class="blockblue">hide</code> when it is clicked. Add another script like this one:</p>
 <p><img src="e4146642f573e25db0a2c498766f864e72b4b2ba.png" alt="when this sprite clicked
     say [3] for (1) secs
     say [2] for (1) secs
     say [2] for (1) secs
     say [GO!] for (1) secs
-    hide" /></p>
+    hide" /></p></li>
+</ol>
 </section>
 <section id="test-your-project-1" class="level2 flag">
 <h2>Test Your Project</h2>
@@ -114,21 +108,17 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 <p>We only want the racers to move after the race has started and we want to know when the race has finished so we need a variable to hold that information.</p>
 <ol>
 <li>Add a variable for all sprites called <code class="blockorange">racing</code>. Untick the box next to it so it does not show on the stage.<br /></li>
-<li>Now set <strong>racing</strong> to be <strong>0</strong> when the project is first started. Change your <code class="blockyellow">when flag clicked</code> script from before to look like this:</li>
-</ol>
+<li><p>Now set <strong>racing</strong> to be <strong>0</strong> when the project is first started. Change your <code class="blockyellow">when flag clicked</code> script from before to look like this:</p>
 <p><img src="c7fe261470330ace56dcaf22a99fadf7eb376875.png" alt="when FLAG clicked
     show
-    set [racing v] to (0)" /></p>
-<ol>
+    set [racing v] to (0)" /></p></li>
 <li>Next, set the <strong>racing</strong> variable to be 1 when the starting countdown has finished.<br /></li>
-<li>Now we need to stop the lion and the parrot from moving unless the racing variable is set to be 1. Click on the parrot sprite. <strong>Add a control block to the script</strong> that only allows the parrot to move if <strong>racing = 1</strong>.</li>
-</ol>
+<li><p>Now we need to stop the lion and the parrot from moving unless the racing variable is set to be 1. Click on the parrot sprite. <strong>Add a control block to the script</strong> that only allows the parrot to move if <strong>racing = 1</strong>.</p>
 <p><img src="862519bb20dcebacc1653a655e832a588d2f849f.png" alt="
     when [a v] key pressed
     if &lt;(racing) = [1]&gt;
-        move (4) steps" /></p>
-<ol>
-<li>Now do the same for the lion sprite.</li>
+        move (4) steps" /></p></li>
+<li><p>Now do the same for the lion sprite.</p></li>
 </ol>
 </section>
 <section id="test-your-project-2" class="level2 flag">
@@ -146,26 +136,22 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 <section id="activity-checklist-3" class="level2 check">
 <h2>Activity Checklist</h2>
 <ol>
-<li>Add a block to the parrot’s script that sets the <strong>racing</strong> variable to be 0 when the sprite touches the edge of the screen.</li>
-</ol>
+<li><p>Add a block to the parrot’s script that sets the <strong>racing</strong> variable to be 0 when the sprite touches the edge of the screen.</p>
 <p><img src="c8d847225cfeeba3c665c15a745a87a1f28d34a6.png" alt="when [a v] key pressed
 if &lt;(racing) = [1]&gt;
     move (4) steps
     if &lt;touching [edge v]?&gt;
-    set (racing) to [0]" /></p>
-<ol>
+    set (racing) to [0]" /></p></li>
 <li>Now we want the parrot to let us know if it wins the race. Record a new sound for the Parrot sprite that will be played when the parrot wins. Click <code class="blocklightgrey">sounds</code> and then record the sound of the parrot winning the race!<br /></li>
-<li>Now add blocks that <code class="blockpurple">play</code> the sound you recorded and makes the parrot say it has won:</li>
-</ol>
+<li><p>Now add blocks that <code class="blockpurple">play</code> the sound you recorded and makes the parrot say it has won:</p>
 <p><img src="63957c0f693cd6cf5735a0cc9d42e8945155f981.png" alt="    when [a v] key pressed
     if &lt;(racing) = [1]&gt;
         move (4) steps
         if &lt;touching [edge v]?&gt;
             set (racing) to [0]
             play sound [recording1 v]
-            say [The Parrot Wins! v] for (3) secs   " /></p>
-<ol>
-<li>Now repeat these steps for the lioness.</li>
+            say [The Parrot Wins! v] for (3) secs   " /></p></li>
+<li><p>Now repeat these steps for the lioness.</p></li>
 </ol>
 </section>
 <section id="test-your-project-3" class="level2 flag">
@@ -184,8 +170,7 @@ if &lt;(racing) = [1]&gt;
 <section id="activity-checklist-4" class="level2 check">
 <h2>Activity Checklist</h2>
 <ol>
-<li>Click on the Parrot sprite.<br />Add a block that broadcasts a <strong>&quot;finished”</strong> message after the sprite says it has won.</li>
-</ol>
+<li><p>Click on the Parrot sprite.<br />Add a block that broadcasts a <strong>&quot;finished”</strong> message after the sprite says it has won.</p>
 <p><img src="b150a0748e51f9be5048cbb4151773c839b0a902.png" alt="when [a v] key pressed
 if &lt;(racing) = [1]&gt;
     move (4) steps
@@ -193,20 +178,15 @@ if &lt;(racing) = [1]&gt;
         set (racing) to [0]
         play sound [recording1 v]
         say [The Parrot Wins! v] for (3) secs
-        broadcast [finished v]" /></p>
-<ol>
-<li>Now we need to add a new script that listens for the finished broadcast and moves the parrot back to the start. What happens if you change the value that <strong>x</strong> is set to?</li>
-</ol>
+        broadcast [finished v]" /></p></li>
+<li><p>Now we need to add a new script that listens for the finished broadcast and moves the parrot back to the start. What happens if you change the value that <strong>x</strong> is set to?</p>
 <p><img src="19dc6417503fa4c1f570030cdb637718b60594db.png" alt="when I receive [finished v]
-    set x to (-170)" /></p>
-<ol>
+    set x to (-170)" /></p></li>
 <li>Now add the same script for the lioness. Test different <strong>x</strong> values to make sure the lion and the parrot line up at the start.<br /></li>
-<li>We also want to put the lion and the parrot in the same position when the project is run, so add another script to each that moves them to the start when we click the flag.</li>
-</ol>
+<li><p>We also want to put the lion and the parrot in the same position when the project is run, so add another script to each that moves them to the start when we click the flag.</p>
 <p><img src="f0f83b812562c866b3473e28eac324c59c9c0b9c.png" alt="when FLAG clicked
-    set x to (-170)" /></p>
-<ol>
-<li>Now click on the button sprite and add a script that shows it when it receives the finished message.</li>
+    set x to (-170)" /></p></li>
+<li><p>Now click on the button sprite and add a script that shows it when it receives the finished message.</p></li>
 </ol>
 </section>
 <section id="test-your-project-4" class="level2 flag">
@@ -222,8 +202,7 @@ if &lt;(racing) = [1]&gt;
 <ul>
 <li><strong>Try to add a booster</strong> that you can use once each race that moves the parrot or the lion <strong>30 steps in 1 go.</strong><br /></li>
 <li><strong>Add a new costume</strong> with fire coming out behind for each sprite and make it appear when the boost is pressed.<br /></li>
-<li><strong>Create another sound</strong> that the sprite will make when the boost is pressed.</li>
-</ul>
+<li><p><strong>Create another sound</strong> that the sprite will make when the boost is pressed.</p>
 <p><img src="4439f6da04ee4a5e49a5eba5727fd9070cc29f34.png" alt="when [p v] key pressed
 if &lt;&lt;(racing) = [1]&gt; and &lt;(boosted) = [0]&gt;&gt;
     switch to costume [parrot-boost v]
@@ -233,7 +212,8 @@ if &lt;&lt;(racing) = [1]&gt; and &lt;(boosted) = [0]&gt;&gt;
          set (racing) to [0]
         play sound [recording1 v]
         say [The Parrot Wins! v] for (3) secs
-        broadcast [finished v]" /></p>
+        broadcast [finished v]" /></p></li>
+</ul>
 </section>
 <section id="test-your-project-5" class="level2 flag">
 <h2>Test Your Project</h2>
@@ -249,8 +229,7 @@ if &lt;&lt;(racing) = [1]&gt; and &lt;(boosted) = [0]&gt;&gt;
 <li>Select the <code class="blocklightgrey">More Blocks</code> palette and then click the <code class="blocklightgrey">Make a Block</code> button.<br /></li>
 <li>Give the custom block a name by typing <strong>&quot;finished&quot;</strong> into the pink box. Then click OK.<br /></li>
 <li>You'll now see a <code class="blockpurple">define finished</code> block appear in the scripts window. Drag it to a clear area.<br /></li>
-<li>Detach the <code class="blockyellow">if</code><code class="blocklightblue">touching edge?</code><code class="blockyellow">then</code> block and drag it to the <code class="blockpurple">define finished</code> block.</li>
-</ol>
+<li><p>Detach the <code class="blockyellow">if</code><code class="blocklightblue">touching edge?</code><code class="blockyellow">then</code> block and drag it to the <code class="blockpurple">define finished</code> block.</p>
 <p><img src="e9d32fc8348aaec692744258a6434d21f6abda6b.png" alt="define finished
  if &lt;touching [edge v]?&gt;
      set (racing) to [0]
@@ -264,7 +243,8 @@ if &lt;&lt;(racing) = [1]&gt; and &lt;(boosted) = [0]&gt;&gt;
     set [boosted v] to [1]     
     move (4) steps
 finished" /></p>
-<p>Can you drag the <code class="blockpurple">finished</code> block from the palette and use it like any other code item?</p>
+<p>Can you drag the <code class="blockpurple">finished</code> block from the palette and use it like any other code item?</p></li>
+</ol>
 <p>Delete the other <code class="blockyellow">if</code><code class="blocklightblue">touching edge?</code> block from your script and replace it with another <code class="blockpurple">finished</code> custom block.</p>
 <p>Does this make your code easier to read? Can you create a similar custom block for the lioness sprite?</p>
 </section>
