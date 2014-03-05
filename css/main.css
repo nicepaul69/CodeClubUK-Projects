@@ -104,6 +104,7 @@ header .title {
 }
 header .logo img {
 	height: 100px;
+  	border: 0;
 }
 
 
