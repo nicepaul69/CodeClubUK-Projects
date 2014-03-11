@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Feliks i Herbert — Code Club</title>
+
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../../../css/lesson.css">
+  <link rel="stylesheet" href="../../../css/scratch.css">
+</head>
+<body>
+<header>
+<div class="logo"><a href="../../../index.html"><img src="../../../img/ccuk_logo.svg"/></a></div>
+<div class="title">Feliks i Herbert</div>
+<div><span class="level">Poziom 1</span></div>
+</header>
+<section class="legal">
+<div>
+These projects are for use inside the UK only. All Code Clubs <strong>must</strong> be registered. You can check registered clubs on the map at <a href="http://www.codeclub.org.uk/">www.codeclub.org.uk</a>. This coursework is developed in the open on GitHub, <a href="http://github.com/CodeClub/">github.com/CodeClub/</a> come and join us!
+</div>
+</section>
+<section class="breadcrumb">
+<ol class="breadcrumb"><li><a href="../../../index.html">Languages</a></li><li><a href="../../index.html">Polski</a></li><li><a href="../index.html">Scratch</a></li><li><strong>Feliks i Herbert</strong></li></ol>
+</section>
+<section id="wstep" class="level1 intro">
+<h1>Wstęp</h1>
+<p>Zrobimy grę w berka, w której kot Feliks goni mysz o imieniu Herbert. Będziesz sterować Herbertem przy pomocy myszki i masz za zadanie nie dać się złapać Feliksowi. Im dłużej będziesz przed nim uciekać, tym więcej punktów zdobędziesz. Nie daj się złapać, bo stracisz punkty!</p>
+<p><img src="feliks-i-herbert.png" alt="screenshot" /></p>
+</section>
+<section id="krok-1-feliks-podaza-za-kursorem-myszy" class="level1 activity">
+<h1>Krok 1: Feliks podąża za kursorem myszy</h1>
+<section id="zadania-do-wykonania" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li><p><strong>Stwórz nowy projekt.</strong></p></li>
+<li><p>Kliknij na <strong>scenę</strong> na lewo od duszka, następnie kliknij zakładkę <code class="blocklightgrey">Tła</code>, a później kliknij na obrazek <code class="blocklightgrey">Wybierz z biblioteki</code> i zaimportuj tło „hall” z katalogu „Indoors”. Usuń puste tło z listy.</p></li>
+<li>Kliknij na duszka, następnie kliknij na ikonkę „i” w jego lewym górnym rogu. Zmień nazwę duszka na <strong>Feliks</strong>.<br /></li>
+<li>Upewnij się, że Feliks obraca się tylko w lewo i prawo, wciskając ten przycisk:<br /></li>
+<li><p><strong>Stwórz poniższy skrypt</strong>:</p>
+<p><img src="2238c418f13970979b1f3d1a6e4d7aa8abf8b415.png" alt="    kiedy kliknięto zieloną flagę
+    zawsze
+        idź do [wskaźnik myszy v]
+        przesuń o (10) kroków
+        następny kostium
+        zagraj bębenkiem (3 v) przez (0.3) taktów
+    koniec" /></p></li>
+</ul>
+</section>
+<section id="przetestuj-swoj-projekt" class="level2 flag">
+<h2>Przetestuj swój projekt</h2>
+<p><strong>Kliknij zieloną flagę.</strong></p>
+<p>Czy Feliks podąża za kursorem myszy? Czy wygląda jakby chodził? Czy porusza się z odpowiednią prędkością?</p>
+</section>
+<section id="zapisz-swoj-projekt." class="level2 save">
+<h2>Zapisz swój projekt.</h2>
+</section>
+</section>
+<section id="krok-2-feliks-goni-herberta" class="level1 activity">
+<h1><strong>Krok 2:</strong> Feliks goni Herberta</h1>
+<p><em>Teraz sprawimy, aby Feliks zaczął gonić Herberta zamiast podążać za kursorem myszy.</em></p>
+<section id="zadania-do-wykonania-1" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li>Stwórz następnego duszka. Kliknij <code class="blockgrey">wybierz nowego duszka z biblioteki</code> i wybierz <strong>Zwierzęta/Mouse1</strong>.<br /></li>
+<li>Zmień nazwę duszka na <strong>Herbert</strong>.<br /></li>
+<li>Przełącz na zakładkę <strong>Kostiumy</strong>, a następnie kliknij na kostium na środku edytora. Pojawi się prostokąt wokół kostiumu. Przeciągnij róg prostokąta i zmniejsz Herberta tak, aby był mniejszy od Feliksa.<br /></li>
+<li>Upewnij się, że Herbert obraca się tylko w lewo i prawo.<br /></li>
+<li><p><strong>Dodaj poniższy skrypt do Herberta:</strong></p>
+<p><img src="76a2fee28fa2a9b722916ef17be6beeacdf7d383.png" alt="    kiedy kliknięto zieloną flagę
+    zawsze
+        idź do [wskaźnik myszy v]
+        ustaw w stronę [Feliks v]
+    koniec" /></p></li>
+</ul>
+</section>
+<section id="przetestuj-swoj-projekt-1" class="level2 flag">
+<h2>Przetestuj swój projekt</h2>
+<p><strong>Wciśnij zieloną flagę.</strong></p>
+<p>Czy Herbert podąża za kursorem myszy? Czy Feliks goni Herberta?</p>
+</section>
+<section id="zapisz-swoj-projekt.-1" class="level2 save">
+<h2>Zapisz swój projekt.</h2>
+</section>
+</section>
+<section id="krok-3-feliks-ogasza-ze-zapa-herberta" class="level1 activity">
+<h1><strong>Krok 3:</strong> Feliks ogłasza, że złapał Herberta</h1>
+<p><strong>Chcemy, aby Feliks nam powiedział, że złapał Herberta.</strong></p>
+<section id="zadania-do-wykonania-2" class="level2 check">
+<h2>Zadania do wykonania:</h2>
+<ul>
+<li><p><strong>Zmień skrypt Feliksa na poniższy:</strong></p>
+<p><img src="7293b8d7934e03f5f80abc571f74c32fae8d5f0b.png" alt="  kiedy kliknięto zieloną flagę
+  zawsze
+    idź do [wskaźnik myszy v]
+    przesuń o (10) kroków
+    następny kostium
+    zagraj bębenkiem (3 v) przez (0.3) taktów
+    jeżeli &lt;dotyka [Herbert v]?&gt;
+      powiedz [Mam cię!] przez (1) s
+    koniec
+  koniec" /></p></li>
+</ul>
+</section>
+<section id="przetestuj-swoj-projekt-2" class="level2 flag">
+<h2>Przetestuj swój projekt</h2>
+<p><strong>Wciśnij zieloną flagę.</strong></p>
+<p>Czy Feliks mówi, że złapał Herberta?</p>
+</section>
+<section id="zapisz-swoj-projekt.-2" class="level2 save">
+<h2>Zapisz swój projekt.</h2>
+</section>
+</section>
+<section id="krok-4-herbert-zamienia-sie-w-ducha-po-zapaniu" class="level1">
+<h1><strong>Krok 4:</strong> Herbert zamienia się w ducha po złapaniu</h1>
+<p><strong>Zamiast wiadomości od Feliksa, że złapał mysz, chcemy, aby Herbert zamienił się w ducha.</strong></p>
+<section id="zadania-do-wykonania-3" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li><p>Zamień skrypt Feliksa na poniższy, aby nadać wiadomość o złapaniu Herberta.</p>
+<p><img src="038efb1659ad29d2adb2178f7c6d2ebeaef3bd0a.png" alt="    kiedy kliknięto zieloną flagę
+    zawsze
+        idź do [wskaźnik myszy v]
+        przesuń o (10) kroków
+        następny kostium
+        zagraj bębenkiem [3 v] przez (0.3) taktów
+        jeżeli &lt;dotyka [Herbert v]?&gt;
+            nadaj [złapany v]
+            zagraj bębenkiem [17 v] przez (0.2) taktów
+            czekaj (1) s
+        koniec
+    koniec" /></p></li>
+<li><p>Dodaj Herbertowi nowy kostium: zaznacz Herberta, przejdź do zakładki Kostiumy i kliknij <code class="blocklightgray">wybierz kostium z biblioteki</code>. Wybierz kostium <strong>Fikcja/ghost2-a</strong>.</p></li>
+<li><p>Zmniejsz nowy kostium klikając na niego w edytorze i przeciągając róg prostokąta, który się pojawi.</p></li>
+<li><p>Zmień nazwy kostiumów Herberta: mysz nazwij „żywy”, a ducha - „nieżywy”.</p></li>
+<li><p><strong>Dodaj nowy skrypt do Herberta, który zamienia go w ducha</strong>:</p>
+<p><img src="e82ae0ff3b033edf175dc010371b43b60bcad47a.png" alt="    kiedy otrzymam [złapany v]
+    zmień kostium na [nieżywy v]
+    czekaj (1) s
+    zmień kostium na [żywy v]" /></p></li>
+</ul>
+</section>
+<section id="przetestuj-swoj-projekt-3" class="level2 flag">
+<h2>Przetestuj swój projekt</h2>
+<p><strong>Wciśnij zieloną flagę.</strong></p>
+<p>Czy Herbert zamienia się w ducha, gdy zostanie złapany?<br />Czy Feliks wydaje odpowiednie odgłosy w odpowiednich momentach?<br />Czy po złapaniu Feliks nie rusza się odpowiednio długo, aby Herbert mógł od niego uciec?</p>
+</section>
+<section id="zapisz-swoj-projekt.-3" class="level2 save">
+<h2>Zapisz swój projekt.</h2>
+</section>
+</section>
+<section id="krok-5-liczymy-punkty" class="level1 activity">
+<h1><strong>Krok 5:</strong> Liczymy punkty</h1>
+<p><strong>Dodajmy licznik punktów, aby było widać, jak dobrze nam idzie ratowanie Herberta.<br />Zaczniemy od zera i co sekundę będziemy dodawać jeden punkt. Gdy Feliks złapie Herberta, odejmiemy sto punktów.</strong></p>
+<section id="zadania-do-wykonania-4" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li><p>Stwórz zmienną o nazwie „Wynik” dla wszystkich duszków. Aby to zrobić, kliknij na <code class="blockorange">Dane</code>, stwórz zmienną i nazwij ją <code class="blockorange">wynik</code>. Upewnij się, że opcja &quot;Dla wszystkich duszków&quot; jest zaznaczona.</p></li>
+<li><p><strong>Kliknij na Scenę i dodaj oba poniższe skrypty:</strong></p>
+<p><img src="995e4ea728bfd95a9f6c5f67626400d9f77fc035.png" alt="    kiedy kliknięto zieloną flagę
+    ustaw [wynik v] na [0]
+    zawsze
+        zmień [wynik v] o (1)
+        czekaj (1) s
+    koniec
+
+    kiedy otrzymam [złapany v]
+    zmień [wynik v] o (-100)" /></p></li>
+</ul>
+</section>
+<section id="przetestuj-swoj-projekt-4" class="level2 flag">
+<h2>Przetestuj swój projekt</h2>
+<p><strong>Wciśnij zieloną flagę.</strong></p>
+<p>Czy wynik rośnie co sekundę o jeden punkt?<br />Czy ilość punktów spada o 100, kiedy Herbert zostanie złapany?<br />Co się dzieje, kiedy Herbert zostanie złapany zanim wynik wzrośnie do 100? Czy wynik zeruje się przy rozpoczęciu nowej gry?</p>
+</section>
+<section id="zapisz-swoj-projekt" class="level2 save">
+<h2>Zapisz swój projekt</h2>
+<p><strong>Brawo! To by było na tyle, teraz możesz cieszyć się swoją grą!</strong></p>
+<p>Nie zapomnij, że możesz podzielić się swoją grą ze swoimi przyjaciółmi i rodziną. Żeby to zrobić, kliknij menu <strong>Udostępnij</strong>.</p>
+</section>
+</section>
+<section class="legal">
+<div>
+These projects are for use inside the UK only. All Code Clubs <strong>must</strong> be registered. You can check registered clubs on the map at <a href="http://www.codeclub.org.uk/">www.codeclub.org.uk</a>. This coursework is developed in the open on GitHub, <a href="http://github.com/CodeClub/">github.com/CodeClub/</a> come and join us!
+
+<br/>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+</div>
+</section>
+</body>
+</div>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Code Club</title>
+
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../../../css/lesson.css">
+  
+</head>
+<body>
+<section class="legal">
+<div>
+These projects are for use inside the UK only. All Code Clubs <strong>must</strong> be registered. You can check registered clubs on the map at <a href="http://www.codeclub.org.uk/">www.codeclub.org.uk</a>. This coursework is developed in the open on GitHub, <a href="http://github.com/CodeClub/">github.com/CodeClub/</a> come and join us!
+</div>
+</section>
+<section class="breadcrumb">
+<ol class="breadcrumb"><li><a href="../../../index.html">Languages</a></li><li><a href="../../index.html">Polski</a></li><li><a href="../index.html">Scratch</a></li><li><strong></strong></li></ol>
+</section>
+<p>Poziom 2</p>
+<section id="pustynny-wyscig" class="level1">
+<h1>Pustynny wyścig</h1>
+<p><strong>Wstęp:</strong><br />Jest to gra dla dwóch graczy, podczas której papuga i lis ścigają się po pustyni. Gracze kierują swoją postacią wciskając szybko klawisz na klawiaturze. Zwierze, które pierwsze dotrze do krawędzi ekranu, wygrywa.</p>
+<section id="krok-1-stworz-scene-i-dodaj-duszki" class="level2">
+<h2>KROK 1: Stwórz scenę i dodaj duszki</h2>
+<ol>
+<li>Kliknij na scenę i dodaj tło z pustynią.<br /></li>
+<li>Dodaj nowego duszka i wybierz kostium lwa z katalogu ze zwierzętami.<br /></li>
+<li>Dodaj kolejnego duszka i wybierz kostium papugi.</li>
+</ol>
+</section>
+<section id="krok-2-spraw-aby-lew-i-papuga-sie-poruszay" class="level2">
+<h2>KROK 2: Spraw, aby lew i papuga się poruszały</h2>
+<p>Chcemy, aby duszki poruszały się w odpowiedzi na wciśnięcie klawiszy.</p>
+<ol>
+<li>Na początek wybierzmy lwa i ustawmy, aby poruszał się o 4 kroki po wciśnięciu klawisza 'L'</li>
+</ol>
+<p><img src="ade4f778d58b3532524cf66f7f7807d5c8b82a80.png" alt="
+    kiedy klawisz l naciśnięty
+    przesuń o 4 kroków" /></p>
+<ol>
+<li>Teraz pora na papugę. Ustawmy, aby przesuwała się o 4 kroki po wciśnięciu klawisza 'A'.</li>
+</ol>
+<p><img src="36367d6d4ce40fd587c96b0783810e24f6dbbb73.png" alt="
+    kiedy klawisz a naciśnięty
+    przesuń o 4 kroków" /></p>
+<section id="przetestuj-swoj-projekt" class="level3">
+<h3>Przetestuj swój projekt</h3>
+<p><strong>Wciśnij zieloną flagę</strong><br />Czy lew i papuga poruszają się po ekranie, gdy wciskasz 'A' i 'L'?</p>
+<p>Zapisz swój projekt.</p>
+</section>
+</section>
+<section id="krok-3-rozpoczecie-wyscigu" class="level2">
+<h2>KROK 3: Rozpoczęcie wyścigu</h2>
+<p>Aby móc określić później, kto wygrał, musimy najpierw wiedzieć, kiedy wyścig się rozpoczął. <strong>Dodajmy przycisk Start.</strong></p>
+<ol>
+<li>Dodaj nowego duszka i wybierz kostium przycisku z katalogu &quot;things&quot;. Nazwij go Start.<br /></li>
+<li>Przejdź do edycji kostiumu, napisz na nim 'Start' i wciśnij OK. Przesuń duszka na środek sceny.<br /></li>
+<li>Dodaj do niego skrypt, który pokazuje przycisk, kiedy gra jest uruchomiona:</li>
+</ol>
+<p><img src="884dfd02f4f8b65e8dcccc1ab17182603337e130.png" alt="
+    kiedy kliknięto flagę
+    pokaż" /></p>
+<ol>
+<li>Teraz chcemy, aby przycisk odliczał od 3 w dół i ogłaszał start wyścigu, a następnie się chował. Dodaj poniższy skrypt:</li>
+</ol>
+<p><img src="72742560a4251881e6d488c4070ec6b101b36580.png" alt="
+    kiedy kliknięto Start
+    powiedz 3 przez 1 s
+    powiedz 2 przez 1 s
+    powiedz 1 przez 1 s
+    powiedz Start! przez 1 s
+    ukryj" /></p>
+<section id="przetestuj-swoj-projekt-1" class="level3">
+<h3>Przetestuj swój projekt</h3>
+<p><strong>Wciśnij zieloną flagę</strong></p>
+<p>Czy widzisz odliczanie po kliknięciu przycisku? Czy przycisk znika po zakończeniu odliczania?</p>
+<p>Zapisz swój projekt.</p>
+<p>Chcemy, aby ścigający poruszali się tylko po rozpoczęciu wyścigu. Chcemy też wiedzieć, kiedy wyścig się zakończył. Będziemy potrzebować zmiennej do przechowywania tej informacji.</p>
+<ol>
+<li>Dodaj zmienną do wszystkich duszków i nazwij ją wyścig. Odznacz pole przy niej, aby nie było jej widać na scenie.<br /></li>
+<li>Teraz ustaw wyścig na 0, kiedy gra się rozpocznie. Dodaj ten krok do skryptu przycisku:</li>
+</ol>
+<p><img src="12623df12b6c55aaee96d59cd1d8489aeeaf7e45.png" alt="
+    kiedy kliknięto flagę
+    pokaż
+    ustaw wyścig na 0" /></p>
+<ol>
+<li>Następnie ustaw, aby zmienna wyścig zmieniała się na 1 po skończeniu odliczania do rozpoczęcia wyścigu.<br /></li>
+<li>Teraz musimy się upewnić, że lew i papuga mogą się ruszać tylko wtedy, kiedy zmienna wyścig jest ustawiona na 1. Kliknij na duszka z papugą. __Dodaj blok kontroli do skryptu, który sprawdza, czy zmienna jest równa 1:</li>
+</ol>
+<p><img src="5473580fbb72b1b7fd4f08d3efb13b7beb90b590.png" alt="    
+    kiedy klawisz a naciśnięty
+    jeżeli wyścig = 1
+        przesuń o 4 kroków
+    (koniec jeżeli)" /></p>
+<ol>
+<li>Ustaw to samo dla lwa.</li>
+</ol>
+</section>
+<section id="przetestuj-swoj-projekt-2" class="level3">
+<h3>Przetestuj swój projekt</h3>
+<p><strong>Wciśnij zieloną flagę</strong></p>
+<p>Czy lew i papuga ruszają się tylko po zakończeniu odliczania?</p>
+<p>Teraz chcemy notować, kto wygrał wyścig i usuwać tę informację po zakończeniu gry, aby można było zacząć od nowa.</p>
+</section>
+</section>
+<section id="krok-4-konczenie-wyscigu" class="level2">
+<h2>KROK 4: Kończenie wyścigu</h2>
+<ol>
+<li>Dodaj blok do skryptu papugi, który ustawia zmienną wyścig na 0, kiedy papuga dotknie brzegu ekranu.</li>
+</ol>
+<p><img src="75bb36ce14b9b4cdb4516dcea654c2aa742f11af.png" alt="
+    kiedy klawisz a naciśnięty
+    jeżeli wyścig = 1
+        przesuń o 4 kroki
+        jeżeli dotyka krawędź
+            ustaw wyścig na 0
+        (koniec jeżeli)
+    (koniec jeżeli)
+    " /></p>
+<ol>
+<li><p>Teraz chcemy, aby papuga dała nam znać, czy wygrała. Nagraj nowy dźwięk dla papugi, który będzie odegrany, jeżeli papuga wygra. Przejdź na kartę <strong>dźwięki</strong> duszka i nagraj odgłos zwycięstwa!</p></li>
+<li><p>Dodaj do skryptu komendę, która odgrywa to nagranie po wygranej:</p></li>
+</ol>
+<p><img src="339197ef45ad8aa43f92c089696551e7b196ad38.png" alt="
+    kiedy klawisz a naciśnięty
+    jeżeli wyścig = 1
+        przesuń o 4 kroki
+        jeżeli dotyka krawędź
+            ustaw wyścig na 0
+            zagraj dźwięk nagrywanie1
+            powiedz Papuga wygrała! przez 3 s
+            (koniec jeżeli)
+        (koniec jeżeli)
+" /></p>
+<ol>
+<li>Powtórz to samo dla lwa.</li>
+</ol>
+<section id="przetestuj-swoj-projekt-3" class="level3">
+<h3>Przetestuj swój projekt</h3>
+<p><strong>Wciśnij zieloną flagę</strong></p>
+<p>Czy działa rozpoczynanie wyścigu po wciśnięciu przycisku? Można się ścigać wciskając przyciski 'A' i 'L'?<br />Czy duszki dobrze ogłaszają, który z nich wygrał?</p>
+<p>Zapisz swój projekt.</p>
+</section>
+</section>
+<section id="krok-5-restartowanie-gry" class="level2">
+<h2>KROK 5: Restartowanie gry</h2>
+<p>Po zakończeniu wyścigu musimy powiedzieć wszystkim duszkom, że to koniec i zresetować grę, aby mogła się zacząć od nowa.</p>
+<p><strong>Duszek, który wygra, musi ogłosić swoje zwycięstwo.</strong></p>
+<ol>
+<li>Kliknij na papugę i dodaj do skryptu ogłaszanie końca wyścigu po wygranej.</li>
+</ol>
+<p><img src="6f3fe41b95ab245e0c8a8bac6c98b97e928c4cb0.png" alt="
+    kiedy klawisz a naciśnięty
+    jeżeli wyścig = 1
+        przesuń o 4 kroki
+        jeżeli dotyka krawędź
+            ustaw wyścig na 0
+            zagraj dźwięk nagrywanie1
+            powiedz Papuga wygrała! przez 3 s
+            nadaj koniec
+        (koniec jeżeli)
+    (koniec jeżeli)
+" /></p>
+<ol>
+<li>Teraz musimy dodać nowy skrypt, który nasłuchuje, czy wyścig został zakończony i jeżeli tak, to przesuwa papugę na linię startu.</li>
+</ol>
+<p><img src="0dabc57b1cd6dbc9c81051d5e2525a8f01c9b885.png" alt="
+    kiedy otrzymam koniec
+    ustaw x na -175" /></p>
+<ol>
+<li>Dodaj takie same skrypty dla lwa. W przypadku tego drugiego przetestuj inne wartości dla x, aby lew i papuga byli równo ustawieni na starcie.<br /></li>
+<li>Chcemy też, aby lew i papuga byli równo ustawieni po rozpoczęciu wyścigu, więc dodaj do obu duszków poniższy skrypt, który ustawia je równo po wciśnięciu flagi:</li>
+</ol>
+<p><img src="891878a3ed6658417fd5f05e1e47b565584acee8.png" alt="
+    kiedy kliknięto flagę
+    ustaw x na -175" /></p>
+<ol>
+<li>Przejdź do duszka przycisku i dodaj skrypt, który go pokazuje po otrzymaniu komunikatu, że wyścig się zakończył.</li>
+</ol>
+<section id="przetestuj-swoj-projekt-4" class="level3">
+<h3>Przetestuj swój projekt</h3>
+<p><strong>Wciśnij zieloną flagę</strong></p>
+<p>Możesz się ścigać z przyjacielem, kiedy jedno z was kieruje papugą wciskając 'A', a drugie kieruje lwem wciskając 'L'?</p>
+<p>Zapisz swój projekt.</p>
+</section>
+</section>
+<section id="wyzwanie-dodaj-dopalacz" class="level2">
+<h2>Wyzwanie: Dodaj dopalacz</h2>
+<ul>
+<li><strong>Spróbuj dodać dopalacz</strong>, który każdy duszek może użyć tylko raz podczas wyścigu. Dopalacz przesuwa postać w przód o <strong>30 kroków</strong>.<br /></li>
+<li><strong>Dodaj nowy kostium</strong> z płomieniem za każdym duszkiem i ustaw, aby się pokazywał, kiedy dopalacz zostanie użyty.<br /></li>
+<li><strong>Nagraj następny dźwięk</strong>, który będzie odegrany po użyciu dopalacza.</li>
+</ul>
+<section id="przetestuj-swoj-projekt-5" class="level3">
+<h3>Przetestuj swój projekt</h3>
+<p>Zapisz swój projekt.</p>
+<p><strong>Brawo! To by było na tyle, teraz możesz się cieszyć swoją grą!</strong><br />Nie zapomnij, że możesz podzielić się swoją grą ze swoimi przyjaciółmi i rodziną. Żeby to zrobić, kliknij menu <strong>Udostępnij</strong>.</p>
+</section>
+</section>
+</section>
+<section class="legal">
+<div>
+These projects are for use inside the UK only. All Code Clubs <strong>must</strong> be registered. You can check registered clubs on the map at <a href="http://www.codeclub.org.uk/">www.codeclub.org.uk</a>. This coursework is developed in the open on GitHub, <a href="http://github.com/CodeClub/">github.com/CodeClub/</a> come and join us!
+
+<br/>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+</div>
+</section>
+</body>
+</div>
+</html>
