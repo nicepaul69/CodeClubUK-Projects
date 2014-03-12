@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Code Club</title>
+    <title>Jednoręki bandyta — Code Club</title>
 
   <style type="text/css">code{white-space: pre;}</style>
   <!--[if lt IE 9]>
@@ -11,24 +11,28 @@
   <![endif]-->
     <link rel="stylesheet" href="../../../css/main.css">
     <link rel="stylesheet" href="../../../css/lesson.css">
-  
+  <link rel="stylesheet" href="../../../css/scratch.css">
 </head>
 <body>
+<header>
+<div class="logo"><a href="../../../index.html"><img src="../../../img/ccuk_logo.svg"/></a></div>
+<div class="title">Jednoręki bandyta</div>
+<div><span class="level">Poziom 2</span></div>
+</header>
 <section class="legal">
 <div>
 These projects are for use inside the UK only. All Code Clubs <strong>must</strong> be registered. You can check registered clubs on the map at <a href="http://www.codeclub.org.uk/">www.codeclub.org.uk</a>. This coursework is developed in the open on GitHub, <a href="http://github.com/CodeClub/">github.com/CodeClub/</a> come and join us!
 </div>
 </section>
 <section class="breadcrumb">
-<ol class="breadcrumb"><li><a href="../../../index.html">Languages</a></li><li><a href="../../index.html">Polski</a></li><li><a href="../index.html">Scratch</a></li><li><strong></strong></li></ol>
+<ol class="breadcrumb"><li><a href="../../../index.html">Languages</a></li><li><a href="../../index.html">Polski</a></li><li><a href="../index.html">Scratch</a></li><li><strong>Jednoręki bandyta</strong></li></ol>
 </section>
-<p>Poziom 2</p>
-<section id="jednoreki-bandyta" class="level1">
-<h1>Jednoręki bandyta</h1>
-<p><strong>Wstęp:</strong></p>
+<section id="wstep" class="level1 intro">
+<h1>Wstęp</h1>
 <p>Prosta gra z trzema duszkami, które się zmieniają w trakcie gry. Jeżeli po zatrzymaniu wszystkie duszki wyglądają tak samo – gratulacje! Tak jak w jednorękim bandycie, takie same duszki wygrywają.</p>
-<section id="krok-1-tworzenie-duszka-ktory-zmienia-kostiumy" class="level2">
-<h2>KROK 1: Tworzenie duszka, który zmienia kostiumy</h2>
+</section>
+<section id="krok-1-tworzenie-duszka-ktory-zmienia-kostiumy" class="level1">
+<h1>KROK 1: Tworzenie duszka, który zmienia kostiumy</h1>
 <p><strong>Zaimportujmy potrzebne obrazki do gry</strong></p>
 <ol>
 <li>Rozpocznij nowy projekt w Scratchu. Usuń kota, klikając na nim prawym przyciskiem myszki i wybierając 'usuń'.<br /></li>
@@ -38,8 +42,8 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 </ol>
 <p><strong>Skoro mamy już kostiumy, teraz sprawmy, aby duszek nosił je wszystkie na zmianę.</strong></p>
 </section>
-<section id="krok-2-zmieniamy-pojawiajace-sie-obrazki" class="level2">
-<h2>KROK 2: Zmieniamy pojawiające się obrazki</h2>
+<section id="krok-2-zmieniamy-pojawiajace-sie-obrazki" class="level1">
+<h1>KROK 2: Zmieniamy pojawiające się obrazki</h1>
 <ol>
 <li>Przejdź do zakładki Skrypty.<br /></li>
 <li>Kliknij na palecie Kontrola i przeciągnij blok &quot;kiedy kliknięto FLAGĘ&quot; na obszar ze skryptami.<br /></li>
@@ -54,19 +58,19 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
         następny kostium
         czekaj 0.1 s
     (koniec zawsze)" /></p>
-<section id="przetestuj-swoj-projekt" class="level3">
-<h3>Przetestuj swój projekt</h3>
+<section id="przetestuj-swoj-projekt" class="level2">
+<h2>Przetestuj swój projekt</h2>
 <p><strong>Kliknij zieloną flagę.</strong></p>
 <p>Czy kostiumy zmieniają się z rozsądną szybkością?</p>
 <p>Zapisz swój projekt.</p>
 </section>
-<section id="rzeczy-do-sprobowania" class="level3">
-<h3>Rzeczy do spróbowania</h3>
+<section id="rzeczy-do-sprobowania" class="level2">
+<h2>Rzeczy do spróbowania</h2>
 <p>Zmień ilość sekund w bloku &quot;czekaj&quot;. Jak myślisz, przy jakiej wartości gra stanie się zbyt prosta, a przy jakiej wartości będzie za trudna?</p>
 </section>
 </section>
-<section id="krok-3-zatrzymujemy-obrazki-kliknieciem-klawisza-myszki" class="level2">
-<h2>KROK 3: Zatrzymujemy obrazki kliknięciem klawisza myszki</h2>
+<section id="krok-3-zatrzymujemy-obrazki-kliknieciem-klawisza-myszki" class="level1">
+<h1>KROK 3: Zatrzymujemy obrazki kliknięciem klawisza myszki</h1>
 <p>Świetnie! Potrafimy już sprawić, aby kostiumy duszka zmieniały się w nieskończoność, ale jak zrobić, aby zatrzymały się, kiedy na niego klikniemy?</p>
 <ol>
 <li>Kliknij na palecie Zmienne i stwórz nową zmienną. Nazwij ją &quot;zatrzymano&quot; i zaznacz, że ma być dostępna 'dla każdego duszka'. Następnie odznacz haczyk obok niej, aby nie była widoczna na Scenie.<br /></li>
@@ -74,8 +78,8 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 <li>Teraz musimy sprawić, aby obrazek przestał się zmieniać, kiedyś zmienna &quot;zatrzymano&quot; będzie miała wartość 1. Kliknij na palecie Kontrola i zamień pętlę &quot;zawsze&quot; na pętlę &quot;zawsze, jeżeli&quot; w bloku &quot;kiedy kliknięto FLAGĘ&quot;. Użyj wyrażenia ze znakiem równości, aby sprawdzić, czy &quot;zatrzymano&quot; jest równe 0.<br /></li>
 <li>Na koniec dodaj &quot;ustaw zatrzymano na 0&quot; zaraz pod kliknięciem we flagę.</li>
 </ol>
-<section id="przetestuj-swoj-projekt-1" class="level3">
-<h3>Przetestuj swój projekt</h3>
+<section id="przetestuj-swoj-projekt-1" class="level2">
+<h2>Przetestuj swój projekt</h2>
 <p><strong>Kliknij zieloną flagę, poczekaj chwilę i kliknij na duszka.</strong></p>
 <p>Czy duszek zmienia kostium, zanim na niego klikniesz?</p>
 <p>Czy duszek zatrzymuje się po kliknięciu?</p>
@@ -84,29 +88,29 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 <p>Zapisz swój projekt.</p>
 </section>
 </section>
-<section id="step-4-dodajemy-dodatkowe-duszki" class="level2">
-<h2>Step 4: Dodajemy dodatkowe duszki</h2>
+<section id="step-4-dodajemy-dodatkowe-duszki" class="level1">
+<h1>Step 4: Dodajemy dodatkowe duszki</h1>
 <p><strong>Teraz potrzebujemy stworzyć dwa inne duszki, abyśmy mogli zagrać w naszą grę!</strong></p>
 <ol>
 <li>Zduplikuj duszka (Duszek1), klikając na nim prawym przyciskiem myszki.<br /></li>
 <li>Zduplikuj go jeszcze raz, tak aby były w sumie trzy.<br /></li>
 <li>Poprzesuwaj duszki na Scenie, tak aby były obok siebie. Jeśli chcesz, możesz je trochę zmniejszyć.</li>
 </ol>
-<section id="przetestuj-swoj-projekt-2" class="level3">
-<h3>Przetestuj swój projekt</h3>
+<section id="przetestuj-swoj-projekt-2" class="level2">
+<h2>Przetestuj swój projekt</h2>
 <p><strong>Kliknij zieloną flagę.</strong></p>
 <p>Wszystkie duszki powinny się zmieniać. Spróbuj zatrzymać je na tym samym obrazku!</p>
 <p>Zapisz swój projekt.</p>
 </section>
-<section id="rzeczy-do-sprobowania-1" class="level3">
-<h3>Rzeczy do spróbowania</h3>
+<section id="rzeczy-do-sprobowania-1" class="level2">
+<h2>Rzeczy do spróbowania</h2>
 <p>Gdy zaczynasz grę, wszystkie duszki pokazują ten sam kostium i zmieniają się razem w taki sam sposób. Może spróbuj to zmienić tak, aby kostiumy zmieniały się losowo po wciśnięciu flagi?</p>
 <p>Wskazówka: spróbuj wylosować strój dla każdego duszka po rozpoczęciu gry.</p>
 <p><strong>Brawo! Udało ci się skończyć podstawową wersję gry! Jest jeszcze kilka rzeczy, które możesz zmienić w grze. Zmierz się z poniższymi wyzwaniami!</strong></p>
 </section>
 </section>
-<section id="wyzwanie-1-zwieksz-poziom-trudnosci-gry" class="level2">
-<h2>Wyzwanie 1: Zwiększ poziom trudności gry</h2>
+<section id="wyzwanie-1-zwieksz-poziom-trudnosci-gry" class="level1">
+<h1>Wyzwanie 1: Zwiększ poziom trudności gry</h1>
 <p>Zwiększmy poziom trudności gry. Zwiększenie prędkości, z jaką zmieniają się obrazki, jest najprostym rozwiązaniem. Spróbuj czegoś bardziej wyszukanego. Oto kilka pomysłów, które mogą ci się spodobać:</p>
 <ol>
 <li>Zmień ilość kostiumów dla każdego duszka.<br /></li>
@@ -117,13 +121,13 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 <p><strong>Baw się dobrze, wymyślając swoje własne modyfikacje!</strong></p>
 <p>Za każdym razem, jak coś zmieniasz, zastanów się, jaki ma to wpływ na poziom trudności gry. Czy gra robi się łatwiejsza czy trudniejsza? Jak możesz zmienić poziom trudności tak, aby był w sam raz?</p>
 </section>
-<section id="wyzwanie-2-dodaj-zmienny-poziom-trudnosci-niech-gra-staje-sie-coraz-atwiejsza-lub-coraz-trudniejsza-w-miare-upywu-czasu" class="level2">
-<h2>Wyzwanie 2: Dodaj zmienny poziom trudności: niech gra staje się coraz łatwiejsza lub coraz trudniejsza w miarę upływu czasu</h2>
+<section id="wyzwanie-2-dodaj-zmienny-poziom-trudnosci-niech-gra-staje-sie-coraz-atwiejsza-lub-coraz-trudniejsza-w-miare-upywu-czasu" class="level1">
+<h1>Wyzwanie 2: Dodaj zmienny poziom trudności: niech gra staje się coraz łatwiejsza lub coraz trudniejsza w miarę upływu czasu</h1>
 <p>Różni ludzie różnie sobie radzą z grą. <strong>Jak możesz zmodyfikować grę, aby dopasowywała swój poziom trudności do zdolności gracza?</strong></p>
 <p>Jednym z rozwiązań jest <strong>dopasowanie prędkości, z jaką zmieniają się kostiumy</strong>. Możesz dodać zmienną o nazwie <strong>opóźnienie</strong>, aby kierować blokiem &quot;czekaj&quot;. Jeżeli gracz wygra rundę, opóźnienie może się zmniejszyć (co podniesie nieco poziom trudności gry). Jeżeli gracz przegra rundę, opóźnienie może wzrosnąć, co ułatwi nieco grę.</p>
 </section>
-<section id="wyzwanie-3-sprawdz-kiedy-wszystkie-duszki-zatrzymay-sie-na-tym-samym-obrazku" class="level2">
-<h2>Wyzwanie 3: Sprawdź, kiedy wszystkie duszki zatrzymały się na tym samym obrazku</h2>
+<section id="wyzwanie-3-sprawdz-kiedy-wszystkie-duszki-zatrzymay-sie-na-tym-samym-obrazku" class="level1">
+<h1>Wyzwanie 3: Sprawdź, kiedy wszystkie duszki zatrzymały się na tym samym obrazku</h1>
 <p><strong>Celem gry jest takie kliknięcie na duszki, aby zatrzymały się wszystkie pokazując ten sam kostium. Byłoby fajnie, gdyby Scena potrafiła wykryć, kiedy runda się skończyła i jaki był wynik gry. Scena mogłaby sprawdzać, czy wszystkie duszki są takie same.</strong></p>
 <p>Po pierwsze, Scena musi wiedzieć, kiedy gracz skończył. Aby to zrobić, musi sprawdzać, czy wszystkie duszki przestały się ruszać po kliknięciu na jednym z nich. Zmodyfikuj blok &quot;kiedy kliknięto Duszek&quot; dla każdego duszka i nadawaj komunikat &quot;sprawdźCzyKoniec&quot;.</p>
 <p>Scena może odpowiedzieć na ten komunikat i sprawdzić, czy gra się skończyła, sprawdzając czy zmienna &quot;zatrzymano&quot; jest ustawiona na 1 dla wszystkich duszków. Możemy do tego użyć bloku &quot;współrzędna x z Duszek&quot; dla każdego duszka i zamienić &quot;współrzędną x&quot; na zmienną &quot;zatrzymano&quot;. Jeżeli wartość zmiennej &quot;zatrzymano&quot; jest równa 1 dla wszystkich duszków, wówczas wiemy, że gra się skończyła i możemy sprawdzić czy gracz wygrał.</p>
@@ -132,7 +136,6 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 <p>Możesz teraz ogłosić wynik gry, korzystając z nadawania komunikatów, które mogą zostać odebrane przez innego duszka. Na przykład, Feliks mógłby pojawić się i pogratulować graczowi.</p>
 <p><strong>Brawo! To by było na tyle, teraz możesz się cieszyć swoją grą!</strong></p>
 <p>Nie zapomnij, że możesz podzielić się swoją grą ze swoimi przyjaciółmi i rodziną. Żeby to zrobić, kliknij menu <strong>Udostępnij</strong>.</p>
-</section>
 </section>
 <section class="legal">
 <div>

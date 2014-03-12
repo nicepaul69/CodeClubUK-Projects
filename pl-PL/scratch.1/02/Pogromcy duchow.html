@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Code Club</title>
+    <title>Pogromcy duchów — Code Club</title>
 
   <style type="text/css">code{white-space: pre;}</style>
   <!--[if lt IE 9]>
@@ -11,24 +11,28 @@
   <![endif]-->
     <link rel="stylesheet" href="../../../css/main.css">
     <link rel="stylesheet" href="../../../css/lesson.css">
-  
+  <link rel="stylesheet" href="../../../css/scratch.css">
 </head>
 <body>
+<header>
+<div class="logo"><a href="../../../index.html"><img src="../../../img/ccuk_logo.svg"/></a></div>
+<div class="title">Pogromcy duchów</div>
+<div><span class="level">Poziom 1</span></div>
+</header>
 <section class="legal">
 <div>
 These projects are for use inside the UK only. All Code Clubs <strong>must</strong> be registered. You can check registered clubs on the map at <a href="http://www.codeclub.org.uk/">www.codeclub.org.uk</a>. This coursework is developed in the open on GitHub, <a href="http://github.com/CodeClub/">github.com/CodeClub/</a> come and join us!
 </div>
 </section>
 <section class="breadcrumb">
-<ol class="breadcrumb"><li><a href="../../../index.html">Languages</a></li><li><a href="../../index.html">Polski</a></li><li><a href="../index.html">Scratch</a></li><li><strong></strong></li></ol>
+<ol class="breadcrumb"><li><a href="../../../index.html">Languages</a></li><li><a href="../../index.html">Polski</a></li><li><a href="../index.html">Scratch</a></li><li><strong>Pogromcy duchów</strong></li></ol>
 </section>
-<p>Poziom 1</p>
-<section id="pogromcy-duchow" class="level1">
-<h1>Pogromcy duchów</h1>
-<p><strong>Wstęp:</strong></p>
+<section id="wstep" class="level1 intro">
+<h1>Wstęp</h1>
 <p>Ten projekt jest bazuje na popularnej angielskiej grze zwanej Whack-A-Mole: zdobywasz punkty klikając duchy, które pojawiają się na ekranie. Celem gry jest zdobycie jak największej ilości punktów w ciągu 30 sekund.</p>
-<section id="krok-1-stworz-latajacego-ducha" class="level2">
-<h2>KROK 1: Stwórz latającego ducha</h2>
+</section>
+<section id="krok-1-stworz-latajacego-ducha" class="level1">
+<h1>KROK 1: Stwórz latającego ducha</h1>
 <ol>
 <li><strong>Stwórz nowy projekt.</strong><br /></li>
 <li><strong>Usuń duszka kota</strong> i zastąp tło lasem (woods) z katalogu <strong>Nature</strong>.<br /></li>
@@ -45,8 +49,8 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
     zawsze
         przesuń o prędkość kroków
     (koniec zawsze)" /></p>
-<section id="przetestuj-swoj-projekt" class="level3">
-<h3>Przetestuj swój projekt</h3>
+<section id="przetestuj-swoj-projekt" class="level2">
+<h2>Przetestuj swój projekt</h2>
 <p><strong>Kliknij zieloną flagę</strong> i zobacz, co robi duch. Dlaczego utknął na brzegu ekranu?</p>
 <ol>
 <li><p>Aby duch nie zatrzymywał się na brzegu ekranu, musimy sprawić, aby zawracał za każdym razem, gdy doleci do brzegu ekranu. Dodajmy blok &quot;jeżeli na brzegu, odbij się&quot; poniżej bloku &quot;przesuń o prędkość kroków&quot; w skrypcie ducha.</p>
@@ -60,21 +64,21 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 <li><p>Aby duch nie obracał się do góry nogami, wybierz opcję &quot;odwróć tylko w prawo-lewo&quot; w ustawieniach tego duszka.</p></li>
 </ol>
 </section>
-<section id="przetestuj-swoj-projekt-1" class="level3">
-<h3>Przetestuj swój projekt</h3>
+<section id="przetestuj-swoj-projekt-1" class="level2">
+<h2>Przetestuj swój projekt</h2>
 <p><strong>Kliknij zieloną flagę.</strong></p>
 <p>Czy duch lata od brzegu do brzegu ekranu?</p>
 <p>Zapisz swój projekt.</p>
 </section>
-<section id="rzeczy-do-sprobowania" class="level3">
-<h3>Rzeczy do spróbowania</h3>
+<section id="rzeczy-do-sprobowania" class="level2">
+<h2>Rzeczy do spróbowania</h2>
 <p><strong>Spróbuj zmienić wartość zmiennej prędkość, aby sprawić, żeby duch latał szybciej lub wolniej.</strong></p>
 <p><strong>Co zrobić, aby duch leciał coraz szybciej w trakcie gry?</strong></p>
 <p>(Jest to troszkę skomplikowane, więc nie przejmuj się, jeżeli jeszcze nie wiesz jak to zrobić. Podpowiemy Ci troszkę później jak to zrobić.)</p>
 </section>
 </section>
-<section id="krok-2-spraw-aby-duch-losowo-pojawia-sie-i-znika" class="level2">
-<h2>KROK 2: Spraw, aby duch losowo pojawiał się i znikał</h2>
+<section id="krok-2-spraw-aby-duch-losowo-pojawia-sie-i-znika" class="level1">
+<h1>KROK 2: Spraw, aby duch losowo pojawiał się i znikał</h1>
 <p>Aby gra była ciekawsza, spróbujemy sprawić, aby duch losowo pojawiał się i znikał. Będzie nam do tego potrzebny kolejny skrypt, który działa w tym samym czasie co ten odpowiedzialny za poruszanie duchem. Nowy skrypt powinien niespodziewanie ukryć ducha i po jakimiś czasie znowu pokazać go na ekranie (i robić to cały czas w trakcie gry).</p>
 <p><strong>Dodajmy duchowi poniższy skrypt:</strong></p>
 <p><img src="ace0915ec3844ea856d5952efb9bbb7782af027f.png" alt="
@@ -85,20 +89,20 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
         pokaż
         czekaj losuj liczbę pomiędzy 3 a 5 s
     (koniec zawsze)" /></p>
-<section id="przetestuj-swoj-projekt-2" class="level3">
-<h3>Przetestuj swój projekt</h3>
+<section id="przetestuj-swoj-projekt-2" class="level2">
+<h2>Przetestuj swój projekt</h2>
 <p><strong>Kliknij zieloną flagę.</strong></p>
 <p>Czy duch lata od brzegu do brzegu ekranu oraz losowo pojawia się i znika?</p>
 <p>Zapisz swój projekt.</p>
 </section>
-<section id="rzeczy-do-sprobowania-1" class="level3">
-<h3>Rzeczy do spróbowania</h3>
+<section id="rzeczy-do-sprobowania-1" class="level2">
+<h2>Rzeczy do spróbowania</h2>
 <p><strong>Spróbuj zmienić wartość liczb, które użyliśmy do ukrywania i pojawiania się ducha. Co się stanie, jeżeli wybierzemy bardzo duże albo bardzo małe liczby?</strong></p>
 <p>Czy pomoże Ci to sprawić, aby duch latał coraz szybciej?</p>
 </section>
 </section>
-<section id="krok-3-spraw-aby-duch-znika-gdy-na-niego-klikniesz" class="level2">
-<h2>KROK 3: Spraw, aby duch znikał, gdy na niego klikniesz</h2>
+<section id="krok-3-spraw-aby-duch-znika-gdy-na-niego-klikniesz" class="level1">
+<h1>KROK 3: Spraw, aby duch znikał, gdy na niego klikniesz</h1>
 <p>Aby zamienić ten projekt w grę, musimy dać graczom coś do zrobienia. Niech klikają w ducha, aby zniknął. Chcemy, aby po kliknięciu w ducha było słychać jakiś dźwięk, a sam duch znikał z ekranu.</p>
 <ol>
 <li><p>W zakładce <strong>Dźwięki</strong> zaimportuj dźwięk <strong>Fairydust</strong> z katalogu <strong>Electronic</strong>.</p></li>
@@ -108,19 +112,19 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
     kiedy kliknięto Duszek1
     ukryj
     zagraj dźwięk Fairydust" /></p>
-<section id="przetestuj-swoj-projekt-3" class="level3">
-<h3>Przetestuj swój projekt</h3>
+<section id="przetestuj-swoj-projekt-3" class="level2">
+<h2>Przetestuj swój projekt</h2>
 <p><strong>Kliknij zieloną flagę.</strong></p>
 <p>Czy ducha znika i wydaje dźwięk, gdy go klikniesz?</p>
 <p>Zapisz swój projekt.</p>
 </section>
-<section id="rzeczy-do-sprobowania-2" class="level3">
-<h3>Rzeczy do spróbowania</h3>
+<section id="rzeczy-do-sprobowania-2" class="level2">
+<h2>Rzeczy do spróbowania</h2>
 <p><strong>Zapytaj osoby prowadzącej zajęcia, czy możesz spróbować nagrywać własny dźwięk i użyć go w swoim projekcie.</strong></p>
 </section>
 </section>
-<section id="krok-4-dodaj-punkty-i-zegar" class="level2">
-<h2>KROK 4: Dodaj punkty i zegar</h2>
+<section id="krok-4-dodaj-punkty-i-zegar" class="level1">
+<h1>KROK 4: Dodaj punkty i zegar</h1>
 <p>Mamy już ducha, więc wykorzystajmy go do stworzenia własnej gry! Zacznijmy liczyć punkty za każde kliknięcie na duchu oraz dodajmy limit czasu do gry. W tym celu użyjemy 2 nowe zmienne.</p>
 <ol>
 <li><p>Stwórz nową zmienną 'Dla każdego duszka' i nazwij ją <strong>Wynik</strong>. Zmieńmy skypt ducha tak, aby przy każdym kliknięciu wartość tej zmiennej zwiększała się o jeden punkt.</p>
@@ -140,19 +144,19 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
     (koniec powtarzaj)
     zakończ wszystko" /></p></li>
 </ol>
-<section id="przetestuj-swoj-projekt-4" class="level3">
-<h3>Przetestuj swój projekt</h3>
+<section id="przetestuj-swoj-projekt-4" class="level2">
+<h2>Przetestuj swój projekt</h2>
 <p><strong>Kliknij zieloną flagę.</strong></p>
 <p>Zapisz swój projekt.</p>
 </section>
-<section id="rzeczy-do-sprobowania-3" class="level3">
-<h3>Rzeczy do spróbowania</h3>
+<section id="rzeczy-do-sprobowania-3" class="level2">
+<h2>Rzeczy do spróbowania</h2>
 <p><strong>Jak można sprawić, aby duch latał coraz szybciej?</strong></p>
 <p><strong>Udało ci się skończyć podstawową wersję gry, ale ciągle są rzeczy, które możesz zmienić w grze. Mamy dla Ciebie wyzwanie!</strong></p>
 </section>
 </section>
-<section id="wyzwanie-dodaj-wiecej-duchow" class="level2">
-<h2>Wyzwanie: Dodaj więcej duchów</h2>
+<section id="wyzwanie-dodaj-wiecej-duchow" class="level1">
+<h1>Wyzwanie: Dodaj więcej duchów</h1>
 <p>Gra z jednym duchem jest super, ale co jeżeli dodamy ich więcej. Na pewno gra będzie jeszcze lepsza!</p>
 <p><strong>Dodajmy kolejne latające duchy do naszej gry.</strong></p>
 <ol>
@@ -161,14 +165,14 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 <li>Zmień <strong>zmienną &quot;prędkość&quot;</strong> każdego ducha, aby każdy z nich latał z inną prędkością.<br /></li>
 <li>Poprzesuwaj duchy po ekranie, aby nie latały wszystkie obok siebie.</li>
 </ol>
-<section id="przetestuj-swoj-projekt-5" class="level3">
-<h3>Przetestuj swój projekt</h3>
+<section id="przetestuj-swoj-projekt-5" class="level2">
+<h2>Przetestuj swój projekt</h2>
 <p><strong>Kliknij zieloną flagę.</strong></p>
 <p>Czy masz na ekranie kilka duchów, latających od brzegu do brzegu ekranu, które niespodziewanie pojawiają się i znikają? Czy duchy znikają po kliknięciu na nie?</p>
 <p>Zapisz swój projekt.</p>
 </section>
-<section id="rzeczy-do-sprobowania-4" class="level3">
-<h3>Rzeczy do spróbowania?</h3>
+<section id="rzeczy-do-sprobowania-4" class="level2">
+<h2>Rzeczy do spróbowania?</h2>
 <ol>
 <li><strong>Jaka ilość duchów będzie najlepsza dla naszej gry?</strong><br /></li>
 <li><strong>Czy możesz sprawić, aby duchy wyglądały inaczej? Możesz zmienić ich kostium albo wybrać zupełnie inny wygląd?</strong><br /></li>
@@ -176,7 +180,6 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 </ol>
 <p><strong>Brawo! To by było na tyle, teraz możesz się cieszyć swoją grą!</strong></p>
 <p>Nie zapomnij, że możesz podzielić się swoją grą ze swoimi przyjaciółmi i rodziną. Żeby to zrobić, kliknij menu <strong>Udostępnij</strong>.</p>
-</section>
 </section>
 </section>
 <section class="legal">
