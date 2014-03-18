@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="nb-NO">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>CSS — Code Club</title>
+
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../../../css/lesson.css">
+  <link rel="stylesheet" href="../../../css/web.css">
+  <style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; }
+code > span.dt { color: #902000; }
+code > span.dv { color: #40a070; }
+code > span.bn { color: #40a070; }
+code > span.fl { color: #40a070; }
+code > span.ch { color: #4070a0; }
+code > span.st { color: #4070a0; }
+code > span.co { color: #60a0b0; font-style: italic; }
+code > span.ot { color: #007020; }
+code > span.al { color: #ff0000; font-weight: bold; }
+code > span.fu { color: #06287e; }
+code > span.er { color: #ff0000; font-weight: bold; }
+  </style>
+</head>
+<body>
+<header>
+<div class="logo"><a href="../../../index.html"><img src="../../../img/ccuk_logo.svg"/></a></div>
+<div class="title">CSS</div>
+<div><span class="level">Lesson 2</span></div>
+</header>
+<section class="legal">
+<div>
+These projects are for use inside the UK only. All Code Clubs <strong>must</strong> be registered. You can check registered clubs on the map at <a href="http://www.codeclub.org.uk/">www.codeclub.org.uk</a>. This coursework is developed in the open on GitHub, <a href="http://github.com/CodeClub/">github.com/CodeClub/</a> come and join us!
+</div>
+</section>
+<section class="breadcrumb">
+<ol class="breadcrumb"><li><a href="../../../index.html">Languages</a></li><li><a href="../../index.html">Norsk</a></li><li><a href="../index.html">HTML &amp; CSS</a></li><li><strong>CSS</strong></li></ol>
+</section>
+<section id="introduksjon" class="level2 intro">
+<h2>Introduksjon</h2>
+<p>La oss gjøre nettside vår bedre med noen stiler.<br />I denne leksjonen og neste skal vi lære hvordan man endrer farge, tekst, størrelser og mer!</p>
+<p>Vi style HTML-sider ved hjelp av et språk som heter <strong>CSS</strong> (som står for <strong>Cascading Style Sheets</strong>). Det er et veldig enkelt språk å lære. La oss komme i gang.</p>
+</section>
+<section id="steg-1-opsett-for-a-skrive-litt-stiler" class="level1 activity">
+<h1>Steg 1: Opsett for å skrive litt stiler</h1>
+<p>Det er mange måter å sette stiler på: inline, i <code>&lt;head&gt;</code>-elementet, eller som en separat CSS-dokument som vi lenker til fra &quot;hodet&quot;. I dag skal vi bruke stiler i <code>head</code> elementet i vår html-side, slik at vi ikke trenger å bekymre oss for å håndtere flere filer.</p>
+<section id="aktivitet" class="level2 check">
+<h2>Aktivitet</h2>
+<ul>
+<li><p>Åpne index.html fra Felix mappen vi lagde siste økt.</p></li>
+<li><p>I &quot;hodet&quot; (det vil si <code>head</code> delen) trenger vi en <strong>style tagg</strong>.</p>
+<pre class="sourceCode css"><code class="sourceCode css">  &lt;style&gt;
+  &lt;/style&gt;</code></pre>
+<p>Alle stilene våre vil gå mellom disse to elementene. Simplez. Generelt ser css kode ut som dette:</p></li>
+</ul>
+<pre class="sourceCode css"><code class="sourceCode css">velger <span class="kw">{</span>
+    <span class="kw">egenskap:</span> verdi<span class="kw">;</span>
+<span class="kw">}</span></code></pre>
+<ul>
+<li>Kan du finne ‘{‘ og ‘}’ tastene på tastaturet ditt? Hva med ‘:’ og ‘;’ ?<br />Velgere kan være HTML-elementer som <code>h1</code>, <code>p</code>, <code>img</code>, <code>a</code>. Men de kan også være andre ting som vi vil lære senere.</li>
+</ul>
+</section>
+</section>
+<section id="steg-2-legge-til-farger" class="level1 activity">
+<h1>Steg 2: Legge til farger</h1>
+<p>La oss legge til litt farge med color-egenskapen! Color er engelsk for farge. Det er stavet på den amerikanske måten. Forresten visste du at CSS ble funnet opp av en nordmann, Håkon Wium Lie?</p>
+<p>La oss endre <code>h1</code> til å være rød i stedet for svart.</p>
+<pre class="sourceCode HTML"><code class="sourceCode html"><span class="kw">&lt;style&gt;</span>
+    h1 <span class="kw">{</span>
+        <span class="kw">color:</span><span class="dt">red</span><span class="kw">;</span> 
+    <span class="kw">}</span>
+<span class="kw">&lt;/style&gt;</span></code></pre>
+<section id="lagre-filen-og-se-pa-den-i-nettlerseren" class="level2 save">
+<h2><strong>LAGRE</strong> filen og se på den i nettlerseren</h2>
+<p>Teksten er nå rød, jippi! Det er forskjellige måter å oppgi verdiene for farge. Det er 16 grunnleggende fargenavn (på engelsk), de heter aqua, black, blue, fuchsia, gray, green, lime, maroon, navy, olive, purple, red, silver, teal, white, og yellow.</p>
+<ul>
+<li><p>Prøv å endre fargen til noe annet!<br />De fleste nettlesere støtter ytterligere 130 fargenavn, er en fullstendig alfabetisk liste finnes på<br />[<a href="http://www.w3.org/TR/css3-color/">http://www.w3.org/TR/css3-color/</a> # svg-color] (<a href="http://www.w3.org/TR/css3-color/">http://www.w3.org/TR/css3-color/</a> # svg-farge) Hva er din favoritt farge i listen?</p></li>
+<li><p>Men vi kan bruke enda flere farger ved hjelp av <strong>hexcode</strong> i stedet for fargenavn. En hexcode er en <code>#</code> fulgt av seks siffer, tallene 0-9 eller bokstavene A, B, C, D, E, F. Med hexcode kan vi bruke mer enn 16 millioner farger!</p></li>
+<li><p>I kodeklubben, er vår favoritt farge <code>#58AB57</code>. Kan du gjette hvilken farge det er? Hvorfor ikke prøve å endre litt tekst til den fargen og åpne den i en nettleser for å se.</p></li>
+</ul>
+</section>
+<section id="lagre-filen-og-se-pa-den-i-nettlerseren-1" class="level2 save">
+<h2><strong>LAGRE</strong> filen og se på den i nettlerseren</h2>
+</section>
+</section>
+<section id="steg-3-farge-spesifikke-elementer" class="level1 activity">
+<h1>Steg 3: Farge spesifikke elementer</h1>
+<p>Hva hvis vi ønsket å gjøre ordet &quot;oransje&quot; i &quot;pelsen hans er oransje&quot; oransje? Ikke hele avsnittet, bare at ordet.</p>
+<p>En måte å gjøre det på er å sette <code>&lt;span&gt;</code> tagger rundt ordet, slik:</p>
+<p><code>&lt;span&gt; oransje &lt;/span&gt;</code></p>
+<p>Så kan vi style <code>span</code> taggen i 'hodet' på dokumentet vårt.</p>
+<pre class="sourceCode css"><code class="sourceCode css">span <span class="kw">{</span>
+    <span class="kw">color:</span>orange<span class="kw">;</span>
+<span class="kw">}</span></code></pre>
+<section id="lagre-filen-og-se-pa-den-i-nettlerseren-2" class="level2 save">
+<h2><strong>LAGRE</strong> filen og se på den i nettlerseren</h2>
+</section>
+</section>
+<section id="steg-4-bakgrunnsfarger" class="level1 activity">
+<h1>Steg 4: Bakgrunnsfarger</h1>
+<p>We can add colours to the background too, not just text. For instance:<br />We kan legge til farger i bakgrunnen også, ikke bare selve teksten. For eksepel:</p>
+<pre class="sourceCode css"><code class="sourceCode css">body <span class="kw">{</span>
+    <span class="kw">background-color:</span><span class="dt">#D2FAFC</span><span class="kw">;</span> 
+<span class="kw">}</span></code></pre>
+<p>This will make the entire background light blue. You can choose any colour you like from a list at<br />Dette gjør hele bakgrunnen lys blå. Du kan bruke hvilken som helst farge fra <a href="http://www.colourpicker.com">www.colourpicker.com</a> som genererer hvilken hexkode du trenger, som du kan klippe ut og lime inn der du trenger den.</p>
+<p>Nå prøv:</p>
+<pre class="sourceCode css"><code class="sourceCode css">h1 <span class="kw">{</span>
+    <span class="kw">background-color:</span><span class="dt">black</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre>
+<p>Siden vi allerede hadde en <code>h1</code> erklæring der, kunne vi bare sette i bakgrunnen-fargen med fargen, vi trenger ikke å skrive det hele på nytt.</p>
+<pre class="sourceCode css"><code class="sourceCode css">h1 <span class="kw">{</span>
+    <span class="kw">color:</span><span class="dt">red</span><span class="kw">;</span>
+    <span class="kw">background-color:</span> <span class="dt">black</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre>
+<section id="lagre-filen-og-se-pa-den-i-nettlerseren-3" class="level2 save">
+<h2><strong>LAGRE</strong> filen og se på den i nettlerseren</h2>
+</section>
+<section id="moro-med-tekst" class="level2">
+<h2>Moro med tekst</h2>
+<p>Kanskje 'mistet' overskirften bør være <strong>større</strong> og også store bokstaver. Vi kan angi størrelsen på teksten ved hjelp av<code>font-size</code>. Verdiene kan være masse forksjellig, men den mest vanlige er 12, 14, 16, 32, 48 og 72 piksler.<br />For nå kan du prøve 72px. (px betyr piksel).</p>
+<pre class="sourceCode css"><code class="sourceCode css">h1 <span class="kw">{</span>
+    <span class="kw">color:</span><span class="dt">red</span><span class="kw">;</span>
+    <span class="kw">background-color:</span><span class="dt">black</span><span class="kw">;</span>
+    <span class="kw">font-size:</span><span class="dt">72px</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre>
+<p>Nå kan du prøve å lage overskriften store bokstaver bare ved å bruke <code>text-transform:uppercase;</code> Vi kan også gjøre den understreket ved å bruke <code>text-decoration:underline;</code></p>
+</section>
+<section id="lagre-filen-og-se-pa-den-i-nettlerseren-4" class="level2 save">
+<h2><strong>LAGRE</strong> filen og se på den i nettlerseren</h2>
+<p>Det er mye mer merkbar nå ikke sant?</p>
+<section id="hvis-du-har-firefox-eller-chrome-nettleser" class="level3">
+<h3>Hvis du har Firefox eller Chrome nettleser:</h3>
+<p>Egentlig er det en annen verdi for <code>text-decoration</code> kalt <code>blink</code>. Jeg kommer ikke til å fortelle deg hva den gjør. Du må prøve det. <code>text-decoration: blink;</code> (det kan bli litt irriterende etter en stund, du kan bytte tilbake til understrek hvis du foretrekker).</p>
+</section>
+</section>
+</section>
+<section id="steg-6.-sentre-tekst-og-bilder-horisontalt" class="level1 activity">
+<h1>Steg 6. Sentre tekst ( og bilder) horisontalt</h1>
+<p>All teksten vår er hele veien over til venstre. Vi kan endre det ved hjelp av <code>text-align:center</code> (du kan også bruke verdien &quot;right&quot; som betyr høyre, &quot;left&quot; betyr venstre, og er standard).</p>
+<ol>
+<li>Vi vil at all tekst skal væresentert, så vi kan skrive:</li>
+</ol>
+<pre class="sourceCode css"><code class="sourceCode css">body <span class="kw">{</span>
+    <span class="kw">background-color:</span> <span class="dt">#F8FAF4</span><span class="kw">;</span>
+    <span class="kw">text-align:</span> <span class="dt">center</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre>
+<p>Did you notice that everything in the page went to the centre when we put ‘text-align:center’ in the body section? That’s because everything inside the body element inherits the style. This happens whenever one element is inside another, like here:</p>
+<p>La du merke til at alt på siden gikk ble sentrert når vi setter <code>text-align:center</code> på body elementet? Det er fordi alt inni <code>&lt;body&gt;</code> arver stilen. Dette skjer når det ene element ligger inne i en annen, slik som her:</p>
+<pre class="sourceCode HTML"><code class="sourceCode html"><span class="kw">&lt;p&gt;</span>Har du sett Felix? <span class="kw">&lt;em&gt;</span>Vennligst<span class="kw">&lt;/em&gt;</span> kontakt eieren hans<span class="kw">&lt;/p&gt;</span></code></pre>
+<p>Ordet 'Vennligst' vil arve stilen på <code>&lt;p&gt;</code> element med stilen på <code>&lt;em&gt;</code> element lagt på. Dette er grunnen til at stilene kalles <strong>cascading</strong> - stilene kaskader fra elementer inn til alle de stilene som er inni dem.<br />Vær forsiktig, men fordi noen stiler ikke er <em>arvet</em> . Vi vil finne ut om disse senere.</p>
+<section id="lagre-filen-og-se-pa-den-i-nettlerseren-5" class="level2 save">
+<h2><strong>LAGRE</strong> filen og se på den i nettlerseren</h2>
+</section>
+<section id="ting-du-kan-prve" class="level2 try">
+<h2>Ting du kan prøve</h2>
+<ul>
+<li>Hvordan ville du endre siden slik at den ser bedre ut? Hvorfor ikke prøve å bruke alle favorittfargene dine? Har de fargenavn eller trenger du å bruke hexcode?<br /></li>
+<li>Hvis du blir ferdig tidlig kan du gå tilbake og legge til stiler til html filer vi har laget i tidligere leksjoner.</li>
+</ul>
+</section>
+</section>
+<section class="legal">
+<div>
+These projects are for use inside the UK only. All Code Clubs <strong>must</strong> be registered. You can check registered clubs on the map at <a href="http://www.codeclub.org.uk/">www.codeclub.org.uk</a>. This coursework is developed in the open on GitHub, <a href="http://github.com/CodeClub/">github.com/CodeClub/</a> come and join us!
+
+<br/><br/>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+</div>
+</section>
+</body>
+</div>
+ <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-30750176-1']);
+        _gaq.push(['_setDomainName', 'codeclub.org.uk']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</html>
