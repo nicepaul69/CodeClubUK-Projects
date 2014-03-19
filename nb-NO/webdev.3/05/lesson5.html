@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="nb-NO">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Styling og formatering av tekst — Code Club</title>
+
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../../../css/lesson.css">
+  <link rel="stylesheet" href="../../../css/web.css">
+  <style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; }
+code > span.dt { color: #902000; }
+code > span.dv { color: #40a070; }
+code > span.bn { color: #40a070; }
+code > span.fl { color: #40a070; }
+code > span.ch { color: #4070a0; }
+code > span.st { color: #4070a0; }
+code > span.co { color: #60a0b0; font-style: italic; }
+code > span.ot { color: #007020; }
+code > span.al { color: #ff0000; font-weight: bold; }
+code > span.fu { color: #06287e; }
+code > span.er { color: #ff0000; font-weight: bold; }
+  </style>
+</head>
+<body>
+<header>
+<div class="logo"><a href="../../../index.html"><img src="../../../img/ccuk_logo.svg"/></a></div>
+<div class="title">Styling og formatering av tekst</div>
+<div><span class="level">Lesson 5</span></div>
+</header>
+<section class="legal">
+<div>
+These projects are for use inside the UK only. All Code Clubs <strong>must</strong> be registered. You can check registered clubs on the map at <a href="http://www.codeclub.org.uk/">www.codeclub.org.uk</a>. This coursework is developed in the open on GitHub, <a href="http://github.com/CodeClub/">github.com/CodeClub/</a> come and join us!
+</div>
+</section>
+<section class="breadcrumb">
+<ol class="breadcrumb"><li><a href="../../../index.html">Languages</a></li><li><a href="../../index.html">Norsk</a></li><li><a href="../index.html">HTML &amp; CSS</a></li><li><strong>Styling og formatering av tekst</strong></li></ol>
+</section>
+<section id="introduksjon" class="level2 intro">
+<h2><strong>Introduksjon:</strong></h2>
+<p>I denne seksjonen skal vi lære hvordan man kan style tekst med forskjellige skrifttyper, farger og størrelser. Vi vil også lære hvordan du legger til bakgrunnsfarger og pyntekanter. Vi skal bruke det samme prosjektet du jobbet med sist gang, så sørg for at du åpner index.html i Felix mappen.</p>
+</section>
+<section id="steg-1-skrifttyper" class="level1 activity">
+<h1>Steg 1: Skrifttyper</h1>
+<p>Vi kan endre utseendet på teksten ved å endre <strong>skrifttypen</strong> (&quot;font&quot; på englesk). De mest vanlige skrifttypene heter:</p>
+<ul>
+<li>Arial<br /></li>
+<li>Courier New, Courier<br /></li>
+<li>Garamond<br /></li>
+<li>Georgia<br /></li>
+<li>Lucida Sans, Lucida Grande, Lucida<br /></li>
+<li>Palatino Linotype<br /></li>
+<li>Tahoma<br /></li>
+<li>Times New Roman, Times<br /></li>
+<li>Trebuchet<br /></li>
+<li>Verdana</li>
+</ul>
+<p>Ikke alle skrifttyper finnes på alle datamaskiner, så vi trenger å oppgi en <strong>fall-back font</strong> (en skrifttype vi kan falle tilbake på om førstevalget vårt ikke finnes på datamaskinen) også. Disse er ganske generiske som &quot;sans serif&quot;, &quot;serif&quot;.</p>
+<p>La oss prøve å endre skrifttype på overskriften ved hjelp av <code>font-family</code>-egenskapen.</p>
+<pre class="sourceCode CSS"><code class="sourceCode css">h1 <span class="kw">{</span> 
+    <span class="kw">color:</span> <span class="dt">red</span><span class="kw">;</span>
+    <span class="kw">background-color:</span><span class="dt">black</span><span class="kw">;</span>
+    <span class="kw">font-size:</span><span class="dt">72px</span><span class="kw">;</span>
+    <span class="kw">text-transform:</span><span class="dt">uppercase</span><span class="kw">;</span>
+    <span class="kw">text-decoration:</span><span class="dt">underline</span><span class="kw">;</span>
+    <span class="kw">text-decoration:</span><span class="dt">blink</span><span class="kw">;</span>
+    <span class="kw">font-family:</span>impact, <span class="dt">sans-serif</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre>
+<p>Og skriften i avsnittene...</p>
+<pre class="sourceCode CSS"><code class="sourceCode css">p <span class="kw">{</span>
+    <span class="kw">font-family:</span>georgia, <span class="st">&#39;times new roman&#39;</span>, <span class="dt">serif</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre>
+<section id="lagre-filen-og-se-pa-den-i-nettleseren" class="level2 save">
+<h2><strong>LAGRE</strong> filen og se på den i nettleseren</h2>
+<p>Prøv noen av de forskjellige skrifttypene for å se hvilken du liker best. Legg merke til hvordan vi skiller mellom hver skrifttype med et komma, og hvis skrifttypen har et navn med mer enn ett ord trenger vi å sette det i anførselstegn.</p>
+<p>Hvilken av skrifttypene vi nevnte tror du ser best ut? Hvilken tror du er lettest å lese?</p>
+<p>Har du andre skrifttyper på datamaskinen enn de som er nevnt? (det har du sannsynligvis). Prøv å åpne et program som Word eller Pages, alle skrifttypene som er lagret på datamaskinen kan vanligvis finnes der.</p>
+<p><img src="fonts.png" alt="screenshot" /></p>
+<p>Finn en skrifttype du liker og prøv den på websiden!</p>
+<p>Du kan gjøre teksten <strong>fet</strong>, <em>kursiv</em> eller begge deler med <code>font-style</code>. La oss endre email teksten (husk den er inni en <code>&lt;a&gt;</code>-tag).</p>
+<pre class="sourceCode CSS"><code class="sourceCode css">a <span class="kw">{</span>
+    <span class="kw">font-style:</span><span class="dt">bold</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre>
+</section>
+<section id="lagre-filen-og-se-pa-den-i-nettlerseren" class="level2 save">
+<h2><strong>LAGRE</strong> filen og se på den i nettlerseren</h2>
+<p>Teksten har blitt fet! La oss se hvordan den ser ut i kursiv. Kursiv på engelsk er <code>italic</code>.</p>
+<pre class="sourceCode CSS"><code class="sourceCode css">a <span class="kw">{</span>
+    <span class="kw">font-style:</span><span class="dt">italic</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre>
+</section>
+<section id="lagre-filen-og-se-pa-den-i-nettlerseren-1" class="level2 save">
+<h2><strong>LAGRE</strong> filen og se på den i nettlerseren</h2>
+<p>Det finnes også en <code>font-style</code>-verdi som heter ‘oblique’. Hvordan ser den ut?</p>
+<p>Vi kan til og med si hvor fet en tekst skal være ved å bruke egenskapen <code>font-weight</code>. Den tar verdiene <code>normal</code>, <code>bold</code>, <code>bolder</code> og <code>lighter</code>. Du kan også bruke tall, 100, 200, 300, 400, 500, 600, 700, 800 og 900, hvor 100 er den tynneste teksten og 900 er den tykkeste. Normal tekst er det samme som 400 og &quot;bold&quot; er det samme som 700. Men ikke alle skrifttypene har alle disse, så det er tryggere å bare bruke normal og bold. Overskrifter er normalt bold som standard. Hvis vi ikke ønsker at <code>h2</code>-overskiften vår skal være fet, må vi skrive:</p>
+<pre class="sourceCode CSS"><code class="sourceCode css">h2 <span class="kw">{</span>
+    <span class="kw">font-weight:</span><span class="dt">normal</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre>
+<p>Prøv da vel!</p>
+</section>
+</section>
+<section id="steg-2-pyntekanter" class="level1 activity">
+<h1>Steg 2: Pyntekanter!</h1>
+<p>La oss legge til en ramme rundt bildet:</p>
+<pre class="sourceCode CSS"><code class="sourceCode css">img <span class="kw">{</span>
+    <span class="kw">border-color:</span><span class="dt">green</span><span class="kw">;</span>
+    <span class="kw">border-width:</span><span class="dt">5px</span><span class="kw">;</span>
+    <span class="kw">border-style:</span><span class="dt">solid</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre>
+<section id="lagre-filen-og-se-pa-den-i-nettlerseren-2" class="level2 save">
+<h2><strong>LAGRE</strong> filen og se på den i nettlerseren</h2>
+<p>Prøv å endre fargen (<code>border-color</code>), bredden (<code>border-width</code>) og pyntekanten (<code>border-style</code>) til du er fornøyd. Noen verdier for <code>border-style</code> er <code>dashed</code>, <code>dotted</code>, <code>double</code>, <code>groove</code>, <code>ridge</code>, <code>inset</code> og <code>outset</code>.</p>
+<p>Du kan sette kanter rundt alle typer elementer, hvorfor ikke prøve noen flere.</p>
+</section>
+</section>
+<section id="steg-3-ider-og-klasser" class="level1 activity">
+<h1>Steg 3: IDer og klasser</h1>
+<p>Vi ønsker å <strong>utheve</strong> kontakt-avsnittet. Vi kan ikke bruke <code>&lt;p&gt;</code>-taggen fordi det vil endre alle avsnittene. For å gjøre slik at en stil gjelder bare for ett element, bruker vi noe som kalles ID. Vi trenger å redigere HTML-filen slik:</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;p</span><span class="ot"> id</span> <span class="ot">=</span><span class="st">&quot;uthevet&quot;</span><span class="kw">&gt;</span>Har du sett Felix? <span class="kw">&lt;em&gt;</span>Vennligst<span class="kw">&lt;/em&gt;</span> kontakt eieren hans på <span class="kw">&lt;a</span><span class="ot"> href=</span><span class="st">&quot;mailto:eierentilfelix@email.com&quot;</span><span class="kw">&gt;</span>eierentilfelix@email.com<span class="kw">&lt;/a</span><span class="er">&lt;/p</span><span class="kw">&gt;</span></code></pre>
+<p>så kan vi style den IDen som så:</p>
+<pre class="sourceCode CSS"><code class="sourceCode css"><span class="fl">#uthevet</span> <span class="kw">{</span>
+    <span class="kw">color:</span><span class="dt">red</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre>
+<section id="lagre-filen-og-se-pa-den-i-nettlerseren-3" class="level2 save">
+<h2><strong>LAGRE</strong> filen og se på den i nettlerseren</h2>
+<p>En ID er unik og kan bare brukes én gang per side. Så hva hvis vi ønsket at to av avsnittene skal ha en større tekststørrelse? Vi kan gjøre det ved hjelp av klasser. Først må vi gi klassenavn til de avsnittene vi ønsker å endre.</p>
+<pre class="sourceCode HTML"><code class="sourceCode html"><span class="kw">&lt;p</span><span class="ot"> class=</span><span class="st">&quot;stor&quot;</span><span class="kw">&gt;</span>Han forvant fra hagen i går.<span class="kw">&lt;/p&gt;</span>
+<span class="kw">&lt;p</span><span class="ot"> class=</span><span class="st">&quot;stor&quot;</span><span class="kw">&gt;&lt;strong&gt;</span>Takk!<span class="kw">&lt;/strong&gt;&lt;p&gt;</span></code></pre>
+<p>Vi styler en klasse sånn (med en <code>.</code> i stedet for <code>#</code>):</p>
+<pre class="sourceCode CSS"><code class="sourceCode css"><span class="fl">.stor</span> <span class="kw">{</span>
+    <span class="kw">font-size:</span><span class="dt">24px</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre>
+</section>
+<section id="ting-du-kan-prve" class="level2 try">
+<h2>Ting du kan prøve</h2>
+<ul>
+<li>Hvordan ville du endret siden slik at den ser bedre ut? Hvorfor ikke prøve å bruke dine favorittfonter, farger osv.<br /></li>
+<li>Hvis du er tidlig ferdig kan du style sidene vi lagde i tidligere leksjoner.<br /></li>
+<li>Forresten, visste du at <code>background</code>-egenskapen ikke bare tar verdier som er farger, men også bilder?</li>
+</ul>
+</section>
+</section>
+<section class="legal">
+<div>
+These projects are for use inside the UK only. All Code Clubs <strong>must</strong> be registered. You can check registered clubs on the map at <a href="http://www.codeclub.org.uk/">www.codeclub.org.uk</a>. This coursework is developed in the open on GitHub, <a href="http://github.com/CodeClub/">github.com/CodeClub/</a> come and join us!
+
+<br/><br/>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+</div>
+</section>
+</body>
+</div>
+ <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-30750176-1']);
+        _gaq.push(['_setDomainName', 'codeclub.org.uk']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</html>
