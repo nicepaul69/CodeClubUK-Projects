@@ -34,67 +34,71 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 <section id="krok-1-stworz-rakiete-ktora-leci-w-kierunku-kursora-myszki" class="level1 activity">
 <h1>Krok 1: Stwórz rakietę, która leci w kierunku kursora myszki</h1>
 <p><strong>Zaimportujmy wszystkie obrazki potrzebne do gry</strong></p>
-<ol>
-<li>Rozpocznij nowy projekt w Scratchu. Usuń kota, klikając na nim prawym przyciskiem myszki i wybierając „usuń”.<br /></li>
-<li>Zmień tło na „city-with-water” z katalogu „Outdoor”.<br /></li>
-<li>Użyj przycisku <strong>„Wybierz nowego duszka z pliku”</strong>, aby dodać rakietę. Otwórz katalog „Zasoby” i wybierz plik „rakieta.png”. Zmień nazwę duszka na „Rakieta”.<br /></li>
+<section id="zadania-do-wykonania" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li>Rozpocznij nowy projekt w Scratchu. Usuń kota, klikając na nim prawym przyciskiem myszki i wybierając &quot;usuń&quot;.<br /></li>
+<li>Zmień tło na <strong>city with water</strong> z kategorii <strong>Na zewnątz</strong>.<br /></li>
+<li>Użyj przycisku <code class="blockgrey">Wybierz nowego duszka z pliku</code>, aby dodać rakietę. Otwórz katalog <strong>Zasoby</strong> i wybierz plik <strong>rakieta.png</strong>. Zmień nazwę duszka na &quot;Rakieta&quot;.<br /></li>
 <li>Spraw, aby rakieta zniknęła po wciśnięciu zielonej flagi.</li>
-</ol>
+</ul>
 <p>Teraz sprawimy, aby po klinięciu rakieta poleciała w kierunku kursora myszki.</p>
-<ol>
-<li>Dodaj blok „kiedy klawisz spacja naciśnięty” do skryptu, a pod nim dodaj skrypt pokazujący ponownie rakietę i sprawiający, że poleci ona w kierunku kursora myszy.</li>
-</ol>
-<p><img src="ca2bbfece6eb1db1dbd844bb2bae258d11f737a1.png" alt="
-    kiedy kliknięto FLAGĘ
+<ul>
+<li><p>Dodaj blok <code class="blockbrown">kiedy klawisz spacja naciśnięty</code> do skryptu, a pod nim dodaj skrypt pokazujący ponownie rakietę i sprawiający, że poleci ona w kierunku kursora myszy.</p>
+<p><img src="528577713a8351ced853fb2a8561d26832018643.png" alt="    kiedy kliknięto zieloną flagę
     ukryj
 
-    kiedy klawisz spacja naciśnięty
+    kiedy klawisz [spacja v] naciśnięty
     pokaż
-    leć przez 1 s do x: x myszy y: y myszy" /></p>
+    leć przez (1) s do x: (x myszy) y: (y myszy)" /></p></li>
+</ul>
+</section>
 <section id="przetestuj-swoj-projekt" class="level2 flag">
 <h2>Przetestuj swój projekt</h2>
 <p><strong>Kliknij zieloną flagę, ustaw kursor myszy na Scenie i wciśnij spację.</strong></p>
-<p>Czy rakieta pojawia się na ekranie i leci w kierunku kursora myszy?</p>
-<p>Co się dzieje, kiedy poruszysz myszą i wciśniesz spację ponownie?</p>
-<ol>
-<li>Fajerwerki nie latają na boki, więc upewnijmy się, że za każdym razem rakieta leci prosto do góry. Zanim pokażemy rakietę na ekranie, użyjmy bloku „idź do”, aby ustawić ją pionowo na dole ekranu.</li>
-</ol>
-<p><img src="38764dd9dce2de3886e7a477bb37cc8e6fd47735.png" alt="
-    kiedy kliknięto FLAGĘ
+<p>Czy rakieta pojawia się na ekranie i leci w kierunku kursora myszy?<br />Co się dzieje, kiedy poruszysz myszą i wciśniesz spację ponownie?</p>
+</section>
+<section id="zadania-do-wykonania-1" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li><p>Fajerwerki nie latają na boki, więc upewnijmy się, że za każdym razem rakieta leci prosto do góry. Zanim pokażemy rakietę na ekranie, użyjmy bloku <code class="blockblue">idź do</code>, aby ustawić ją pionowo na dole ekranu.</p>
+<p><img src="522a295c40ce50c6cea6ca6ac9787cac44f82f76.png" alt="    kiedy kliknięto zieloną flagę
     ukryj
 
-    kiedy klawisz spacja naciśnięty
-    idź do x: x myszy y: -200
+    kiedy klawisz [spacja v] naciśnięty
+    idź do x: (x myszy) y: (-200)
     pokaż
-    leć przez 1 do to x: x myszy y: y myszy" /></p>
+    leć przez (1) s do x: (x myszy) y: (y myszy)" /></p></li>
+</ul>
 </section>
 <section id="przetestuj-swoj-projekt-1" class="level2 flag">
 <h2>Przetestuj swój projekt</h2>
 <p><strong>Kliknij zieloną flagę, ustaw kursor myszy na Scenie i wciśnij spację.</strong></p>
-<p>Czy rakieta leci w kierunku kursora z samego dołu ekranu?</p>
-<p>Co się dzieje, kiedy przesuniesz kursor w bok i wciśniesz spację ponownie?</p>
-<ol>
-<li>Pora zamienić naciśnięcie klawisza spacji na kliknięcie klawiszem myszki. Aby to zrobić, „owińmy” nasz skrypt w blok <strong>„zawsze, jeżeli wciśnięty klawisz myszy”</strong>, a następnie zastąpmy blok „kiedy klawisz spacja naciśnięty” blokiem <strong>„kiedy kliknięto FLAGĘ”</strong>. Pamiętaj, żeby na początku gry rakieta była zawsze ukryta.</li>
-</ol>
-<p><img src="e14d8c12a58d89f27e1d7d2533af294b3a033e18.png" alt="
-    kiedy kliknięto FLAGĘ
+<p>Czy rakieta leci w kierunku kursora z samego dołu ekranu?<br />Co się dzieje, kiedy przesuniesz kursor w bok i wciśniesz spację ponownie?</p>
+</section>
+<section id="zadania-do-wykonania-2" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li><p>Pora zamienić naciśnięcie klawisza spacji na kliknięcie klawiszem myszki. Aby to zrobić, &quot;owińmy&quot; nasz skrypt w blok <code class="blockyellow">zawsze</code>, <code class="blockyellow">jeżeli wciśnięty klawisz myszy</code>, a następnie zastąpmy blok <code class="blockbrown">kiedy klawisz spacja naciśnięty</code> blokiem <code class="blockbrown">kiedy kliknięto zieloną flagę</code>. Pamiętaj, żeby na początku gry rakieta była zawsze ukryta.</p>
+<p><img src="459484edc70a621481cf0c095cb22af5680bb02a.png" alt="    kiedy kliknięto zieloną flagę
     ukryj
-    zawsze, jeżeli wciśnięty klawisz myszy?
-        idź do x: x myszy y: -200
-        pokaż
-        leć przez 1 s do x: x myszy y: y myszy
-    (koniec zawsze)" /></p>
+    zawsze
+        jeżeli &lt;wciśnięty klawisz myszy?&gt; to
+            idź do x: (x myszy) y: (-200)
+            pokaż
+            leć przez (1) s do x: (x myszy) y: (y myszy)" /></p></li>
+</ul>
 </section>
 <section id="przetestuj-swoj-projekt-2" class="level2 flag">
 <h2>Przetestuj swój projekt</h2>
 <p><strong>Kliknij zieloną flagę, a następnie kliknij na scenie. Kliknij jeszcze raz w innym miejscu.</strong></p>
 </section>
-<section id="rzeczy-do-sprobowania" class="level2">
+<section id="rzeczy-do-sprobowania" class="level2 try">
 <h2>Rzeczy do spróbowania</h2>
-<ol>
-<li>Spróbuj zmienić cel rakiety, zanim zacznie lecieć w stronę myszy. (Tak aby leciała lekko po łuku.)<br /></li>
-<li>Spróbuj zmienić prędkość rakiety: niech niektóre lecą szybciej, a inne wolniej.</li>
-</ol>
+<ul>
+<li>Spróbuj zmienić prędkość rakiety: niech niektóre lecą szybciej, a inne wolniej.<br /></li>
+<li>Spróbuj zmienić cel rakiety, zanim zacznie lecieć w stronę myszy. (Tak aby leciała lekko po łuku.)</li>
+</ul>
 </section>
 <section id="zapisz-swoj-projekt." class="level2 save">
 <h2>Zapisz swój projekt.</h2>
@@ -102,105 +106,119 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 </section>
 <section id="krok-2-spraw-aby-rakieta-wybucha" class="level1 activity">
 <h1>Krok 2: Spraw, aby rakieta wybuchła</h1>
-<ol>
-<li><p>Pierwszym zadaniem dla nas będzię dodanie odgłosu huku tuż przed wylotem rakiety oraz schowanie jej, gdy doleci do celu. Aby zaimportować odgłos wybuchu, przejdź do zakładki „Dźwięki” i wybierz plik „bum” z katalogu Zasoby.</p>
-<p><img src="deccadf581e7cf9c7d10ea0f19452f29af4ffb55.png" alt="
-    kiedy kliknięto FLAGĘ
+<section id="zadania-do-wykonania-3" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li><p>Pierwszym zadaniem dla nas będzię dodanie odgłosu huku tuż przed wylotem rakiety oraz schowanie jej, gdy doleci do celu. Aby zaimportować odgłos wybuchu, przejdź do zakładki &quot;Dźwięki&quot;, kliknij <code class="blockgrey">Wgraj dźwięk z pliku</code> i wybierz plik <strong>bum</strong> z katalogu <strong>Zasoby</strong>.</p>
+<p><img src="b11ed6b3c538b45aa4461fcd2916b9e92829067f.png" alt="    kiedy kliknięto zieloną flagę
     ukryj
-    zawsze, jeżeli wciśnięty klawisz myszy?
-        idź do x: x myszy y: -200
-        zagraj dźwięk bum
-        pokaż
-        leć przez 1 s do x: x myszy y: y myszy
-        ukryj
-    (koniec zawsze)" /></p></li>
+    zawsze
+        jeżeli &lt;wciśnięty klawisz myszy?&gt; to
+            idź do x: (x myszy) y: (-200)
+            zagraj dźwięk [bum v]
+            pokaż
+            leć przez (1) s do x: (x myszy) y: (y myszy)
+            ukryj" /></p></li>
 <li><p>Następnie nadajmy komunikat eksplozji rakiety. Odbierzemy go troszkę później.</p>
-<p><img src="78b7e8d22e73d38be4bc75d36619c9b4c9fafb9d.png" alt="
-    kiedy kliknięto FLAGĘ
+<p><img src="426b549084db44fb45420e4792a1d5488895bf6a.png" alt="
+    kiedy kliknięto zieloną flagę
     ukryj
-    zawsze, jeżeli wciśnięty klawisz myszy?
-        idź do x: x myszy y: -200
-        zagraj dźwięk bum
-        pokaż
-        leć przez 1 s do x: x myszy y: y myszy
-        ukryj
-        nadaj wybuch
-    (koniec zawsze)" /></p></li>
-</ol>
+    zawsze
+        jeżeli &lt;wciśnięty klawisz myszy?&gt; to
+            idź do x: (x myszy) y: (-200)
+            zagraj dźwięk [bum v]
+            pokaż
+            leć przez (1) s do x: (x myszy) y: (y myszy)
+            ukryj
+            nadaj [wybuch v]" /></p></li>
+</ul>
+</section>
 <section id="przetestuj-swoj-projekt-3" class="level2 flag">
 <h2>Przetestuj swój projekt</h2>
 <p><strong>Kliknij zieloną flagę.</strong></p>
 <p>Upewnij się, że rakieta odtwarza dźwięk i chowa się po osiągnięciu celu.</p>
-<ol>
-<li>Dodaj nowego duszka i wybierz plik „fajerwerki1.png” z katalogu „Zasoby”.<br /></li>
-<li>Kiedy nowy duszek odbierze komunikat o wybuchu, powinien się ukryć i przesunąć w miejsce, w którym jest rakieta – użyj do tego bloku „idź do”. Następnie powinien się pokazać w nowym miejscu i zniknąć ponownie sekundę później.</li>
-</ol>
-<p><img src="2e893ca9423001c379996aff6a77079dd48004f1.png" alt="
-    kiedy otrzymam wybuch
+</section>
+<section id="zadania-do-wykonania-4" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li>Dodaj nowego duszka z pliku <strong>fajerwerki1.png</strong> z katalogu <strong>Zasoby</strong>.<br /></li>
+<li><p>Kiedy nowy duszek odbierze komunikat o wybuchu, powinien się ukryć i przesunąć w miejsce, w którym jest rakieta – użyj do tego bloku <code class="blockblue">idź do</code>. Następnie powinien się pokazać w nowym miejscu i zniknąć ponownie sekundę później.</p>
+<p><img src="30c174d27061c49487ea4eef4ace3173f3659430.png" alt="
+    kiedy otrzymam [wybuch v]
     ukryj
-    idź do x: współrzędna x z Rakieta y: współrzędna y z Rakieta
+    idź do [Rakieta v]
     pokaż
-    czekaj 1 s
-    ukryj" /></p>
+    czekaj (1) s
+    ukryj" /></p></li>
+</ul>
 </section>
 <section id="przetestuj-swoj-projekt-4" class="level2 flag">
 <h2>Przetestuj swój projekt</h2>
 <p><strong>Wystrzel następną rakietę.</strong></p>
-<p>Czy rakieta została zastąpiona obrazkiem wybuchu?</p>
-<p>Co się dzieje, kiedy przytrzymasz wciśnięty przycisk myszy i przesuwasz kursor? (Nie martw się, naprawimy ten problem później).</p>
+<p>Czy rakieta została zastąpiona obrazkiem wybuchu?<br />Co się dzieje, kiedy przytrzymasz wciśnięty przycisk myszy i przesuwasz kursor? (Nie martw się, naprawimy ten problem później).</p>
 </section>
 <section id="zapisz-swoj-projekt.-1" class="level2 save">
 <h2>Zapisz swój projekt.</h2>
 </section>
 </section>
-<section id="krok-3-spraw-aby-kazda-eksplozja-bya-unikalna" class="level1 activity">
-<h1>Krok 3: Spraw, aby każda eksplozja była unikalna</h1>
-<ol>
-<li>Teraz sprawmy, aby każdy wybuch był inny. Skorzystaj z bloku „zmień efekt kolor” i każ mu wybierać losowy kolor z listy od 1 do 200 przed pokazaniem wybuchu.</li>
-</ol>
-<p><img src="884d7f24b17da3ee1ae1d5c9ab10d7b4d2abac3d.png" alt="
-    kiedy otrzymam wybuch
+<section id="krok-3-spraw-aby-kazda-eksplozja-bya-wyjatkowa" class="level1 activity">
+<h1>Krok 3: Spraw, aby każda eksplozja była wyjątkowa</h1>
+<section id="zadania-do-wykonania-5" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li><p>Teraz sprawmy, aby każdy wybuch był inny. Skorzystaj z bloku <code class="blockpurple">ustaw efekt kolor</code> i każ mu wybierać losowy kolor z listy od <strong>1</strong> do <strong>200</strong> przed pokazaniem wybuchu.</p>
+<p><img src="f53bc254f159f8a2dd425b0c119ab84099e06a77.png" alt="
+    kiedy otrzymam [wybuch v]
     ukryj
-    zmień efekt kolor na losuj liczbę pomiędzy 1 a 200
-    idź do x: współrzędna x z Rakieta y: współrzędna y z Rakieta
+    ustaw efekt [kolor v] na (losuj od (1) do (200))
+    idź do [Rakieta v]
     pokaż
-    czekaj 1 s
-    ukryj" /></p>
+    czekaj (1) s
+    ukryj" /></p></li>
+</ul>
+</section>
 <section id="przetestuj-swoj-projekt-5" class="level2 flag">
 <h2>Przetestuj swój projekt</h2>
 <p><strong>Kliknij zieloną flagę.</strong></p>
 <p>Czy każda eksplozja ma inny kolor?</p>
-<ol>
-<li>Dodajmy kilka różnych rodzajów eksplozji. Zaimportuj pliki „fajerwerki2.png” i „fajerwerki3.png” z katalogu „Zasoby” jako nowe kostiumy i dodaj przełączanie między nimi dla każdej rakiety tuż przed jej pokazaniem się.</li>
-</ol>
+</section>
+<section id="zadania-do-wykonania-6" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li>Dodajmy kilka różnych rodzajów eksplozji. Zaimportuj pliki <strong>fajerwerki2.png</strong> i <strong>fajerwerki3.png</strong> z katalogu <strong>Zasoby</strong> jako nowe kostiumy i dodaj przełączanie między nimi dla każdej rakiety tuż przed jej pokazaniem się.</li>
+</ul>
 </section>
 <section id="przetestuj-swoj-projekt-6" class="level2 flag">
 <h2>Przetestuj swój projekt</h2>
 <p><strong>Kliknij zieloną flagę.</strong></p>
 <p>Czy każda rakieta wybucha w inny sposób i ma inny kolor?</p>
-<ol>
-<li>Na koniec sprawmy, aby każda eksplozja powiększała się w miarę upływu czasu, a nie po prostu pojawiała się na ekranie. Zamiast czekać sekundę, ustaw rozmiar duszka na 5% zanim zostanie pokazany, a potem, jak już będzie widoczny, skorzystaj z bloku „powtórz”, aby zwiększyć jego rozmiar o 2 pięćdziesiąt razy.</li>
-</ol>
-<p><img src="490f7d198aaa559dbce6e952fbac46a68b52f9a5.png" alt="
-    kiedy otrzymam wybuch
+</section>
+<section id="zadania-do-wykonania-7" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li><p>Na koniec sprawmy, aby każda eksplozja powiększała się w miarę upływu czasu, a nie po prostu pojawiała się na ekranie. Zamiast czekać sekundę, ustaw rozmiar duszka na <strong>5%</strong> zanim zostanie pokazany, a potem, jak już będzie widoczny, skorzystaj z bloku <code class="blockbrown">powtórz</code>, aby zwiększyć jego rozmiar o <strong>2 pięćdziesiąt razy</strong>.</p>
+<p><img src="81834a56738bd1ec74e7fb4e12947a1c1131e469.png" alt="
+    kiedy otrzymam [wybuch v]
     ukryj
-    zmień efekt kolor na losuj liczbę pomiędzy 1 a 200
-    idź do x: współrzędna x z Rakieta y: współrzędna y z Rakieta
-    ustaw rozmiar na 5%
+    ustaw efekt [kolor v] na (losuj od (1) do (200))
+    idź do [Rakieta v]
+    ustaw rozmiar na (5) %
     pokaż
-    powtórz 50 razy
-        zmień rozmiar o 2
-    (koniec powtórz)
-    ukryj" /></p>
+    powtórz (50) razy
+        zmień rozmiar o (2)
+    ukryj" /></p></li>
+</ul>
 </section>
 <section id="przetestuj-swoj-projekt-7" class="level2 flag">
 <h2>Przetestuj swój projekt</h2>
 <p><strong>Kliknij zieloną flagę.</strong></p>
 <p>Czy wybuch rakiety powiększa się w miarę upływu czasu?</p>
 </section>
-<section id="rzeczy-do-sprobowania-1" class="level2">
+<section id="rzeczy-do-sprobowania-1" class="level2 try">
 <h2>Rzeczy do spróbowania</h2>
-<p>Spróbuj sprawić, aby każdy wybuch był bardziej unikalny, zmieniając jego rozmiar i szybkość wzrostu każdej eksplozji.</p>
+<ul>
+<li>Spróbuj sprawić, aby każdy wybuch był bardziej wyjątkowy, zmieniając jego rozmiar i szybkość wzrostu każdej eksplozji.</li>
+</ul>
 </section>
 <section id="zapisz-swoj-projekt.-2" class="level2 save">
 <h2>Zapisz swój projekt.</h2>
@@ -208,23 +226,24 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 </section>
 <section id="krok-4-naprawiamy-problem-z-nadawaniem" class="level1 activity">
 <h1>Krok 4: Naprawiamy problem z nadawaniem</h1>
-<p>Pamiętasz błąd, który pojawił się wcześniej przy poruszaniu kursora myszy, gdy przycisk myszy jest wciśnięty?</p>
-<p>Dzieje się tak z dlatego, że rakieta nadaje komunikat o wybuchu i natychmiast powtarza pętlę „jeżeli”, która z kolei nadaje kolejny komunikat o wybuchu, zanim ten poprzedni skończył się wyświetlać.</p>
-<ol>
-<li>Aby to naprawić, możemy zastąpić blok „nadaj” blokiem „nadaj i czekaj”, przez co pętla nie powtórzy się, dopóki wybuch się nie skończy.</li>
-</ol>
-<p><img src="df54a3389422f9385d3fb82475246258dcdd3c1b.png" alt="
-    kiedy kliknięto FLAGĘ
+<p>Pamiętasz błąd, który pojawił się wcześniej przy poruszaniu kursora myszy, gdy przycisk myszy jest wciśnięty?<br />Dzieje się tak z dlatego, że rakieta nadaje komunikat o wybuchu i natychmiast powtarza pętlę &quot;jeżeli&quot;, która z kolei nadaje kolejny komunikat o wybuchu, zanim ten poprzedni skończył się wyświetlać.</p>
+<section id="zadania-do-wykonania-8" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li><p>Aby to naprawić, możemy zastąpić blok <code class="blockbrown">nadaj</code> blokiem <code class="blockbrown">nadaj i czekaj</code>, przez co pętla nie powtórzy się, dopóki wybuch się nie skończy.</p>
+<p><img src="faf907308a41b307f4357f3247f3fdc19fecaeb4.png" alt="
+    kiedy kliknięto zieloną flagę
     ukryj
-    zawsze, jeżeli wciśnięty klawisz myszy?
-        idź do x: x myszy y: -200
-        zagraj dźwięk bum
-        pokaż
-        leć przez 1 s do x: x myszy y: y myszy
-        ukryj
-        nadaj wybuch i czekaj
-    (koniec zawsze)
-" /></p>
+    zawsze
+        jeżeli &lt;wciśnięty klawisz myszy?&gt; to
+            idź do x: (x myszy) y: (-200)
+            zagraj dźwięk [bum v]
+            pokaż
+            leć przez (1) s do x: (x myszy) y: (y myszy)
+            ukryj
+            nadaj [wybuch v] i czekaj" /></p></li>
+</ul>
+</section>
 <section id="przetestuj-swoj-projekt-8" class="level2 flag">
 <h2>Przetestuj swój projekt</h2>
 <p><strong>Kliknij zieloną flagę, przytrzymaj przycisk myszy i przesuń kursor po ekranie.</strong></p>
@@ -232,6 +251,8 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 </section>
 <section id="zapisz-swoj-projekt.-3" class="level2 save">
 <h2>Zapisz swój projekt.</h2>
+<p><strong>Brawo! To by było na tyle, teraz możesz cieszyć się swoją grą!</strong></p>
+<p>Nie zapomnij, że możesz podzielić się swoją grą ze swoimi przyjaciółmi i rodziną. Żeby to zrobić, kliknij menu <strong>Udostępnij</strong>.</p>
 </section>
 </section>
 <section class="legal">
