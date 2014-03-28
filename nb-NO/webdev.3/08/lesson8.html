@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="nb-NO">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Lyd og video på nettsider — Code Club</title>
+
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../../../css/lesson.css">
+  <link rel="stylesheet" href="../../../css/web.css">
+</head>
+<body>
+<header>
+<div class="logo"><a href="../../../index.html"><img src="../../../img/ccuk_logo.svg"/></a></div>
+<div class="title">Lyd og video på nettsider</div>
+<div><span class="level">Lesson 8</span></div>
+</header>
+<section class="legal">
+<div>
+These projects are for use inside the UK only. All Code Clubs <strong>must</strong> be registered. You can check registered clubs on the map at <a href="http://www.codeclub.org.uk/">www.codeclub.org.uk</a>. This coursework is developed in the open on GitHub, <a href="http://github.com/CodeClub/">github.com/CodeClub/</a> come and join us!
+</div>
+</section>
+<section class="breadcrumb">
+<ol class="breadcrumb"><li><a href="../../../index.html">Languages</a></li><li><a href="../../index.html">Norsk</a></li><li><a href="../index.html">HTML &amp; CSS</a></li><li><strong>Lyd og  video på nettsider</strong></li></ol>
+</section>
+<section id="introduksjon" class="level1 intro">
+<h1>Introduksjon</h1>
+<p>Det finnes flere måter å legge til video eller lyd til sidene dine. La oss ta en nærmere titt på dem sammen.</p>
+</section>
+<section id="legge-til-video-fra-youtube" class="level1 activity">
+<h1>Legge til video fra YouTube</h1>
+<p>Å legge til videoer fra YouTube er egentlig ganske enkelt.</p>
+<ul>
+<li>Gå til siden på YouTube hvor videoen er.<br /></li>
+<li>Under videospiller kan du finne <code>Dele</code>-knappen. Klikk på den.<br /></li>
+<li>For å få koden du kan bruke på nettsiden din, klikk <code>Innbygg</code>.</li>
+</ul>
+<p>Det vil se omtrent slik ut:</p>
+<pre><code>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/embed/FxhGIajRsq4&quot;
+   frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;</code></pre>
+<p>Denne spesifikke kodefragment ville legge en CodeClub video til din side. Bare kopier og lim inn koden der du ønsker at videoen skal vises.</p>
+<p>Legg merke til <code>width</code> (bredde) og <code>height</code> (høyde) attributtene. De lar deg kontrollere hvor stor videoen vil være på siden, så du kan gjerne endre dem.</p>
+</section>
+<section id="add-a-video-from-vimeo." class="level1 activity">
+<h1>Add a video from Vimeo.</h1>
+<ul>
+<li>Gå til en videoside på Vimeo.<br /></li>
+<li>Klikk på <code>Dele</code>-knappen på videospilleren.<br /></li>
+<li>På høyre side er det en <code>embedd</code> boks. Klikk på den for å velge koden og kopiere den. Det vil se litt ut som dette:</li>
+</ul>
+<pre><code>&lt;iframe src=&quot;http://player.vimeo.com/video/44738167&quot; width=&quot;600&quot; height=&quot;338&quot; 
+   frameborder=&quot;0&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</code></pre>
+<ul>
+<li>Bare kopier og lim inn koden der du ønsker at videoen skal vises. Legg merke til <code>width</code> (bredde) og <code>height</code> (høyde) attributtene. De lar deg kontrollere hvor stor videoen vil være på siden, så du kan gjerne endre dem.</li>
+</ul>
+</section>
+<section id="legg-til-en-videofil-fra-datamaskinen" class="level1 activity">
+<h1>Legg til en videofil fra datamaskinen</h1>
+<p>Hvis du har en video du har laget, kan du legge den på siden din uten å måtte laste det opp til YouTube eller Vimeo.</p>
+<ul>
+<li>For å plassere en video på siden din må du legge til en <code>video</code> tag. Akkurat som <code>&lt;img&gt;</code> taggen peker <code>src</code> attributtet til filen:</li>
+</ul>
+<pre><code>    &lt;video src=&quot;spaceship_landing.mp4&quot;&gt;
+    &lt;/video&gt;</code></pre>
+<p>Dessverre kan ikke alle nettlesere spille alle videoformater. Du blir nødt til å lagre den i minst <code>.mp4</code> og <code>.ogv</code> formater, som vil fungere i de fleste nettlesere.</p>
+<p>For å la nettleseren vite at vi har mer enn ett format av video klar, skriver vi slik:</p>
+<pre><code>    &lt;video&gt;
+        &lt;source src=&quot;spaceship_landing.ogv&quot; type=&quot;video/ogg&quot;&gt;
+        &lt;source src=&quot;spaceship_landing.mp4&quot; type=&quot;video/mp4&quot;&gt;
+    &lt;/video&gt;</code></pre>
+<ul>
+<li>For å legge inn et bilde som vil bli sett før videoen spilles av, kan du bruke en <code>poster</code> (plakat) attributt:</li>
+</ul>
+<pre><code>    &lt;video poster=&quot;spaceship_landing.jpg&quot;&gt;
+        &lt;source src=&quot;spaceship_landing.ogv&quot; type=&quot;video/ogg&quot;&gt;
+        &lt;source src=&quot;spaceship_landing.mp4&quot; type=&quot;video/mp4&quot;&gt;
+    &lt;/video&gt;</code></pre>
+<ul>
+<li>Hvis du ønsker å spille av videoen automatisk, kan du legge til <code>autoplay</code> atributt, slik som dette:</li>
+</ul>
+<pre><code>    &lt;video poster=&quot;spaceship_landing.jpg&quot; autoplay&gt;
+        &lt;source src=&quot;spaceship_landing.ogv&quot; type=&quot;video/ogg&quot;&gt;
+        &lt;source src=&quot;spaceship_landing.mp4&quot; type=&quot;video/mp4&quot;&gt;
+    &lt;/video&gt;</code></pre>
+<ul>
+<li>For å vise video kontroller, som spill knapp, volum kontroll osv, kan du legge til <code>controls</code> atributt.</li>
+</ul>
+<pre><code>    &lt;video poster=&quot;spaceship_landing.jpg&quot; controls&gt;
+        &lt;source src=&quot;spaceship_landing.ogv&quot; type=&quot;video/ogg&quot;&gt;
+        &lt;source src=&quot;spaceship_landing.mp4&quot; type=&quot;video/mp4&quot;&gt;
+    &lt;/video&gt;</code></pre>
+<ul>
+<li>Du kan også kontrollere størrelsen på videon med <code>width</code> (bredde) og <code>height</code> (høyde) attributer. Skriv:</li>
+</ul>
+<pre><code>    &lt;video poster=&quot;spaceship_landing.jpg&quot; width=&quot;600&quot; height=&quot;400&quot;&gt;
+        &lt;source src=&quot;spaceship_landing.ogv&quot; type=&quot;video/ogg&quot;&gt;
+        &lt;source src=&quot;spaceship_landing.mp4&quot; type=&quot;video/mp4&quot;&gt;
+    &lt;/video&gt;</code></pre>
+</section>
+<section id="legg-til-en-lydfil-fra-datamaskinen" class="level1 activity">
+<h1>Legg til en lydfil fra datamaskinen</h1>
+<p>Måten å legge lydfiler til siden din fra datamaskinen din er omtrent som med videofil.</p>
+<ul>
+<li>For å plassere lyden på siden, skirv dette:</li>
+</ul>
+<pre><code>    &lt;audio src=&quot;spaceship.mp3&quot;&gt;
+    &lt;/audio&gt;</code></pre>
+<p>Legg merke til <code>src</code> atributtet som peker til filen.</p>
+<p>Akkurat som med video, kan ikke alle nettlesere spille hver type lydfil, så for å sørge for at så mange som mulig kan høre lyden du har til å legge filen i mer enn ett format, i hvert fall i <code>.mp3</code> og <code>.oga</code>.</p>
+<pre><code>    &lt;audio&gt;
+        &lt;source src=&quot;spaceship.mp3&quot; type=&#39;audio/mp3&#39;&gt;
+        &lt;source src=&quot;spaceship.ogg&quot; type=&#39;audio/ogg; codecs=vorbis&#39;&gt;
+    &lt;/audio&gt;</code></pre>
+<ul>
+<li>For å legge til kontrollene trenger du å legge til <code>controls</code> nøkkelordet:</li>
+</ul>
+<pre><code>    &lt;audio controls&gt;
+        &lt;source src=&quot;spaceship.mp3&quot; type=&#39;audio/mp3&#39;&gt;
+        &lt;source src=&quot;spaceship.ogg&quot; type=&#39;audio/ogg; codecs=vorbis&#39;&gt;
+    &lt;/audio&gt;</code></pre>
+<ul>
+<li>Hvis du vil at lyden skal spille så snart som siden lastes, kan du legge den <code>autoplay</code> nøkkelord, slik som dette:</li>
+</ul>
+<pre><code>    &lt;audio controls autoplay&gt;
+        &lt;source src=&quot;spaceship.mp3&quot; type=&#39;audio/mp3&#39;&gt;
+        &lt;source src=&quot;spaceship.ogg&quot; type=&#39;audio/ogg; codecs=vorbis&#39;&gt;
+    &lt;/audio&gt;</code></pre>
+</section>
+<section class="legal">
+<div>
+These projects are for use inside the UK only. All Code Clubs <strong>must</strong> be registered. You can check registered clubs on the map at <a href="http://www.codeclub.org.uk/">www.codeclub.org.uk</a>. This coursework is developed in the open on GitHub, <a href="http://github.com/CodeClub/">github.com/CodeClub/</a> come and join us!
+
+<br/><br/>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+</div>
+</section>
+</body>
+</div>
+ <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-30750176-1']);
+        _gaq.push(['_setDomainName', 'codeclub.org.uk']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</html>

@@ -29,7 +29,7 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 </section>
 <section id="wstep" class="level1 intro">
 <h1>Wstęp</h1>
-<p>Ten projekt bazuje na popularnej angielskiej grze zwanej Whack-A-Mole: zdobywasz punkty klikając duchy, które pojawiają się na ekranie. Celem gry jest zdobycie jak największej liczby punktów w ciągu 30 sekund.</p>
+<p>Ten projekt bazuje na popularnej angielskiej grze zwanej Whack-A-Mole: zdobywasz punkty klikając w duchy, które pojawiają się na ekranie. Celem gry jest zdobycie jak największej liczby punktów w ciągu 30 sekund.</p>
 <p><img src="pogromcy-duchow.png" alt="screenshot" /></p>
 </section>
 <section id="krok-1-stworz-latajacego-ducha" class="level1 activity">
@@ -38,12 +38,12 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 <h2>Zadania do wykonania</h2>
 <ul>
 <li><strong>Stwórz nowy projekt.</strong><br /></li>
-<li><strong>Usuń duszka kota</strong> i zastąp tło lasem (woods) z katalogu <strong>Nature</strong>.<br /></li>
+<li><strong>Usuń duszka kota</strong> i zastąp tło lasem (woods) z katalogu <strong>Natura</strong>.<br /></li>
 <li>Kliknij przycisk <code class="blockgrey">Wybierz nowego duszka z biblioteki</code> i dodaj ducha do projektu (znajdź kostium <strong>Fikcja/ghost2-b</strong>).</li>
 </ul>
 <p><strong>Teraz sprawmy, aby duch zaczął latać</strong></p>
 <ul>
-<li>Dodaj <code class="blocklightgrey">zmienną</code> tylko dla tego duszka i nazwij ją <code class="blockorange">prędkość</code>.<br />Nowa zmienna powinna pojawić się na <strong>Scenie</strong> jako <strong>&quot;Duszek1 prędkość&quot;</strong>.<br />Jeżeli widzisz tam tylko &quot;prędkość&quot;, usuń zmienną i stwórz ją na nowo, tylko tym razem wybierz opcję &quot;Tylko dla tego duszka&quot;.<br />Odznacz &quot;prędkość&quot; w <strong>panelu Dane</strong>, aby nie było jej widać na Scenie. Ta zmienna będzie kontrolować prędkość lotu naszego ducha. Korzystamy ze zmiennej, aby móc później zmieniać prędkość lotu ducha.<br /></li>
+<li>Dodaj <code class="blocklightgrey">zmienną</code> tylko dla tego duszka i nazwij ją <code class="blockorange">prędkość</code>.<br />Nowa zmienna powinna pojawić się na <strong>Scenie</strong> jako <strong>&quot;Ghost2: prędkość&quot;</strong>.<br />Jeżeli widzisz tam tylko &quot;prędkość&quot;, usuń zmienną i stwórz ją na nowo, tylko tym razem wybierz opcję &quot;Tylko dla tego duszka&quot;.<br />Odznacz &quot;prędkość&quot; w <strong>panelu Dane</strong>, aby nie było jej widać na Scenie. Ta zmienna będzie kontrolować prędkość lotu naszego ducha. Korzystamy ze zmiennej, aby móc później zmieniać prędkość lotu ducha.<br /></li>
 <li><p>Chcemy, aby duch zaczął latać zaraz po rozpoczęciu gry. <strong>Stwórz dla niego poniższy skrypt</strong>:</p>
 <p><img src="82ce84d712922b563bbafaf0ae71a70305f12d6a.png" alt="    kiedy kliknięto zieloną flagę
     ustaw [prędkość v] na [5]
@@ -88,12 +88,12 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 <section id="zadania-do-wykonania-2" class="level2 check">
 <h2>Zadania do wykonania</h2>
 <p><strong>Dodajmy duchowi poniższy skrypt:</strong></p>
-<p><img src="2f2a2f914db9b40ddcb32458599636830d319238.png" alt="    kiedy kliknięto zieloną flagę
+<p><img src="60e006490059557e33722ddb30e4c5aaf4320ae3.png" alt="    kiedy kliknięto zieloną flagę
     zawsze
         ukryj
-        czekaj (losuj liczbę pomiędzy (2) a (5)) s
+        czekaj (losuj od (2) do (5)) s
         pokaż
-        czekaj (losuj liczbę pomiędzy (3) a (5)) s" /></p>
+        czekaj (losuj od (3) do (5)) s" /></p>
 </section>
 <section id="przetestuj-swoj-projekt-2" class="level2 flag">
 <h2>Przetestuj swój projekt</h2>
@@ -140,7 +140,7 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 </section>
 <section id="krok-4-dodaj-punkty-i-zegar" class="level1 activity">
 <h1>Krok 4: Dodaj punkty i zegar</h1>
-<p>Mamy już ducha, więc wykorzystajmy go do stworzenia własnej gry! Zacznijmy liczyć punkty za każde kliknięcie na duchu oraz dodajmy limit czasu do gry. W tym celu użyjemy 2 nowe zmienne.</p>
+<p>Mamy już ducha, więc wykorzystamy go do stworzenia własnej gry! Zaczniemy liczyć punkty za każde kliknięcie na ducha. Dodamy też do gry limit czasu. W tym celu użyjemy dwóch nowych zmiennych.</p>
 <section id="zadania-do-wykonania-4" class="level2 check">
 <h2>Zadania do wykonania</h2>
 <ul>
@@ -149,14 +149,14 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
     ukryj
     zagraj dźwięk [Fairydust v]
     zmień [wynik v] o (1)" /></p></li>
-<li><p>Kliknij na <strong>Scenę</strong>, stwórz <strong>nową zmienną</strong> (tym razem tylko dla sceny) i nazwij ją <strong>czas</strong>. Dodaj nowy skrypt uruchamiany kliknięciem flagi, który ustawia <code class="blockorange">czas</code> na <strong>30</strong> oraz wynik na <strong>0</strong>. Skorzystaj z bloku <code class="blockyellow">powtarzaj aż</code>, aby odczekać sekundę i zmniejszyć wartość <code class="blockorange">czasu</code> o jeden. Akcja powinna powtarzać się dopóki licznik czasu nie dojdzie do zera. Wtedy to zakończymy grę używając bloku <code class="blockyellow">zatrzymaj wszystko</code>.</p>
-<p><img src="25397138567727351d1e9de3588ea5777d03775e.png" alt="    kiedy kliknięto zieloną flagę
+<li><p>Kliknij na <strong>Scenę</strong>, stwórz <strong>nową zmienną</strong> i nazwij ją <strong>czas</strong>. Dodaj nowy skrypt uruchamiany kliknięciem flagi, który ustawia <code class="blockorange">czas</code> na <strong>30</strong> oraz wynik na <strong>0</strong>. Skorzystaj z bloku <code class="blockyellow">powtarzaj aż</code>, aby odczekać sekundę i zmniejszyć wartość <code class="blockorange">czasu</code> o jeden. Akcja powinna powtarzać się dopóki licznik czasu nie dojdzie do zera. Wtedy to zakończymy grę używając bloku <code class="blockyellow">zatrzymaj wszystko</code>.</p>
+<p><img src="faa9d7aeb79ccee30ae56276731054bc33d3e0b1.png" alt="    kiedy kliknięto zieloną flagę
     ustaw [czas v] na (30)
     ustaw [wynik v] na (0)
     powtarzaj aż &lt;(czas) = [0]&gt;
         czekaj (1) s
         zmień [czas v] o (-1)
-
+    koniec
     zatrzymaj [wszystko v]" /></p></li>
 </ul>
 </section>
