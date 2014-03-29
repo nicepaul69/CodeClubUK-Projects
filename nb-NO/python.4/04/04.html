@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Code Club</title>
+    <title>Skilpadder hele veien ned — Code Club</title>
 
   <style type="text/css">code{white-space: pre;}</style>
   <!--[if lt IE 9]>
@@ -11,7 +11,7 @@
   <![endif]-->
     <link rel="stylesheet" href="../../../css/main.css">
     <link rel="stylesheet" href="../../../css/lesson.css">
-  
+  <link rel="stylesheet" href="../../../css/python.css">
   <style type="text/css">
 table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
   margin: 0; padding: 0; vertical-align: baseline; border: none; }
@@ -33,17 +33,20 @@ code > span.er { color: #ff0000; font-weight: bold; }
   </style>
 </head>
 <body>
+<header>
+<div class="logo"><a href="../../../index.html"><img src="../../../img/ccuk_logo.svg"/></a></div>
+<div class="title">Skilpadder hele veien ned</div>
+<div><span class="level">Level 1</span></div>
+</header>
 <section class="legal">
 <div>
 These projects are for use inside the UK only. All Code Clubs <strong>must</strong> be registered. You can check registered clubs on the map at <a href="http://www.codeclub.org.uk/">www.codeclub.org.uk</a>. This coursework is developed in the open on GitHub, <a href="http://github.com/CodeClub/">github.com/CodeClub/</a> come and join us!
 </div>
 </section>
 <section class="breadcrumb">
-<ol class="breadcrumb"><li><a href="../../../index.html">Languages</a></li><li><a href="../../index.html">Norsk</a></li><li><a href="../index.html">Python</a></li><li><strong></strong></li></ol>
+<ol class="breadcrumb"><li><a href="../../../index.html">Languages</a></li><li><a href="../../index.html">Norsk</a></li><li><a href="../index.html">Python</a></li><li><strong>Skilpadder hele veien ned</strong></li></ol>
 </section>
-<section id="skilpadder-hele-veien-ned" class="level1">
-<h1>04—Skilpadder hele veien ned</h1>
-<section id="steg-1-tegn-et-fjell" class="level2">
+<section id="steg-1-tegn-et-fjell" class="level2 activity">
 <h2>Steg 1: Tegn et fjell</h2>
 <p>Hent frem skilpaddene dine, åpne IDLE, det er på tide å tegne igjen. Men<br />først, la oss se på de følgende tre figurene:<br />Hvordan kan vi tegne dem i Python?</p>
 <pre><code>_________________________
@@ -91,7 +94,7 @@ second()</code></pre></li>
 _________/      \________</code></pre></li>
 </ol>
 </section>
-<section id="steg-2-et-fjell-av-fjell" class="level2">
+<section id="steg-2-et-fjell-av-fjell" class="level2 activity">
 <h2>Steg 2: Et fjell av fjell</h2>
 <p>Hva med den tredje figuren? Selv om den er litt komplisert å programmere om<br />vi må skrive alle stegene vi må ta, er det egentlig bare det første fjellet<br />tegnet fire ganger.</p>
 <pre><code>            /\
@@ -127,7 +130,7 @@ third()</code></pre>
 <p>Disse figurene er spesielle på den måten at vi tegner dem ved å sette sammen enklere versjon av figurene om igjen og om igjen: Den tredje er laget av den andre, og den andre er laget av den første. Det vi virkelig har lyst til er å be datamaskinen om å tegne dette igjen og igjen helt til det er ferdig.</p></li>
 </ol>
 </section>
-<section id="steg-3-igjen-og-igjen" class="level2">
+<section id="steg-3-igjen-og-igjen" class="level2 activity">
 <h2>Steg 3: Igjen og igjen</h2>
 <p>Vi får til dette ved å dele problemet i to: Det enkle problemet og spesialtilfellet av problemet. Det enkle problemet er enkelt: Det er bare <code>forward(100)</code>. Spesialtilfellet er litt vanskeligere, det vil si: Tegn spesialtilfellet, men en mindre enn i sted, helt til du kommer til det enkle tilfellet. Det er kanskje enklere å se på programmet enn å forklare.</p>
 <ol>
@@ -152,7 +155,7 @@ mountain(3)</code></pre>
 <li><p>Kjør det og se hva som skjer. Hva skjer om du prøver <code>mountain(1)</code>, <code>mountain(2)</code>, eller <code>mountain(4)</code>?</p></li>
 </ol>
 </section>
-<section id="steg-4-tegn-et-snflak-av-fjell" class="level2">
+<section id="steg-4-tegn-et-snflak-av-fjell" class="level2 activity">
 <h2>Steg 4: Tegn et snøflak av fjell</h2>
 <ol>
 <li><p>La oss bare legge til en siste ting til filen fra i sted, så den ser ut som under. Vi legger til en ny prosedyre <code>snowflake</code>:</p>
@@ -186,7 +189,7 @@ snowflake(<span class="dv">4</span>,<span class="dv">5</span>)</code></pre>
 <li><p>Prøv å kjøre <code>snowflake(1, 50)</code>, <code>snowflake(2, 25)</code>, <code>snowflake(3, 20)</code>. Jo større dybde, jo lenger tar det å tegne, så husk å putte inn <code>speed(11)</code> så skilpadden går så fort den kan!</p></li>
 </ol>
 </section>
-<section id="steg-5-bokser-flere-bokser-og-enda-flere-bokser" class="level2">
+<section id="steg-5-bokser-flere-bokser-og-enda-flere-bokser" class="level2 activity">
 <h2>Steg 5: Bokser, flere bokser, og enda flere bokser</h2>
 <p>La oss se på en annen figur, en som ligner veldig på snøflaket, men med<br />bokser istedenfor fjell.</p>
 <pre><code>
@@ -235,7 +238,7 @@ ________|         |________</code></pre></li>
 </ol>
 <p>Vi har det enkle tilellet <code>forward(100)</code>, og vi vet hvordan vi skal tegne linjen med firkanthumpen på seg, så la oss hoppe rett til tegningen!</p>
 </section>
-<section id="steg-6-klumpete-firkanter" class="level2">
+<section id="steg-6-klumpete-firkanter" class="level2 activity">
 <h2>Steg 6: Klumpete firkanter</h2>
 <ol>
 <li><p>Åpne en ny fil i IDLE og skriv inn følgende:</p>
@@ -268,7 +271,7 @@ xcurve(<span class="dv">4</span>,<span class="dv">5</span>)</code></pre></li>
 <li><p>Vi har ikke skrevet inn spesialtilfellet, det har vi tenkt å la deg gjøre. Det er ganske likt som å programmere linjen vi hadde før, det burde holde å kalle <code>box(newdepth, length)</code> for å få det til. Koden burde se veldig lik ut som fjellet og snøflaket.</p></li>
 </ol>
 </section>
-<section id="steg-7-trekanter-igjen" class="level2">
+<section id="steg-7-trekanter-igjen" class="level2 activity">
 <h2>Steg 7: Trekanter igjen</h2>
 <p>La oss tegne et siste fraktal, og som før har vi et enkelt tilfelle og et spesialtilfelle.</p>
 <p>De første tre versjonene ser ut som dette. Vi tegner et triangel, og så tegner vi det som tre trekanter sammen.</p>
@@ -342,7 +345,7 @@ triforce(<span class="dv">7</span>, <span class="dv">512</span>)</code></pre>
 <li><p>Prøv å endre verdiene vi sender til <code>triforce()</code>, endre den siste linjen til <code>triforce(5, 300)</code>, hva gjør den?</p></li>
 </ol>
 </section>
-<section id="steg-8-bobler" class="level2">
+<section id="steg-8-bobler" class="level2 activity">
 <h2>Steg 8: Bobler</h2>
 <ol>
 <li><p>Hvis du vil kan du tegne med sirkler istedenfor trekanter! Åpne en ny fil og skriv inn følgende kode:</p>
@@ -375,7 +378,6 @@ bubble(<span class="dv">6</span>, <span class="dv">512</span>)</code></pre></li>
 <li><p>Hva skjer? Hva ser det ut som? Vi har brukt <code>circle</code> kommandoen for å tegne en sirkel på skjermen, som tar en radius.</p></li>
 <li><p>Forsøk å endre sirkelens radius, bytt ut <code>circle(length/2)</code> med <code>circle(length)</code>, dette tegner en større sirkel istedenfor.</p></li>
 </ol>
-</section>
 </section>
 <section class="legal">
 <div>

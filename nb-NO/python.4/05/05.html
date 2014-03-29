@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Code Club</title>
+    <title>Hangman — Code Club</title>
 
   <style type="text/css">code{white-space: pre;}</style>
   <!--[if lt IE 9]>
@@ -11,7 +11,7 @@
   <![endif]-->
     <link rel="stylesheet" href="../../../css/main.css">
     <link rel="stylesheet" href="../../../css/lesson.css">
-  
+  <link rel="stylesheet" href="../../../css/python.css">
   <style type="text/css">
 table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
   margin: 0; padding: 0; vertical-align: baseline; border: none; }
@@ -33,18 +33,24 @@ code > span.er { color: #ff0000; font-weight: bold; }
   </style>
 </head>
 <body>
+<header>
+<div class="logo"><a href="../../../index.html"><img src="../../../img/ccuk_logo.svg"/></a></div>
+<div class="title">Hangman</div>
+<div><span class="level">Level 2</span></div>
+</header>
 <section class="legal">
 <div>
 These projects are for use inside the UK only. All Code Clubs <strong>must</strong> be registered. You can check registered clubs on the map at <a href="http://www.codeclub.org.uk/">www.codeclub.org.uk</a>. This coursework is developed in the open on GitHub, <a href="http://github.com/CodeClub/">github.com/CodeClub/</a> come and join us!
 </div>
 </section>
 <section class="breadcrumb">
-<ol class="breadcrumb"><li><a href="../../../index.html">Languages</a></li><li><a href="../../index.html">Norsk</a></li><li><a href="../index.html">Python</a></li><li><strong></strong></li></ol>
+<ol class="breadcrumb"><li><a href="../../../index.html">Languages</a></li><li><a href="../../index.html">Norsk</a></li><li><a href="../index.html">Python</a></li><li><strong>Hangman</strong></li></ol>
 </section>
-<section id="hangman" class="level1">
-<h1>05—Hangman</h1>
+<section id="introduksjon" class="level2 intro">
+<h2>Introduksjon</h2>
 <p>La oss lage et spill: Hangman! Datamaskinen vil velge et ord og du kan gjette det bokstav for bokstav. Dersom du gjetter feil for mange ganger taper du.</p>
-<section id="steg-1-velg-et-ord" class="level2">
+</section>
+<section id="steg-1-velg-et-ord" class="level2 activity">
 <h2>Steg 1: Velg et ord</h2>
 <p>Først må vi få datamaskinen til å velge et tilfeldig ord, så la oss begynne.</p>
 <ol>
@@ -60,7 +66,7 @@ word = choice([<span class="st">&quot;kode&quot;</span>, <span class="st">&quot;
 </ol>
 <p>Hver gang du kjører dette programmet vil det velge et tilfeldig ord fra listen <code>[&quot;kode&quot;, &quot;kurs&quot;]</code> ved hjelp av <code>choice</code>-funksjonen.</p>
 </section>
-<section id="steg-2-gjett-en-bokstav" class="level2">
+<section id="steg-2-gjett-en-bokstav" class="level2 activity">
 <h2>Steg 2: Gjett en bokstav</h2>
 <p>Nå har vi valgt et ord, la oss finne ut hvordan vi gjetter en bokstav.</p>
 <ol>
@@ -101,7 +107,7 @@ guess = <span class="dt">input</span>()
 <p>Da har vi gjort det viktigste, la oss fortsette videre.</p>
 <p>(Python 2 tips: Bruk <code>raw_input</code> i stedet for <code>input</code> dersom du bruker en gammel version av python)</p>
 </section>
-<section id="steg-3-husk-bokstavene-som-er-gjettet" class="level2">
+<section id="steg-3-husk-bokstavene-som-er-gjettet" class="level2 activity">
 <h2>Steg 3: Husk bokstavene som er gjettet</h2>
 <p>Nå skal vi bruke to nye komponenter i python, lister og <code>while</code>-løkker.</p>
 <ol>
@@ -143,7 +149,7 @@ guessed = []
 <p>Vi bruker også en liste, <code>guessed</code>, hvor vi legger til bokstavene som er riktige for å huske dem senere.</p></li>
 </ol>
 </section>
-<section id="steg-4-tell-feilene" class="level2">
+<section id="steg-4-tell-feilene" class="level2 activity">
 <h2>Steg 4: Tell feilene</h2>
 <p>For at Hangman skal holde oversikt over alle bokstavene som er gjettet på må vi også huske på når spilleren gjetter feil.</p>
 <ol>
@@ -186,7 +192,7 @@ wrong = []
 </ol>
 <p>Bare en ting gjenstår før spillet er ferdig, vi vil begrense hvor mange forsøk man har til å gjette.</p>
 </section>
-<section id="steg-5-bare-noen-fa-forsk" class="level2">
+<section id="steg-5-bare-noen-fa-forsk" class="level2 activity">
 <h2>Steg 5: Bare noen få forsøk</h2>
 <ol>
 <li><p>Endre filen for å legge til en ny variabel, <code>tries</code>:</p>
@@ -236,7 +242,7 @@ tries = <span class="dv">7</span>
 <p>Legg merke til at vi endret <code>while</code>-løkken ved å legge inn en forutsetning, <code>while tries &gt; 0</code>. Dette betyr at løkken bare kjøres så lenge variabelen <code>tries</code> er større enn 0. Kikker du litt rundt i koden ser du at <code>tries</code> starter med verdien 7, også blir den 1 mindre for hver feil bokstav som gjettes. Altså vil spilleren kunne gjette opp til 7 bokstaver feil før spillet er slutt.</p></li>
 </ol>
 </section>
-<section id="steg-6-legg-til-nye-ord" class="level2">
+<section id="steg-6-legg-til-nye-ord" class="level2 activity">
 <h2>Steg 6: Legg til nye ord</h2>
 <ol>
 <li><p>Finn linjen i programkoden som sier:</p>
@@ -245,7 +251,6 @@ tries = <span class="dv">7</span>
 <pre class="sourceCode python"><code class="sourceCode python">word = choice([<span class="st">&quot;kode&quot;</span>, <span class="st">&quot;kurs&quot;</span>, <span class="st">&quot;robot&quot;</span>, <span class="st">&quot;klubb&quot;</span>])</code></pre>
 <p>Husk at ordene må stå i anførselstegn og at det må være komma mellom ordene for å lage en liste. Legg til flere ord som du finner på selv.</p></li>
 </ol>
-</section>
 </section>
 <section class="legal">
 <div>
