@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="nb-NO">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Flaksefugl — Code Club</title>
+
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../../../css/lesson.css">
+  <link rel="stylesheet" href="../../../css/scratch.css">
+</head>
+<body>
+<header>
+<div class="logo"><a href="../../../index.html"><img src="../../../img/ccuk_logo.svg"/></a></div>
+<div class="title">Flaksefugl</div>
+<div><span class="level">Level 2</span></div>
+</header>
+<section class="legal">
+<div>
+These projects are for use inside the UK only. All Code Clubs <strong>must</strong> be registered. You can check registered clubs on the map at <a href="http://www.codeclub.org.uk/">www.codeclub.org.uk</a>. This coursework is developed in the open on GitHub, <a href="http://github.com/CodeClub/">github.com/CodeClub/</a> come and join us!
+</div>
+</section>
+<section class="breadcrumb">
+<ol class="breadcrumb"><li><a href="../../../index.html">Languages</a></li><li><a href="../../index.html">Norsk</a></li><li><a href="../index.html">Scratch</a></li><li><strong>Flaksefugl</strong></li></ol>
+</section>
+<section id="introduksjon" class="level1 intro">
+<h1>Introduksjon</h1>
+<p><strong>I denne oppgaven skal vi lage vår egen versjon av spillet Flappy Bird.</strong><br />Trykk på mellomromstasten for å flakse og prøv å styre mellom rørene!</p>
+<p><img src="flappy_screenshot.png" alt="screenshot" /></p>
+</section>
+<section id="steg-1-fa-flakse-til-a-falle" class="level1 activity">
+<h1><strong>Steg 1:</strong> Få Flakse til å falle</h1>
+<section id="sjekkliste" class="level2 check">
+<h2>Sjekkliste</h2>
+<ul>
+<li>Start et nytt Scratch-prosjekt. Slett katten ved å høyreklikke den og velge &quot;Slett&quot;.<br /></li>
+<li>Bytt ut bakgrunnen med et utendørslandskap. <strong>desert</strong> er et bra valg.<br /></li>
+<li>Legg til Flapppy-figuren. Du trenger en figur med drakter for vinger opp og vinger ned. <strong>parrot</strong> er et bra forslag.<br /></li>
+<li>Bytt navn på figuren til <strong>Flakse</strong>.<br /></li>
+<li>Gi Flappy dette scriptet:</li>
+</ul>
+<p><img src="8f17b2aab66a24154610d26acda23c67f7bd424e.png" alt="når Grønt flagg klikkes
+    gå til x: (-50) y: (0)
+    for alltid
+        endre y med (-3)" /></p>
+</section>
+<section id="test-prosjektet-ditt" class="level2 flag">
+<h2>Test prosjektet ditt</h2>
+<p><strong>klikk det grønne flagget</strong>: starter Flakse midt på skjermen og faller mot bunnen?</p>
+</section>
+<section id="lagre-prosjektet-ditt-hvis-du-kan" class="level2 save">
+<h2>Lagre prosjektet ditt hvis du kan</h2>
+</section>
+</section>
+<section id="steg-2-fa-flakse-til-a-fly" class="level1 activity">
+<h1><strong>Steg 2:</strong> Få Flakse til å fly</h1>
+<p><em>Nå vil vi at Flakse skal fly oppover når du trykker mellomrom.</em></p>
+<section id="sjekkliste-1" class="level2 check">
+<h2>Sjekkliste</h2>
+<ul>
+<li>Klikk på <strong>Drakter</strong> og gi de to draktene navnene <strong>Vinger opp</strong> og <strong>Vinger ned</strong>.<br /></li>
+<li>Gå tilbake til <strong>Skript</strong> og legg til dette skriptet:</li>
+</ul>
+<p><img src="2057b367f69ec0ab0e90e403b9775c96cf715f3b.png" alt="Når [mellomrom] trykkes
+    bytt drakt til [Vinger ned]
+    gjenta (10) ganger
+        endre y med (6)
+    end
+    bytt drakt til [Vinger opp]
+    gjenta (10) ganger
+        endre y med (6)
+    end" /></p>
+</section>
+<section id="test-prosjektet-ditt-1" class="level2 flag">
+<h2>Test prosjektet ditt</h2>
+<p><strong>Klikk det grønne flagget</strong>: klarer du å kontrollere Flakse med mellomromstasten? La du merke til at noen ganger så flytter ikke Flakse seg når du trykker mellomrom? Det er det neste vi skal fikse.</p>
+</section>
+<section id="lagre-prosjektet-ditt" class="level2 save">
+<h2>Lagre prosjektet ditt</h2>
+</section>
+</section>
+<section id="steg-3-gjr-kontrollen-bedre" class="level1 activity">
+<h1><strong>Steg 3:</strong> Gjør kontrollen bedre</h1>
+<p><em>Vi vil at Flakse skal reagere hver gang vi trykker mellomrom. Men når vi trykker mellomrom så starter to løkker etterhverandre. Hvis vi trykker mellomrom før disse to løkkene er ferdig så skjer det ikke noe. For å løse dette problemet skal vi bruke en variabel til å telle hvor mange flaks vi trenger å gjøre.</em></p>
+<section id="sjekkliste-2" class="level2 check">
+<h2>Sjekkliste</h2>
+<ul>
+<li>Ta fra hverandre skriptet som starter med <code class="blockbrown">når mellomrom trykkes</code> og legg de til siden. Vi skal bruke klossene straks.<br /></li>
+<li>Lag en ny variabel <code class="blockgrey">For denne figuren</code> og kall den <code class="blockorange">flaks</code>.<br /></li>
+<li>Legg til dette skriptet ved å bruke blokkene du la til siden:</li>
+</ul>
+<p><img src="447f680c79a9e0acd864730bf6b2b7d635d8d734.png" alt="når grønt flagg klikkes
+    sett [flaks] til [0]
+    bytt drakt til [Vinger opp]
+    for alltid
+        gjenta til &lt;(flaks) = [0]&gt;
+            endre [flaks] med (-1)
+            bytt drakt til [Vinger ned]
+            gjenta (10) ganger
+                endre y med (6)
+            slutt
+            bytt drakt til [Vinger opp]
+            gjenta (10) ganger
+                endre y med (6)
+            slutt
+" /></p>
+<ul>
+<li>Til slutt, legg til dette skriptet på <code class="blockbrown">når mellomrom trykkes</code> blokken:</li>
+</ul>
+<p><img src="56dcf1ff9eb29efea54dc3f2b6bc5207b047de3c.png" alt="når [mellomrom] trykkes
+    endre [flaks] med (1)" /></p>
+</section>
+<section id="test-prosjektet" class="level2 flag">
+<h2>Test prosjektet</h2>
+<p><strong>Klikk det grønne flagget</strong>: Flakser Flakse en gang for hver gang du trykker mellomrom??</p>
+</section>
+<section id="lagre-prosjektet-ditt-om-det-trengs" class="level2 save">
+<h2>Lagre prosjektet ditt om det trengs</h2>
+</section>
+</section>
+<section id="steg-4-legg-til-rrene" class="level1 activity">
+<h1><strong>Steg 4:</strong> Legg til rørene</h1>
+<p><em>Vi vil legge til noen hindringer som Flakse kan fly igjennom.</em></p>
+<section id="sjekkliste-3" class="level2 check">
+<h2>Sjekkliste</h2>
+<ul>
+<li>Klikk på <code class="blockgrey">tegn ny figur</code> knappen.<br /></li>
+<li>Gi den nye figuren navnet <strong>rør</strong>.<br /></li>
+<li>Hvis drakten er i <code class="blockgrey">Punktgrafikk</code> klikk på <code class="blockgrey">Bytt til vektorgrafikk</code> knappen.<br /></li>
+<li>Klikk på <code class="blockgrey">Zoom -</code> så du kan se hele tegneområdet.<br /></li>
+<li>Klikk på <code class="blockgrey">Rektangel</code>, velg en farge og klikk på <code class="blockgrey">Fylt rektangel</code> knappen nederst til venstre.<br /></li>
+<li>Klikk og dra to bokser, en fra toppen og en fr bunn i midten av tegneflaten. Det skal se sånn ut:</li>
+</ul>
+<p><img src="pipe_design.png" alt="screenshot" /></p>
+<ul>
+<li>Du kan skyggelegge røra ved å klikke på <code class="blockgrey">Fyll farge</code> og klikke på en av skyggemetodene i firkantene nede til venstre. Velg to varianter av samme farge: en for forgrunnen og en for bakgrunnen. Når du klikker på en firkant med fylleverktøyet får du en fin effekt.<br /></li>
+<li>Gi figuren navnet <strong>Rør</strong>.</li>
+</ul>
+</section>
+<section id="lagre-prosjektet-ditt-1" class="level2 save">
+<h2>Lagre prosjektet ditt</h2>
+</section>
+</section>
+<section id="steg-5-fa-rra-til-a-bevege-seg" class="level1 activity">
+<h1><strong>Steg 5:</strong> Få røra til å bevege seg</h1>
+<p><em>Nå skal vi få røra til å flytte seg og gjøre plasseringen tilfeldig slik at vi får en hinderløype til Flakse.</em></p>
+<section id="sjekkliste-4" class="level2 check">
+<h2>Sjekkliste</h2>
+<ul>
+<li>Klikk på <strong>rør</strong>-figuren og velg <code class="blockgrey">Skript</code>.<br /></li>
+<li>Legg til dette skriptet:</li>
+</ul>
+<p><img src="620dcec9a23248eb58687d3ae886f6c160ad1f2b.png" alt="når grønt flagg klikkes
+    skjul
+    sett størrelse til (200)%
+    for alltid
+        lag klon av [meg]
+        vent (2) sekunder
+
+når jeg starter som klon
+    gå til x: (240) y: (tilfeldig tall fra(-80) til (80))
+    vis
+    gjenta (120) ganger
+        endre x med (-4)
+    slutt
+    slett denne klonen" /></p>
+</section>
+<section id="test-prosjektet-1" class="level2 flag">
+<h2>Test prosjektet</h2>
+<p><strong>Klikk det grønne flagget</strong>: Kommer det mange rør flygende mot Flakse? Har rørene åpninger til å fly gjennom? Om du synes det er vanskelig å fly Flakse gjennom åpningene kan du endre på åpningen mellom rørene med tegneverktøyet, eller du kan lage Flakse mindre.</p>
+</section>
+<section id="lagre-prosjektet" class="level2 save">
+<h2>Lagre prosjektet</h2>
+</section>
+</section>
+<section id="steg-6-finn-ut-om-flakse-krsjer-med-rrene" class="level1 activity">
+<h1><strong>Steg 6:</strong> Finn ut om Flakse kræsjer med rørene</h1>
+<p><em>For at spillet skal bli vanskelig må spilleren styre Flakse gjennom åpningene mellom rørene uten å komme borti hverken rør eller kanten av skjermen. Vi skal legge til noen blokker for å merke om Flakse kræsjer.</em></p>
+<section id="sjekkliste-5" class="level2 check">
+<h2>Sjekkliste</h2>
+<ul>
+<li>Vi legger til en lyd som vi kan spille når Flakse kræsjer. Kliukk på <strong>Flakse</strong> og så på <code class="blockgrey">Lyder</code>.<br /></li>
+<li>Klikk på <code class="blockgrey">Velg lyd fra biblioteket</code>.<br /></li>
+<li>Velg en kræsjelyd for <strong>Flakse</strong>. <strong>screech</strong> er en kul lyd.<br /></li>
+<li>Klikk deg tilbake til <code class="blockgrey">Skript</code> fliken.<br /></li>
+<li>Legg til dette skriptet:</li>
+</ul>
+<p><img src="892ea0d1360f097123a28c23a581871c2c21be72.png" alt="når grønt flagg klikkes
+    vent til ((berører [kant]?) eller (berører [Rør]?))
+    spill lyden [screech v]
+    si [Du tapte!]
+    send melding [Tap]
+    stopp [andre skript i figuren]" /></p>
+<ul>
+<li>Klikk på <strong>Rør</strong> og legg til dette skriptet:</li>
+</ul>
+<p><img src="8c3691ec730214869da4158d44944dbbaf2e7d02.png" alt="når jeg mottar [Tap]
+    stopp [andre skript i figuren]" /></p>
+</section>
+<section id="test-prosjektet-ditt-2" class="level2 flag">
+<h2>Test prosjektet ditt</h2>
+<p><strong>Klikk det grønne flagget</strong>: Stopper spillet når Flakse kommer borti et rør eller kanten av brettet?</p>
+</section>
+<section id="lagre-prosjektet-ditt-2" class="level2 save">
+<h2>Lagre prosjektet ditt</h2>
+</section>
+</section>
+<section id="steg-7-legg-til-poeng" class="level1 activity">
+<h1><strong>Steg 7:</strong> Legg til poeng</h1>
+<p><em>Spilleren skal score ett poeng hver gang Flakse flyr gjennom en røråpning.</em></p>
+<section id="sjekkliste-6" class="level2 check">
+<h2>Sjekkliste</h2>
+<ul>
+<li>Vi legger til en lyd hver gang Flakse scorer ett poeng. Klikk på <strong>Rør</strong> og legg til en lyd. <strong>bird</strong> er et lurt valg.<br /></li>
+<li>Gå tilbake til <code class="blockgrey">Skript</code> .<br /></li>
+<li>Lag en ny variabel <code class="blockgrey">for alle figurer</code> og kall den <code class="blockorange">poeng</code>.<br /></li>
+<li>Legg til et skript som setter poengene til 0 når det grønne flagget klikkes.<br /></li>
+<li>Legg til dette skriptet:</li>
+</ul>
+<p><img src="80faec1eae422bae3ff62d15bbc428bda285c3d8.png" alt="når jeg starter som klon
+    vent til &lt;(x posisjon) &lt; ([x posisjon] av [Flakse])&gt;
+    endre [poeng] med (1)
+    spill lyden [bird]" /></p>
+</section>
+<section id="test-prosjektet-ditt-3" class="level2 flag">
+<h2>Test prosjektet ditt</h2>
+<p><strong>Klikk det grønne flagget</strong>: scorer du poeng når Flakse flyr forbi en åpning mellom rørene?</p>
+</section>
+<section id="lagre-prosjektet-ditt-3" class="level2 save">
+<h2>Lagre prosjektet ditt</h2>
+</section>
+<section id="ting-du-kan-prve" class="level2 try">
+<h2>Ting du kan prøve</h2>
+<ol>
+<li><strong>Kan du lage dette spillet lettere eller vanskeligere?</strong><br /></li>
+<li><strong>Supert, du har laga ferdig spillet i sin enkleste form. Her er noen flere ting du kan prøve:</strong></li>
+</ol>
+</section>
+<section id="utfordring-1-legg-til-rekorder" class="level2 challenge">
+<h2>Utfordring 1: legg til rekorder</h2>
+<ul>
+<li>Lag en ny variabel og klikk <code class="blockgrey">Nett variabel (lagret på nett)</code> boksen. Kall variabelen <code class="blockorange">Rekord</code><br /></li>
+<li>når spillet er ferdig må du sjekke om det er en ny rekord:</li>
+</ul>
+<p><img src="0d91f95d01e1da7439bd3ca7e14e269b11619648.png" alt="når jeg mottar [Tap]
+    hvis &lt;(poeng) &gt; (rekord)&gt; 
+        sett [rekord] til (poeng)
+    slutt
+    stopp [andre skript i figuren]" /></p>
+</section>
+<section id="test-prosjektet-2" class="level2 flag">
+<h2>Test prosjektet</h2>
+<p><strong>Klikk det grønne flagget</strong>: Oppdaterer rekorden seg for hver gang du setter ny rekord?</p>
+</section>
+<section id="lagre-prosjektet-ditt-4" class="level2 save">
+<h2>Lagre prosjektet ditt</h2>
+</section>
+<section id="utfordring-2-legg-til-tyngdekraft" class="level2 challenge">
+<h2>Utfordring 2: legg til tyngdekraft</h2>
+<p>Når noe faller på grunn avtyngdekraft øker farten jo lenger fallet varer. Vi skal prøve å etterligne denne måten å falle på.</p>
+<ul>
+<li>Legg til en ny variabel <code class="blockgrey">for denne figuren</code> for <strong>Flakse</strong> og kall den <code class="blockorange">løft</code>.<br /></li>
+<li>Endre Flakses falleskript:</li>
+</ul>
+<p><img src="62e678f13290b7acc52765dbe04f366863f0ea7b.png" alt="når grønt flagg klikkes
+    sett [løft] til [0]
+    gå til x: (-50) y: (0)
+    for alltid
+        endre y med (løft)
+        endre [løft] med (-0.4)" /></p>
+<ul>
+<li>og endre Flakses flakseskript:</li>
+</ul>
+<p><img src="2f63757192a82f7c9a162e439dbdb0ae5fdb617e.png" alt="når grønt flagg klikkes
+    sett [flaks] til [0]
+    bytt drakt til [vinger opp]
+    for alltid
+        gjenta til &lt;(flaks) = [0]&gt;
+            endre [flaks] med (-1)
+            bytt drakt til [vinger ned]
+            endre [løft] med (8)
+            vent (0.2) sekunder
+            bytt drakt til [vinger opp]
+            vent (0.2) sekunder" /></p>
+</section>
+<section id="test-prosjektet-ditt-4" class="level2 flag">
+<h2>Test prosjektet ditt</h2>
+<p><strong>Klikk det grønne flagget</strong>: detter Flakse fortere jo lenger han detter?</p>
+</section>
+<section id="lagre-prosjektet-ditt-5" class="level2 save">
+<h2>Lagre prosjektet ditt</h2>
+</section>
+<section id="utfordring-3-dett-ut-av-skjermen" class="level2 challenge">
+<h2>Utfordring 3: dett ut av skjermen</h2>
+<p>Når spilleren taper skal Flakse dette ned og ut av skjermen.</p>
+<ul>
+<li>Bytt ut <code class="blockbrown">send meldingen Tap</code> blokka med <code class="blockbrown">send meldingen fall</code><br /></li>
+<li>Legg til dett eskriptet:</li>
+</ul>
+<p><img src="ed33c5a4caa73cc0a2be4fd588913b7fc27093e6.png" alt="når jeg mottar [Fall]
+    gjenta (10) ganger
+        vend høyre (5) grader
+
+når jeg mottar [Fall]
+    gjenta til &lt;(y posisjon) &lt; [-180]&gt;
+        endre y med (løft)
+        endre [løft] med (-0.4)
+    slutt
+    skjul
+    send melding [Tap]" /></p>
+<ul>
+<li>ikke glem å legge til en <code class="blockpurple">vis</code>-blokk og sett Flakses retning når spillet starter på nytt.</li>
+</ul>
+</section>
+<section id="test-prosjektet-ditt-5" class="level2 flag">
+<h2>Test prosjektet ditt</h2>
+<p><strong>Klikk det grønne flagget</strong>: detter Flakse ut av skjermen når han treffer et rør? Flyr Flakse riktig vei når spillet starter igjen?</p>
+</section>
+<section id="lagre-prosjektet-ditt-6" class="level2 save">
+<h2>Lagre prosjektet ditt</h2>
+<p><strong>Gratulerer, du er ferdig med spillet! Hva er rekorden din?</strong><br />ikke glem å dele spillet med vennene dine. Trykk på <strong>Legg ut</strong> for at andre skal få prøve!</p>
+</section>
+</section>
+<section class="legal" id="legal">
+<div>
+These projects are for use inside the UK only. All Code Clubs <strong>must</strong> be registered. You can check registered clubs on the map at <a href="http://www.codeclub.org.uk/">www.codeclub.org.uk</a>. This coursework is developed in the open on GitHub, <a href="http://github.com/CodeClub/">github.com/CodeClub/</a> come and join us!
+
+<br/><br/>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+</div>
+</section>
+</body>
+</div>
+ <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-30750176-1']);
+        _gaq.push(['_setDomainName', 'codeclub.org.uk']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</html>
