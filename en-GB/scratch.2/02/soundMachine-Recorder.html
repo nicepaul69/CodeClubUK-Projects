@@ -30,13 +30,13 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 <section id="activity-checklist" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li><p>Create two new lists (for all sprites). Call one of them<br /> <code class="blockred">instrument</code> and the other <code class="blockred">timing</code>.</p></li>
+<li><p>Create two new lists (for all sprites). Call one of them <code class="blockred">instrument</code> and the other <code class="blockred">timing</code>.</p></li>
 <li><p>Create a new variable (for all sprites) called <code class="blockorange">recording</code></p></li>
-<li><p>For each of your instruments (drum, piano, each sound sample etc.), you will<br /> need to add the following items to the <code class="blockbrown">when I receive</code> block.</p>
+<li><p>For each of your instruments (drum, piano, each sound sample etc.), you will need to add the following items to the <code class="blockbrown">when I receive</code> block.</p>
 <p><img src="01f1009944853bf3c1a67cda600b996c76c4bdc0.png" alt="if &lt;(recording) = (1)&gt;
   add (timer) to [timing v]
   add (cat) to [instrument v]" /></p>
-<p>Change the word “cat” in <code class="blockred">add [cat] to [instrument v]</code> to match<br /> the name of the message used to play this sound.</p>
+<p>Change the word “cat” in <code class="blockred">add [cat] to [instrument v]</code> to match the name of the message used to play this sound.</p>
 <p><img src="441d9b48e4c327ae3df198214bdc13f893341877.png" alt="when I receive [drum v]
 play drum (48 v) for (0.2) beats
 if &lt;(recording) = (1)&gt;
@@ -46,17 +46,19 @@ end
 set size to (110) %
 wait (0.1) secs
 set size to (100) %" /></p></li>
-<li><p>Draw a new sprite and give it a red circle costume. Name this sprite “Record”.<br /> <img src="record-costume.png" alt="record costume" /></p></li>
-<li><p>Create a script that sets <code class="blockorange">recording</code> to 1 and deletes all of<br /> <code class="blockred">instrument</code> and <code class="blockred">timing</code> when clicked.</p></li>
+<li><p>Draw a new sprite and give it a red circle costume. Name this sprite “Record”.</p>
+<p><img src="record-costume.png" alt="record costume" /></p></li>
+<li><p>Create a script that sets <code class="blockorange">recording</code> to 1 and deletes all of <code class="blockred">instrument</code> and <code class="blockred">timing</code> when clicked.</p></li>
 </ul>
 </section>
 <section id="test-your-project" class="level2 flag">
 <h2>Test your project</h2>
 <p>Try clicking the record button. What happens when you play instruments?</p>
 <ul>
-<li><p>Create another sprite and give it a costume in the shape of a green arrow.<br /> Call this “Play”.<br /> <img src="play-costume.png" alt="play costume" /></p></li>
+<li><p>Create another sprite and give it a costume in the shape of a green arrow. Call this “Play”.</p>
+<p><img src="play-costume.png" alt="play costume" /></p></li>
 <li><p>Create a new variable called <code class="blockorange">index</code> for Play only.</p></li>
-<li><p>Now we need to make the playback actually do something. Add this script to<br /> &quot;Play&quot;</p>
+<li><p>Now we need to make the playback actually do something. Add this script to &quot;Play&quot;</p>
 <pre><code>when Play clicked
 set [recording v] to (0)
 set [index v] to (1)

@@ -30,24 +30,46 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 <section id="activity-checklist" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li><p>Draw a piano by creating black and white rectangles.<br /> <img src="piano-costume1.png" alt="costume1" /></p></li>
-<li><p>Now create a script which plays a note when the “a” key is pressed.<br />```blocks<br />when [a v] key pressed<br />broadcast [piano-1 v]</p></li>
+<li><p>Draw a piano by creating black and white rectangles.</p>
+<p><img src="piano-costume1.png" alt="costume1" /></p></li>
+<li><p>Now create a script which plays a note when the “a” key is pressed.</p>
+<p><img src="3590cde550c4846e15bccde9149ec81c3ee47449.png" alt="when [a v] key pressed
+broadcast [piano-1 v]" /></p>
+<p><img src="1412d5e6ea070946e0041be7bb4eb1050b4d1e98.png" alt="when I receive [piano-1 v]
+play note (60 v) for (0.5) beats" /></p></li>
+<li><p>Create two more notes when you press “s” and “d” on the keyboard.</p>
+<p><img src="3590cde550c4846e15bccde9149ec81c3ee47449.png" alt="when [a v] key pressed
+broadcast [piano-1 v]" /></p>
+<p><img src="d6ba84422eed1b0f1f0281f1482c0ec0019d9733.png" alt="when [s v] key pressed
+broadcast [piano-2 v]" /></p>
+<p><img src="f033fcbc0fb0f607735dd2a30fb8cced496d6565.png" alt="when [d v] key pressed
+broadcast [piano-3 v]" /></p>
+<p><img src="1412d5e6ea070946e0041be7bb4eb1050b4d1e98.png" alt="when I receive [piano-1 v]
+play note (60 v) for (0.5) beats" /></p>
+<p><img src="ae926f070c16e0c557cc6cf82d434f9e5266ebec.png" alt="when I receive [piano-2 v]
+play note (64 v) for (0.5) beats" /></p>
+<p><img src="14d545b2daed5524f63af0f20c0aa189b3f5c86c.png" alt="when I receive [piano-3 v]
+play note (67 v) for (0.5) beats" /></p></li>
+<li><p>Copy the costume 3 times. Fill in a different key on each one.</p>
+<p><img src="piano-costume-3.png" alt="costume3" /></p>
+<p><img src="piano-costumes.png" alt="all costumes" /></p></li>
+<li><p>Make each note switch to a different costume and then switch back to <code class="blockblue">costume1</code>.</p>
+<p><img src="db5408b4242a26c120032e3880e1af7fbe95df32.png" alt="when I receive [piano-1 v]
+switch to costume [costume2 v]
+play note (60 v) for (0.5) beats
+switch to costume [costume1 v]" /></p>
+<p><img src="9c63ab14a76e5a6622d4be2e5489fd4d747f522e.png" alt="when I receive [piano-2 v]
+switch to costume [costume3 v]
+play note (64 v) for (0.5) beats
+switch to costume [costume1 v]" /></p>
+<p><img src="19859dad7ab28e7c2767d6ec7c60851dcc9d764c.png" alt="when I receive [piano-3 v]
+switch to costume [costume4 v]
+play note (67 v) for (0.5) beats
+switch to costume [costume1 v]" /></p></li>
 </ul>
-<p>when I receive [piano-1 v]<br />play note (60 v) for (0.5) beats<br /><code>+ Create two more notes when you press “s” and “d” on the keyboard.</code>blocks<br />when [a v] key pressed<br />broadcast [piano-1 v]</p>
-<p>when [s v] key pressed<br />broadcast [piano-2 v]</p>
-<p>when [d v] key pressed<br />broadcast [piano-3 v]</p>
-<p>when I receive [piano-1 v]<br />play note (60 v) for (0.5) beats</p>
-<p>when I receive [piano-2 v]<br />play note (64 v) for (0.5) beats</p>
-<p>when I receive [piano-3 v]<br />play note (67 v) for (0.5) beats<br />```</p>
-<ul>
-<li>Copy the costume 3 times. Fill in a different key on each one.<br /> <img src="piano-costume-3.png" alt="costume3" /><br /> <img src="piano-costumes.png" alt="all costumes" /><br /></li>
-<li>Make each note switch to a different costume and then switch back to<br /> <code class="blockblue">costume1</code>.<br />```blocks<br />when I receive [piano-1 v]<br />switch to costume [costume2 v]<br />play note (60 v) for (0.5) beats<br />switch to costume [costume1 v]</li>
-</ul>
-<p>when I receive [piano-2 v]<br />switch to costume [costume3 v]<br />play note (64 v) for (0.5) beats<br />switch to costume [costume1 v]</p>
-<p>when I receive [piano-3 v]<br />switch to costume [costume4 v]<br />play note (67 v) for (0.5) beats<br />switch to costume [costume1 v]<br />```</p>
 </section>
-<section id="challenge-.challenge-create-a-way-to-change-the-instrument." class="level1">
-<h1>Challenge {.challenge} Create a way to change the instrument.</h1>
+<section id="challenge-create-a-way-to-change-the-instrument." class="level1 challenge">
+<h1>Challenge: Create a way to change the instrument.</h1>
 <p><img src="2214ccd6cdb5c2be3d862a7302217e3275b478e1.png" alt="when [up-arrow v] key pressed
 set instrument to (pick random (1) to (99))" /></p>
 </section>
