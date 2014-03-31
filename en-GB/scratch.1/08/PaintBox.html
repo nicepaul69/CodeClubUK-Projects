@@ -43,18 +43,15 @@ These projects are for use inside the UK only. All Code Clubs <strong>must</stro
 <li>Upload a new sprite called <strong>green-pencil</strong>, using <strong>resources\green-pencil.png</strong><br /></li>
 <li>Switch to the <strong>costumes</strong> tab and click edit from the <strong>Paint Editor</strong>, change the center of the image to be at the tip of the pen. To do this, click the <strong>Set costume center</strong> button and drag the lines until they are at the tip.<br /></li>
 <li><p>Make the pencil follow the mouse around the stage using the <code class="blockyellow">forever</code> and <code class="blockblue">go to</code> mouse-pointer blocks.</p>
-<pre><code>```blocks
-when FLAG clicked
+<p><img src="114c4cccdc793fbabf6110c475b637da603af339.png" alt="when FLAG clicked
 forever
     go to [mouse-pointer v]
-end
-```</code></pre></li>
+end" /></p></li>
 </ol>
 <p><strong>Now we want to use this pen sprite as an actual pen.</strong> If you look under the pen section you’ll see all sorts of drawing related blocks. The ones we’re initially interested in are <code class="blockgreen">pen down</code> and <code class="blockgreen">pen up</code>.</p>
 <ol>
 <li><p>We want to use the mouse button to control the pen – whenever the mouse button is down the pen should be down, and when it is up the pen should be up. We can do this using an <code class="blockyellow">if... else</code> and <code class="blocklightblue">mouse down?</code> blocks.</p>
-<pre><code>```blocks
-when FLAG clicked
+<p><img src="0335211614918d072cc714a07c49863a32b89d4e.png" alt="when FLAG clicked
 forever
     go to [mouse-pointer v]
     if (mouse down?)
@@ -62,13 +59,11 @@ forever
     else
     pen up
     end
-end
-```</code></pre>
+end" /></p>
 <h2>Test Your Project</h2>
 <p><strong>Click on the green flag.</strong><br />Does the pen follow the mouse around? What happens if you hold the mouse button down and move the mouse? Don’t worry about the pen colour for now.</p></li>
 <li><p>Eventually the screen is going to get pretty filled with scribbles. The clear block can be used to clear the screen.</p>
-<pre><code>```blocks
-when FLAG clicked
+<p><img src="a5d678e7067f6ca67aba536d05bac1763087f1f1.png" alt="when FLAG clicked
 clear
 forever
     go to [mouse-pointer v]
@@ -77,8 +72,7 @@ forever
     else
     pen up
     end
-end
-```</code></pre></li>
+end" /></p></li>
 </ol>
 </section>
 <section id="test-your-project-1" class="level2 flag">
@@ -100,10 +94,8 @@ end
 <li>Change the sprite’s name to <strong>clear</strong>.<br /></li>
 <li>Position the sprite near the bottom-left corner of the stage.<br /></li>
 <li><p>Give the clear sprite this simple script:</p>
-<pre><code>```blocks
-when this sprite clicked
-clear
-```</code></pre></li>
+<p><img src="459fde6a9e9bb3d03456f45d44fa7dbc956abd14.png" alt="when this sprite clicked
+clear" /></p></li>
 </ol>
 </section>
 <section id="test-your-project-2" class="level2 flag">
@@ -126,18 +118,14 @@ clear
 <li><p>When the red sprite is clicked, it should broadcast the message <strong>red</strong>.</p>
 <p><img src="be778103a7cd23ceaed7ad99d56a2e6a72b4894d.png" alt="when this sprite clicked
 broadcast [red v]" /></p>
-<p><strong>Yes, that’s all it does. The hard work is done by the pencil.</strong></p></li>
-</ol>
-<p>In the pencil, upload a new costume, <strong>resources/red-pencil.png</strong>. Set the costume centre to be the tip of the pencil as you did for the original costume.</p>
-<ol>
-<li>Add a new script to the pencil. When the pencil receives the message <strong>red</strong>, it should change to the red pencil costume and change the pen colour to red (using the <code class="blockgreen">set pen color to</code> block).</li>
-</ol>
-<p><strong>Hint:</strong> if you click on the coloured square in the <code class="blockgreen">set pen color to</code> block, you can<br />click the red button sprite to make sure it’s the same colour.</p>
-<pre><code>```blocks
-when I receive [red v]
+<p><strong>Yes, that’s all it does. The hard work is done by the pencil.</strong></p>
+<p>In the pencil, upload a new costume, <strong>resources/red-pencil.png</strong>. Set the costume centre to be the tip of the pencil as you did for the original costume.</p></li>
+<li><p>Add a new script to the pencil. When the pencil receives the message <strong>red</strong>, it should change to the red pencil costume and change the pen colour to red (using the <code class="blockgreen">set pen color to</code> block).</p>
+<p><strong>Hint:</strong> if you click on the coloured square in the <code class="blockgreen">set pen color to</code> block, you can click the red button sprite to make sure it’s the same colour.</p>
+<p><img src="1770ec6fed72a7284134c838efd6b783c8d46907.png" alt="when I receive [red v]
 switch to costume [red-pencil v]
-set pen color to [#FF0000]
-```</code></pre>
+set pen color to [#FF0000]" /></p></li>
+</ol>
 </section>
 <section id="test-your-project-3" class="level2 flag">
 <h2>Test Your Project</h2>
@@ -166,17 +154,14 @@ set pen color to [#FF0000]
 <p>To do this, wrap a new if block around your existing <code class="blockblue">goto...</code><code class="blockyellow">if</code> block, and inside this new if check for the following:</p>
 <p>mouse y is greater than -120 and mouse y is less than 170<br />and mouse x is greater than -230 and mouse x is less than 230</p>
 <p><strong>Note</strong> to do this you’ll need to use multiple <code class="blockgreen">and</code> operator blocks, one for the two mouse x conditions, one for the two mouse y conditions and a final one to join these all together:</p>
-<pre><code>```blocks
-clear
+<p><img src="4f95ac677849eaa30b89aafa12b6e18aef2bda24.png" alt="clear
 forever 
 if &lt;&lt;(mouse y) &gt; (-120)&gt; and &lt;(mouse y) &lt; (170)&gt; and &lt;(mouse x) &gt; (-230)&gt; and &lt;(mouse x) &lt; (230)&gt;&gt;
 go to [mouse-pointer v]
 end
-end
-```</code></pre>
+end" /></p>
 <p>Since we can’t draw outside of the drawing area, we could hide the pencil tool whenever we leave it. To do this, replace the <code class="blockyellow">if</code> with an <code class="blockyellow">if else</code> block. Keep the same condition for the <code class="blockyellow">if</code>, and <code class="blockblue">show</code> the pencil if it’s true, otherwise hide it.</p>
-<pre><code>```blocks
-when FLAG clicked
+<p><img src="e636a80a37e471311ab86212100b93d7f1d675ec.png" alt="when FLAG clicked
 clear
 forever
     if &lt;&lt;(mouse y) &gt; (-120)&gt; and &lt;(mouse y) &lt; (170)&gt; and &lt;(mouse x) &gt; (-230)&gt; and &lt;(mouse x) &lt; (230)&gt;&gt;
@@ -190,8 +175,7 @@ forever
     else
         hide
     end
-end
-```</code></pre>
+end" /></p>
 <section id="test-your-project-5" class="level2 flag">
 <h2>Test Your Project</h2>
 <p><strong>Click on the green flag.</strong></p>
